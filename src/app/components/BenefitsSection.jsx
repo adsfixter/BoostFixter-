@@ -32,10 +32,15 @@ export default function BenefitsSection() {
   return (
     <section className="bg-gray-50 px-6 py-20 md:px-12 md:py-32">
       <div className="mx-auto max-w-7xl">
-        {/* Heading */}
-        <h2 className="mb-16 text-center text-4xl font-bold text-gray-900 md:text-5xl">
-          Discover the Benefits with Us
-        </h2>
+        {/* Title */}
+        <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 text-gray-900">
+          Discover the{" "}
+          <span className="relative inline-block">
+            <span className="relative z-10 text-[#29554A]">Benefits </span>
+            <span className="absolute left-0 bottom-4 w-48 h-2 bg-[#29554A]/30 rounded-sm z-0"></span>
+            <span> with Us</span>
+          </span>
+        </h1>
 
         {/* Content Grid */}
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
@@ -58,9 +63,9 @@ export default function BenefitsSection() {
 
           {/* Right Column - Image */}
           <div className="flex items-center justify-center">
-            <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-lg">
+            <div className="relative  w-full overflow-hidden h-[500px] shadow-lg">
               <Image
-                src="/modern-agency-office-workspace-with-team.jpg"
+                src="/Benefits.jpg"
                 alt="Agency office workspace"
                 fill
                 className="object-cover"

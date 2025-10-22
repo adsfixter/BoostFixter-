@@ -5,7 +5,6 @@ import Services from "./components/Services";
 import ConsultancyForm from "./components/Consultation";
 import BenefitsSection from "./components/BenefitsSection";
 import LatestBlogsSection from "./components/LatestBlogsSection";
-import Option from "./components/Option";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
       <ConsultancyForm></ConsultancyForm>
       <BenefitsSection></BenefitsSection>
       <LatestBlogsSection></LatestBlogsSection>
-      <Option></Option>
     </div>
   );
 }

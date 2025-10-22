@@ -56,41 +56,41 @@ function Services() {
           </button>
         </div>
 
-        {/* Services Cards Parent div with border */}
-        <div className="relative p-6">
-  {/* Four corner borders */}
-  <span className="absolute top-0 left-0 w-12 h-1 bg-gray-200"></span> {/* top-left horizontal */}
-  <span className="absolute top-0 left-0 w-1 h-12 bg-gray-200"></span> {/* top-left vertical */}
-
-  <span className="absolute top-0 right-0 w-12 h-1 bg-gray-200"></span> {/* top-right horizontal */}
-  <span className="absolute top-0 right-0 w-1 h-12 bg-gray-200"></span> {/* top-right vertical */}
-
-  <span className="absolute bottom-0 left-0 w-12 h-1 bg-gray-200"></span> {/* bottom-left horizontal */}
-  <span className="absolute bottom-0 left-0 w-1 h-12 bg-gray-200"></span> {/* bottom-left vertical */}
-
-  <span className="absolute bottom-0 right-0 w-12 h-1 bg-gray-200"></span> {/* bottom-right horizontal */}
-  <span className="absolute bottom-0 right-0 w-1 h-12 bg-gray-200"></span> {/* bottom-right vertical */}
-
   {/* Cards grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative">
-    {services.map((service, index) => (
-      <div
-        key={index}
-        className="group flex flex-col h-full px-10 py-12 space-y-4 border shadow-sm transition transform hover:-translate-y-2 hover:bg-gray-50 hover:shadow-lg"
-      >
-        {/* icon div */}
-        <div className="flex justify-center">
-          <h1 className="p-8 rounded-full bg-red-500 text-white text-2xl">{service.icon}</h1>
-        </div>
+ <div className="grid md:grid-cols-3 gap-10">
+        {services.map((service, index) => (
+          <div
+  key={index}
+  className="relative group flex flex-col items-center justify-center h-[450px] px-10 py-12 space-y-4 shadow-sm transition transform hover:-translate-y-2 hover:bg-gray-50 hover:shadow-lg text-center"
+>
+  {/* Conditional Borders */}
+  {index === 0 && (
+    <div className="absolute -top-2 -left-2 w-40 h-40 border-t-8 border-l-8 border-red-600 transition-transform duration-300 group-hover:translate-y-[-1px]" />
+  )}
+  {index === 2 && (
+    <div className="absolute -top-2 -right-2 w-40 h-40 border-t-8 border-r-8 border-red-600 transition-transform duration-300 group-hover:translate-y-[-1px]" />
+  )}
+  {index === 3 && (
+    <div className="absolute -bottom-6 -left-2 w-40 h-40 border-l-8 border-b-8 border-red-600 transition-transform duration-300 group-hover:translate-y-[-1px]" />
+  )}
+  {index === services.length - 1 && (
+    <div className="absolute -bottom-6 -right-2 w-40 h-40 border-r-8 border-b-8 border-red-600 transition-transform duration-300 group-hover:translate-y-[-1px]" />
+  )}
 
-        <h3 className="text-xl font-semibold mb-2 text-center">{service.name}</h3>
-        <p className="text-gray-600 flex-grow">{service.description}</p>
-      </div>
-    ))}
+  {/* icon div */}
+  <div className="flex justify-center rounded-full w-20 h-20 bg-red-900">
+    <h1 className=" text-white text-2xl items-center flex">{service.icon}</h1>
   </div>
+
+  <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
+  <p className="text-gray-600">{service.description}</p>
 </div>
 
+        ))}
       </div>
+</div>
+
+      
     </section>
   )
 }
