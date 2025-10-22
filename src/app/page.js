@@ -4,6 +4,8 @@ import Spotlight from "./components/Spotlight";
 import Services from "./components/Services";
 import ConsultancyForm from "./components/Consultation";
 
+import Test from "./components/test"
+
 export default function Home() {
   return (
     <div>
@@ -11,6 +13,7 @@ export default function Home() {
       <Spotlight></Spotlight>
       <Services></Services>
       <ConsultancyForm></ConsultancyForm>
+      <Test></Test>
     </div>
   );
 }
