@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Menu, X, ChevronDown } from "lucide-react"
-import Link from "next/link"
+import { useState } from "react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [openDropdown, setOpenDropdown] = useState(null)
+  const [isOpen, setIsOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
 
   const toggleDropdown = (name) => {
-    setOpenDropdown(openDropdown === name ? null : name)
-  }
+    setOpenDropdown(openDropdown === name ? null : name);
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur">
@@ -19,9 +19,8 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="flex items-center justify-center rounded-lg">
-              <img src="/BoostFixter_Website.png" alt=""></img>
+              <img src="/BoostFixter_Website.png" alt="BoostFixter Logo" />
             </div>
-            
           </Link>
 
           {/* Desktop Menu */}
@@ -30,7 +29,7 @@ export default function Navbar() {
               Home
             </Link>
 
-            {/* Services */}
+            {/* Services Dropdown */}
             <div className="relative group">
               <Link
                 href="/services"
@@ -45,7 +44,7 @@ export default function Navbar() {
                 <Link href="/services/development" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Web Design & Development
                 </Link>
-                <Link href="/services/creativeSolution" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
+                <Link href="/services/creative-solution" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Creative Solution
                 </Link>
                 <Link href="/services/video-production" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
@@ -64,25 +63,25 @@ export default function Navbar() {
               Blog
             </Link>
 
-            {/* Get in Touch */}
+            {/* Get in Touch Dropdown */}
             <div className="relative group">
               <Link
-                href="/contact-us"
+                href="/getInTouch/contactUs"
                 className="flex items-center gap-1 font-medium transition hover:text-red-600"
               >
                 Get in Touch <ChevronDown size={16} />
               </Link>
               <div className="absolute right-0 invisible w-48 mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-md opacity-0 group-hover:opacity-100 group-hover:visible">
-                <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600">
+                <Link href="/getInTouch/aboutUs" className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600">
                   About Us
                 </Link>
-                <Link href="/our-team" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
+                <Link href="/getInTouch/our-team" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Our Team
                 </Link>
-                <Link href="/career" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
+                <Link href="/getInTouch/career" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Career
                 </Link>
-                <Link href="/contact-us" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
+                <Link href="/getInTouch/contactUs" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Contact Us
                 </Link>
               </div>
@@ -90,7 +89,10 @@ export default function Navbar() {
           </nav>
 
           {/* Mobile Toggle */}
-          <button className="text-gray-700 md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <button
+            className="text-gray-700 md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -109,14 +111,17 @@ export default function Navbar() {
                 className="flex items-center justify-between w-full px-3 py-2 text-left rounded hover:bg-gray-100 hover:text-red-600"
               >
                 Services
-                <ChevronDown size={16} className={`${openDropdown === "services" ? "rotate-180" : ""} transition-transform`} />
+                <ChevronDown
+                  size={16}
+                  className={`${openDropdown === "services" ? "rotate-180" : ""} transition-transform`}
+                />
               </button>
               {openDropdown === "services" && (
                 <div className="flex flex-col pl-4">
                   <Link href="/services/digital-marketing" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Digital Marketing
                   </Link>
-                  <Link href="/services/web-design" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
+                  <Link href="/services/development" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Web Design & Development
                   </Link>
                   <Link href="/services/creative-solution" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
@@ -129,7 +134,7 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link href="/portfolio" className="px-3 py-2 rounded hover:text-primary">
+            <Link href="/portfolio" className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600">
               Portfolio
             </Link>
             <Link href="/case-study" className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600">
@@ -146,20 +151,23 @@ export default function Navbar() {
                 className="flex items-center justify-between w-full px-3 py-2 text-left rounded hover:bg-gray-100 hover:text-red-600"
               >
                 Get in Touch
-                <ChevronDown size={16} className={`${openDropdown === "getintouch" ? "rotate-180" : ""} transition-transform`} />
+                <ChevronDown
+                  size={16}
+                  className={`${openDropdown === "getintouch" ? "rotate-180" : ""} transition-transform`}
+                />
               </button>
               {openDropdown === "getintouch" && (
                 <div className="flex flex-col pl-4">
-                  <Link href="/about-us" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
+                  <Link href="/getInTouch/about-us" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     About Us
                   </Link>
-                  <Link href="/our-team" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
+                  <Link href="/getInTouch/our-team" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Our Team
                   </Link>
-                  <Link href="/career" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
+                  <Link href="/getInTouch/career" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Career
                   </Link>
-                  <Link href="/contact-us" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
+                  <Link href="/getInTouch/contactUs" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Contact Us
                   </Link>
                 </div>
@@ -169,5 +177,5 @@ export default function Navbar() {
         )}
       </div>
     </header>
-  )
+  );
 }
