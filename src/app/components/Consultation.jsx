@@ -24,7 +24,7 @@ export default function ConsultancyForm() {
       {/* Left Image Section */}
       <div className="md:w-1/2 w-full flex items-center justify-center bg-gray-50 p-6">
         <img
-          src="/marketing-strategy.jpg"
+          src="/Consultancy.png"
           alt="Marketing Strategy"
           className="rounded-2xl shadow-xl object-cover w-full max-w-md md:max-w-lg transition-transform duration-500 hover:scale-105"
         />

@@ -50,7 +50,7 @@ export function Hero() {
               <span className="text-[#0f766e]">partner for ultimate success.</span>
             </h1>
 
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+            <p className="text-base md:text-lg text-secondary leading-relaxed">
               Welcome to IMBD Agency — one of the leading Digital Marketing agencies in Bangladesh. 
               With our innovative strategies and results-oriented approach, we help businesses thrive 
               in the digital world. Partner with us to achieve measurable results and drive your growth.
