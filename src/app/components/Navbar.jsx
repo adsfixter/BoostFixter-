@@ -13,20 +13,20 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">B</span>
+            <div className="flex items-center justify-center w-8 h-8 bg-blue-600 rounded-lg">
+              <span className="text-lg font-bold text-white">B</span>
             </div>
-            <span className="font-bold text-xl text-blue-700">BoostFixter</span>
+            <span className="text-xl font-bold text-blue-700">BoostFixter</span>
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-8 text-gray-700">
-            <Link href="/" className="hover:text-blue-600 transition font-medium">
+          <nav className="items-center hidden gap-8 text-gray-700 md:flex">
+            <Link href="/" className="font-medium transition hover:text-red-600">
               Home
             </Link>
 
@@ -34,33 +34,33 @@ export default function Navbar() {
             <div className="relative group">
               <Link
                 href="/services"
-                className="flex items-center gap-1 hover:text-blue-600 transition font-medium"
+                className="flex items-center gap-1 font-medium transition hover:text-red-600"
               >
                 Services <ChevronDown size={16} />
               </Link>
-              <div className="absolute left-0 mt-2 w-52 bg-white shadow-lg border border-gray-100 rounded-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-200">
-                <Link href="/services/digital-marketing" className="block px-4 py-2 hover:bg-gray-50">
+              <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
+                <Link href="/services/digital-marketing" className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600">
                   Digital Marketing
                 </Link>
-                <Link href="/services/development" className="block px-4 py-2 hover:bg-gray-50 border-t">
+                <Link href="/services/development" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Web Design & Development
                 </Link>
-                <Link href="/services/creativeSolution" className="block px-4 py-2 hover:bg-gray-50 border-t">
+                <Link href="/services/creativeSolution" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Creative Solution
                 </Link>
-                <Link href="/services/video-production" className="block px-4 py-2 hover:bg-gray-50 border-t">
+                <Link href="/services/video-production" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Video Production
                 </Link>
               </div>
             </div>
 
-            <Link href="/portfolio" className="hover:text-blue-600 transition font-medium">
+            <Link href="/portfolio" className="font-medium transition hover:text-red-600">
               Portfolio
             </Link>
-            <Link href="/case-study" className="hover:text-blue-600 transition font-medium">
+            <Link href="/case-study" className="font-medium transition hover:text-red-600">
               Case Study
             </Link>
-            <Link href="/blog" className="hover:text-blue-600 transition font-medium">
+            <Link href="/blog" className="font-medium transition hover:text-red-600">
               Blog
             </Link>
 
@@ -68,21 +68,21 @@ export default function Navbar() {
             <div className="relative group">
               <Link
                 href="/contact-us"
-                className="flex items-center gap-1 hover:text-blue-600 transition font-medium"
+                className="flex items-center gap-1 font-medium transition hover:text-red-600"
               >
                 Get in Touch <ChevronDown size={16} />
               </Link>
-              <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-100 rounded-lg shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-50">
+              <div className="absolute right-0 invisible w-48 mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-md opacity-0 group-hover:opacity-100 group-hover:visible">
+                <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600">
                   About Us
                 </Link>
-                <Link href="/our-team" className="block px-4 py-2 hover:bg-gray-50 border-t">
+                <Link href="/our-team" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Our Team
                 </Link>
-                <Link href="/career" className="block px-4 py-2 hover:bg-gray-50 border-t">
+                <Link href="/career" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Career
                 </Link>
-                <Link href="/contact-us" className="block px-4 py-2 hover:bg-gray-50 border-t">
+                <Link href="/contact-us" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
                   Contact Us
                 </Link>
               </div>
@@ -90,15 +90,15 @@ export default function Navbar() {
           </nav>
 
           {/* Mobile Toggle */}
-          <button className="md:hidden text-gray-700" onClick={() => setIsOpen(!isOpen)}>
+          <button className="text-gray-700 md:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
-          <nav className="md:hidden flex flex-col gap-1 pb-4 mt-2 text-gray-700">
-            <Link href="/" className="py-2 px-3 rounded hover:bg-gray-100">
+          <nav className="flex flex-col gap-1 pb-4 mt-2 text-gray-700 md:hidden">
+            <Link href="/" className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600">
               Home
             </Link>
 
@@ -106,36 +106,36 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => toggleDropdown("services")}
-                className="w-full text-left py-2 px-3 flex justify-between items-center hover:bg-gray-100 rounded"
+                className="flex items-center justify-between w-full px-3 py-2 text-left rounded hover:bg-gray-100 hover:text-red-600"
               >
                 Services
                 <ChevronDown size={16} className={`${openDropdown === "services" ? "rotate-180" : ""} transition-transform`} />
               </button>
               {openDropdown === "services" && (
-                <div className="pl-4 flex flex-col">
-                  <Link href="/services/digital-marketing" className="py-2 px-3 hover:bg-gray-50 text-sm">
+                <div className="flex flex-col pl-4">
+                  <Link href="/services/digital-marketing" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Digital Marketing
                   </Link>
-                  <Link href="/services/web-design" className="py-2 px-3 hover:bg-gray-50 text-sm">
+                  <Link href="/services/web-design" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Web Design & Development
                   </Link>
-                  <Link href="/services/creative-solution" className="py-2 px-3 hover:bg-gray-50 text-sm">
+                  <Link href="/services/creative-solution" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Creative Solution
                   </Link>
-                  <Link href="/services/video-production" className="py-2 px-3 hover:bg-gray-50 text-sm">
+                  <Link href="/services/video-production" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Video Production
                   </Link>
                 </div>
               )}
             </div>
 
-            <Link href="/portfolio" className="py-2 px-3 rounded hover:bg-gray-100">
+            <Link href="/portfolio" className="px-3 py-2 rounded hover:text-primary">
               Portfolio
             </Link>
-            <Link href="/case-study" className="py-2 px-3 rounded hover:bg-gray-100">
+            <Link href="/case-study" className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600">
               Case Study
             </Link>
-            <Link href="/blog" className="py-2 px-3 rounded hover:bg-gray-100">
+            <Link href="/blog" className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600">
               Blog
             </Link>
 
@@ -143,23 +143,23 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => toggleDropdown("getintouch")}
-                className="w-full text-left py-2 px-3 flex justify-between items-center hover:bg-gray-100 rounded"
+                className="flex items-center justify-between w-full px-3 py-2 text-left rounded hover:bg-gray-100 hover:text-red-600"
               >
                 Get in Touch
                 <ChevronDown size={16} className={`${openDropdown === "getintouch" ? "rotate-180" : ""} transition-transform`} />
               </button>
               {openDropdown === "getintouch" && (
-                <div className="pl-4 flex flex-col">
-                  <Link href="/about-us" className="py-2 px-3 hover:bg-gray-50 text-sm">
+                <div className="flex flex-col pl-4">
+                  <Link href="/about-us" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     About Us
                   </Link>
-                  <Link href="/our-team" className="py-2 px-3 hover:bg-gray-50 text-sm">
+                  <Link href="/our-team" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Our Team
                   </Link>
-                  <Link href="/career" className="py-2 px-3 hover:bg-gray-50 text-sm">
+                  <Link href="/career" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Career
                   </Link>
-                  <Link href="/contact-us" className="py-2 px-3 hover:bg-gray-50 text-sm">
+                  <Link href="/contact-us" className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600">
                     Contact Us
                   </Link>
                 </div>

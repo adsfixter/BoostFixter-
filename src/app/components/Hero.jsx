@@ -37,44 +37,44 @@ export function Hero() {
   }
 
   return (
-    <section className="relative py-10 md:py-20 overflow-hidden bg-white text-black">
+    <section className="relative py-10 overflow-hidden text-black bg-white md:py-20">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-white to-white" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
 
           {/* LEFT CONTENT */}
-          <div className="space-y-6 z-10">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <div className="z-10 space-y-6">
+            <h1 className="text-3xl font-bold leading-tight md:text-5xl lg:text-6xl">
               “Your Strategic Digital{" "}
-              <span className="text-[#0f766e]">partner for ultimate success.</span>
+              <span className="text-secondary">partner for ultimate success.</span>
             </h1>
 
-            <p className="text-base md:text-lg text-secondary leading-relaxed">
+            <p className="text-base leading-relaxed md:text-lg text-secondary">
               Welcome to IMBD Agency — one of the leading Digital Marketing agencies in Bangladesh. 
               With our innovative strategies and results-oriented approach, we help businesses thrive 
               in the digital world. Partner with us to achieve measurable results and drive your growth.
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row sm:justify-start sm:items-center gap-4 pt-4 w-full">
+            <div className="flex flex-col w-full gap-4 pt-4 sm:flex-row sm:justify-start sm:items-center">
               <Link
                 href="#_"
-                className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-red-500 text-white font-medium hover:bg-red-600 transition w-full sm:w-auto"
+                className="flex items-center justify-center w-full gap-2 px-6 py-3 font-medium text-white transition bg-red-500 rounded-xl hover:bg-red-600 sm:w-auto"
               >
                 Book Free Consultation <ArrowRight size={20} />
               </Link>
 
               <Link
                 href="#_"
-                className="relative inline-flex items-center justify-center px-6 py-3 font-bold bg-white text-black rounded-md group overflow-hidden"
+                className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-black bg-white rounded-md group"
               >
                 {/* Top-left small horizontal border */}
                 <span className="absolute top-0 left-0 w-4 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
                 {/* Bottom-right small horizontal border */}
                 <span className="absolute bottom-0 right-0 w-4 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full group-hover:right-0"></span>
                 {/* Full border on hover */}
-                <span className="absolute inset-0 border-2 border-transparent rounded-md transition-all duration-300 pointer-events-none group-hover:border-red-500"></span>
+                <span className="absolute inset-0 transition-all duration-300 border-2 border-transparent rounded-md pointer-events-none group-hover:border-red-500"></span>
                 {/* Content */}
                 <span className="relative flex items-center gap-2">
                   Working Scope With You <ArrowRight size={20} />
@@ -84,15 +84,15 @@ export function Hero() {
 
             {/* Stats */}
             <div className="flex flex-wrap gap-8 pt-8">
-              <div className="w-1/3 md:w-1/4 text-center">
+              <div className="w-1/3 text-center md:w-1/4">
                 <p className="text-2xl font-bold text-[#0f766e]">500+</p>
                 <p className="text-sm text-gray-600">Projects Completed</p>
               </div>
-              <div className="w-1/3 md:w-1/4 text-center">
+              <div className="w-1/3 text-center md:w-1/4">
                 <p className="text-2xl font-bold text-[#0f766e]">98%</p>
                 <p className="text-sm text-gray-600">Client Satisfaction</p>
               </div>
-              <div className="w-1/3 md:w-1/4 text-center">
+              <div className="w-1/3 text-center md:w-1/4">
                 <p className="text-2xl font-bold text-[#0f766e]">10+</p>
                 <p className="text-sm text-gray-600">Years Experience</p>
               </div>
@@ -111,7 +111,7 @@ export function Hero() {
                       alt={`Slide ${i + 1}`}
                       width={800}
                       height={600}
-                      className="rounded-2xl object-cover w-full h-full"
+                      className="object-cover w-full h-full rounded-2xl"
                     />
                   </div>
                 ))}
@@ -126,7 +126,7 @@ export function Hero() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block overflow-hidden rounded-lg hover:shadow-lg transition"
+                  className="block overflow-hidden transition rounded-lg hover:shadow-lg"
                 >
                   <Image
                     src={link.src}        

@@ -40,5 +40,8 @@
   background-color: var(--color-secondary);
 }
 
-
+.text-primary:hover,
+.text-hover:hover {
+  color: var(--color-secondary);
+}
 
