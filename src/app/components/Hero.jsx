@@ -17,9 +17,9 @@ const images = [
 ]
 
 const smallLinks = [
-  { src: "/hero/download.jpeg", alt: "Small 1", url: "https://example.com/link1" },
-  { src: "/hero/download.jpeg", alt: "Small 2", url: "https://example.com/link2" },
-  { src: "/hero/download.jpeg", alt: "Small 3", url: "https://example.com/link3" },
+  { src: "/hero/Logo-BASIS-f01.png", alt: "Small 1", url: "https://example.com/link1" },
+  { src: "/hero/ecab-icon.png", alt: "Small 2", url: "https://example.com/link2" },
+  { src: "/hero/eclub-icon.png", alt: "Small 3", url: "https://example.com/link3" },
 ]
 
 export function Hero() {
@@ -44,13 +44,13 @@ export function Hero() {
         <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
 
           {/* LEFT CONTENT */}
-          <div className="z-10 space-y-6">
-            <h1 className="text-3xl font-bold leading-tight md:text-5xl lg:text-6xl">
+          <div className="z-10 space-y-6 m">
+            <h1 className="text-3xl text-secondary font-bold leading-tight md:text-5xl lg:text-6xl">
               “Your Strategic Digital{" "}
               <span className="text-secondary">partner for ultimate success.</span>
             </h1>
 
-            <p className="text-base leading-relaxed md:text-lg text-secondary">
+            <p className="text-base leading-relaxed md:text-lg ">
               Welcome to IMBD Agency — one of the leading Digital Marketing agencies in Bangladesh. 
               With our innovative strategies and results-oriented approach, we help businesses thrive 
               in the digital world. Partner with us to achieve measurable results and drive your growth.
@@ -60,7 +60,7 @@ export function Hero() {
             <div className="flex flex-col w-full gap-4 pt-4 sm:flex-row sm:justify-start sm:items-center">
               <Link
                 href="#_"
-                className="flex items-center justify-center w-full gap-2 px-6 py-3 font-medium text-white transition bg-red-500 rounded-xl hover:bg-red-600 sm:w-auto"
+                className="flex items-center justify-center w-full gap-2 px-6 py-3 font-medium text-white transition bg-secondary rounded-xl sm:w-auto"
               >
                 Book Free Consultation <ArrowRight size={20} />
               </Link>
@@ -102,7 +102,7 @@ export function Hero() {
           {/* RIGHT CONTENT */}
           <div className="w-full">
             {/* Slider */}
-            <div className="overflow-hidden rounded-2xl w-full h-[500px] border md:h-[600px]">
+            <div className="overflow-hidden rounded-2xl w-full h-[400px] md:h-[400px] mb-5 border">
               <Slider {...settings} className="w-full h-full">
                 {images.map((src, i) => (
                   <div key={i} className="flex items-center justify-center h-full">
@@ -119,7 +119,7 @@ export function Hero() {
             </div>
 
             {/* Small clickable links under slider */}
-            <div className="flex justify-center w-[300px] gap-4 mt-4">
+            <div className="flex justify-center items-center w-full h-full gap-4 mt-4">
               {smallLinks.map((link, i) => (
                 <a
                   key={i}
@@ -131,9 +131,9 @@ export function Hero() {
                   <Image
                     src={link.src}        
                     alt={link.alt}
-                    width={0}
-                    height={0}
-                    className="object-cover w-full h-full"
+                    width={100}
+                    height={100}
+                    className=""
                   />
                 </a>
               ))}

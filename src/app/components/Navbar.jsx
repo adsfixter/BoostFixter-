@@ -18,10 +18,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex items-center justify-center w-8 h-8 bg-blue-600 rounded-lg">
-              <span className="text-lg font-bold text-white">B</span>
+            <div className="flex items-center justify-center rounded-lg">
+              <img src="/BoostFixter_Website.png" alt=""></img>
             </div>
-            <span className="text-xl font-bold text-blue-700">BoostFixter</span>
+            
           </Link>
 
           {/* Desktop Menu */}
