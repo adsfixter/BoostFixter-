@@ -42,13 +42,13 @@ const services = [
 function Services() {
   return (
     <section className="py-20 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
-        <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 text-gray-900">
+        <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
           Our{" "}
           <span className="relative inline-block">
-            <span className="relative z-10 text-[#29554A]">Services</span>
-            <span className="absolute left-0 bottom-1 w-full h-2 bg-[#29554A]/30 rounded-sm z-0"></span>
+            <span className="relative z-10 ">Services</span>
+            <span className="absolute left-0 bottom-4 w-full h-3 bg-secondary z-0"></span>
           </span>
         </h1>
 
@@ -63,7 +63,7 @@ function Services() {
         </div>
 
         {/* Cards grid */}
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
@@ -71,25 +71,24 @@ function Services() {
             >
               {/* Conditional Borders */}
               {index === 0 && (
-                <div className="absolute -top-2 -left-2 w-40 h-40 border-t-8 border-l-8 border-red-600 transition-transform duration-300 group-hover:translate-y-[-1px]" />
+                <div className="absolute -top-2 -left-2 w-40 h-40 border-t-8 border-l-8 text-secondary transition-transform duration-300 group-hover:translate-y-[-0px]" />
               )}
               {index === 2 && (
-                <div className="absolute -top-2 -right-2 w-40 h-40 border-t-8 border-r-8 border-red-600 transition-transform duration-300 group-hover:translate-y-[-1px]" />
+                <div className="absolute -top-2 -right-2 w-40 h-40 border-t-8 border-r-8 text-secondary transition-transform duration-300 group-hover:translate-y-[-0px]" />
               )}
               {index === 3 && (
-                <div className="absolute -bottom-6 -left-2 w-40 h-40 border-l-8 border-b-8 border-red-600 transition-transform duration-300 group-hover:translate-y-[-1px]" />
+                <div className="absolute -bottom-6 -left-2 w-40 h-40 border-l-8 border-b-8 text-secondary transition-transform duration-300 group-hover:translate-y-[-1px]" />
               )}
               {index === services.length - 1 && (
-                <div className="absolute -bottom-6 -right-2 w-40 h-40 border-r-8 border-b-8 border-red-600 transition-transform duration-300 group-hover:translate-y-[-1px]" />
+                <div className="absolute -bottom-6 -right-2 w-40 h-40 border-r-8 border-b-8 text-secondary transition-transform duration-300 group-hover:translate-y-[-1px]" />
               )}
 
               {/* icon div */}
-              <div className="flex justify-center rounded-full w-20 h-20 bg-red-900">
+              <div className="flex justify-center rounded-full w-20 h-20 bg-primary">
                 <h1 className=" text-white text-2xl items-center flex">
                   {service.icon}
                 </h1>
               </div>
-
               <h3 className="text-xl font-semibold mb-2 ">{service.name}</h3>
               <p className="text-gray-600">{service.description}</p>
             </div>

@@ -26,7 +26,7 @@ export default function Spotlight() {
 
   return (
     <section className="bg-white py-20 px-6">
-      <div className="max-w-7xl mx-auto ">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-10 text-gray-900">
           In the{" "}
