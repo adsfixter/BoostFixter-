@@ -1,202 +1,117 @@
 "use client";
+
 import { useState } from "react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 export default function ConsultancyForm() {
   const [step, setStep] = useState(1);
-  const [form, setForm] = useState({
-    name: "",
-    company: "",
-    designation: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleNext = () => setStep(step + 1);
-  const handlePrev = () => setStep(step - 1);
 
   return (
-    <div className="flex flex-col md:flex-row  bg-white text-[#1a1a1a]">
-      {/* Left Image Section */}
-      <div className="md:w-1/2 w-full flex items-center justify-center bg-gray-50 p-6">
-        <img
-          src="/Consultancy.png"
-          alt="Marketing Strategy"
-          className="rounded-2xl shadow-xl object-cover w-full max-w-md md:max-w-lg transition-transform duration-500 hover:scale-105"
-        />
-      </div>
+    <section className="py-20 px-6 bg-white">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* Left Image */}
+        <div className="relative overflow-hidden">
+          <Image
+            src="/Consultancy.png"
+            alt="Consultancy Meeting"
+            width={800}
+            height={600}
+            className="object-cover w-full h-full"
+          />
+        </div>
 
-      {/* Right Form Section */}
-      <div className="md:w-1/2 w-full flex items-center justify-center p-6 md:p-12">
-        <div className="w-full max-w-lg bg-white rounded-2xl p-8 shadow-2xl border border-gray-200">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-            Book a{" "}
-            <span className="text-[#29554A] border-b-4 border-[#29554A]">
-              Free Consultancy
-            </span>
-          </h2>
+        {/* Right Form */}
+        <div className="">
+         {/* Title */}
+        <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
+          Book a Free{" "}
+          <span className="relative inline-block">
+            <span className="relative z-10 ">Consultancy</span>
+            <span className="absolute left-0 bottom-4 w-full h-3 bg-secondary z-0"></span>
+          </span>
+        </h1>
 
-          {/* Step Indicator */}
-          <div className="flex justify-between mb-10">
-            {[1, 2, 3].map((num) => (
-              <div key={num} className="flex flex-col items-center flex-1">
+          {/* Step Indicators */}
+          <div className="flex items-center justify-between mb-8">
+            {[1, 2, 3].map((s) => (
+              <div key={s} className={`text-center ${step === s ? "text-blue-600" : "text-gray-400"}`}>
                 <div
-                  className={`rounded-full w-8 h-8 flex items-center justify-center font-semibold transition-all duration-300 
-                    ${
-                      step === num
-                        ? "bg-[#29554A] text-white shadow-lg shadow-[#29554A]/40"
-                        : "bg-gray-100 text-gray-500 border border-gray-300"
-                    }`}
-                >
-                  {num}
-                </div>
-                <span
-                  className={`text-xs mt-2 ${
-                    step === num
-                      ? "text-[#29554A] font-semibold"
-                      : "text-gray-500"
+                  className={`w-8 h-8 flex items-center justify-center rounded-full border${
+                    step === s ? "border-blue-600 bg-secondary" : "border-blue-600"
                   }`}
                 >
-                  {num === 1
+                  {s}
+                </div>
+                <p className="text-sm mt-1 font-medium">
+                  {s === 1
                     ? "Personal Info"
-                    : num === 2
+                    : s === 2
                     ? "Contact Info"
                     : "Message"}
-                </span>
+                </p>
               </div>
             ))}
           </div>
 
-          {/* Step 1 */}
+          {/* Step 1 Form */}
           {step === 1 && (
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                handleNext();
-              }}
-              className="space-y-4"
-            >
+            <div className="space-y-4">
               <input
-                type="text"
-                name="name"
-                placeholder="Full Name"
-                value={form.name}
-                onChange={handleChange}
-                className="w-full border border-gray-300 py-3 px-4 rounded-md outline-none focus:border-[#29554A] focus:ring-1 focus:ring-[#29554A] transition"
-                required
+                placeholder="Name"
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
               <input
-                type="text"
-                name="company"
                 placeholder="Company Name"
-                value={form.company}
-                onChange={handleChange}
-                className="w-full border border-gray-300 py-3 px-4 rounded-md outline-none focus:border-[#29554A] focus:ring-1 focus:ring-[#29554A] transition"
-                required
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
               <input
-                type="text"
-                name="designation"
                 placeholder="Designation"
-                value={form.designation}
-                onChange={handleChange}
-                className="w-full border border-gray-300 py-3 px-4 rounded-md outline-none focus:border-[#29554A] focus:ring-1 focus:ring-[#29554A] transition"
-                required
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
               <button
-                type="submit"
-                className="w-full py-3 mt-4 bg-[#29554A] hover:bg-[#1d3e34] text-white rounded-md font-semibold transition-all"
+                onClick={() => setStep(2)}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center justify-center"
               >
-                Next
+                Next <ArrowRight className="ml-2 w-4 h-4" />
               </button>
-            </form>
+            </div>
           )}
 
-          {/* Step 2 */}
+          {/* Step 2 Form */}
           {step === 2 && (
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                handleNext();
-              }}
-              className="space-y-4"
-            >
+            <div className="space-y-4">
               <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                value={form.email}
-                onChange={handleChange}
-                className="w-full border border-gray-300 py-3 px-4 rounded-md outline-none focus:border-[#29554A] focus:ring-1 focus:ring-[#29554A]"
-                required
+                placeholder="Email"
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
               <input
-                type="tel"
-                name="phone"
                 placeholder="Phone Number"
-                value={form.phone}
-                onChange={handleChange}
-                className="w-full border border-gray-300 py-3 px-4 rounded-md outline-none focus:border-[#29554A] focus:ring-1 focus:ring-[#29554A]"
-                required
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
-              <div className="flex justify-between pt-2">
-                <button
-                  type="button"
-                  onClick={handlePrev}
-                  className="px-6 py-2 border border-gray-400 text-gray-700 rounded-md hover:bg-gray-100 transition"
-                >
-                  Back
-                </button>
-                <button
-                  type="submit"
-                  className="px-6 py-2 bg-[#29554A] hover:bg-[#1d3e34] text-white rounded-md font-semibold transition"
-                >
-                  Next
-                </button>
-              </div>
-            </form>
+              <button
+                onClick={() => setStep(3)}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center justify-center"
+              >
+                Next <ArrowRight className="ml-2 w-4 h-4" />
+              </button>
+            </div>
           )}
 
-          {/* Step 3 */}
+          {/* Step 3 Form */}
           {step === 3 && (
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                alert("Form submitted successfully!");
-              }}
-              className="space-y-4"
-            >
+            <div className="space-y-4">
               <textarea
-                name="message"
-                placeholder="Write your message..."
-                value={form.message}
-                onChange={handleChange}
-                className="w-full border border-gray-300 py-3 px-4 rounded-md outline-none focus:border-[#29554A] focus:ring-1 focus:ring-[#29554A] min-h-[120px]"
-                required
+                placeholder="Your Message"
+                className="w-full min-h-[120px] border border-gray-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
-              <div className="flex justify-between pt-2">
-                <button
-                  type="button"
-                  onClick={handlePrev}
-                  className="px-6 py-2 border border-gray-400 text-gray-700 rounded-md hover:bg-gray-100 transition"
-                >
-                  Back
-                </button>
-                <button
-                  type="submit"
-                  className="px-6 py-2 bg-[#29554A] hover:bg-[#1d3e34] text-white rounded-md font-semibold transition"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
+              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">
+                Submit
+              </button>
+            </div>
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
