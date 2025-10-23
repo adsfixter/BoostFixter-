@@ -9,6 +9,7 @@ import ClientRatings from "./components/ClientRatings";
 import SuccessTogether from "./components/SuccessTogether";
 import ClientsSays from "./components/ClientsSays";
 import VideoSection from "./components/VideoSection";
+import MemoriesMoments from "./components/MemoriesMoments";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <BenefitsSection></BenefitsSection>
       <SuccessTogether></SuccessTogether>
       <ClientsSays></ClientsSays>
+      <MemoriesMoments></MemoriesMoments>
       <LatestBlogsSection></LatestBlogsSection>
     </div>
   );

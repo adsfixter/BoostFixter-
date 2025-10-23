@@ -67,14 +67,15 @@ export function Hero() {
 
               <Link
                 href="#_"
-                className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-black bg-white rounded-md group"
+                className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold group "
               >
-                {/* Top-left small horizontal border */}
-                <span className="absolute top-0 left-0 w-4 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-                {/* Bottom-right small horizontal border */}
-                <span className="absolute bottom-0 right-0 w-4 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full group-hover:right-0"></span>
+                {/* bottom left */}
+                <span className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 text-secondary transition-all duration-300  group-hover:w-full group-hover:h-full"></span>
+                
+                {/* top right */}
+                <span className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 text-secondary transition-all duration-300 group-hover:w-full group-hover:h-full"></span>
                 {/* Full border on hover */}
-                <span className="absolute inset-0 transition-all duration-300 border-2 border-transparent rounded-md pointer-events-none group-hover:border-red-500"></span>
+                {/* <span className="absolute inset-0 transition-all duration-300 border-2 border-transparent pointer-events-none group-hover:border-red-500"></span> */}
                 {/* Content */}
                 <span className="relative flex items-center gap-2">
                   Working Scope With You <ArrowRight size={20} />
