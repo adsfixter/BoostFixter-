@@ -1,4 +1,4 @@
-import { CheckCircle2 } from "lucide-react";
+import { Check, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
 const benefits = [
@@ -31,13 +31,13 @@ const benefits = [
 export default function BenefitsSection() {
   return (
     <section className="bg-gray-50 px-6 py-20 md:px-12 md:py-32">
-      <div className="mx-auto max-w-7xl">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
-        <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 text-gray-900">
+        <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 ">
           Discover the{" "}
           <span className="relative inline-block">
-            <span className="relative z-10 text-[#29554A]">Benefits </span>
-            <span className="absolute left-0 bottom-4 w-48 h-2 bg-[#29554A]/30 rounded-sm z-0"></span>
+            <span className="relative z-10">Benefits </span>
+             <span className="absolute left-0 bottom-4 w-48 h-3 bg-secondary z-0"></span>
             <span> with Us</span>
           </span>
         </h1>
@@ -50,7 +50,11 @@ export default function BenefitsSection() {
               <div key={index} className="flex gap-4">
                 {/* Icon */}
                 <div className="flex-shrink-0">
-                  <CheckCircle2 className="h-6 w-6 text-primary" strokeWidth={2.5} />
+                  <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center">
+  <Check size={34} strokeWidth={4.5} className="" />
+</div>
+
+                  
                 </div>
                 {/* Content */}
                 <div>

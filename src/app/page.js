@@ -6,6 +6,7 @@ import ConsultancyForm from "./components/Consultation";
 import BenefitsSection from "./components/BenefitsSection";
 import LatestBlogsSection from "./components/LatestBlogsSection";
 import ClientRatings from "./components/ClientRatings";
+import SuccessTogether from "./components/SuccessTogether";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ConsultancyForm></ConsultancyForm>
       <ClientRatings></ClientRatings>
       <BenefitsSection></BenefitsSection>
+      <SuccessTogether></SuccessTogether>
       <LatestBlogsSection></LatestBlogsSection>
     </div>
   );
