@@ -47,3 +47,8 @@
 .hover\:bg-secondary:hover {
   background-color: var(--color-secondary);
 }
+/* Border colors */
+.border-secondary {
+  border-color: var(--color-secondary);
+  transition: border-color 0.3s ease;
+}

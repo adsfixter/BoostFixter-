@@ -17,9 +17,9 @@ const images = [
 ]
 
 const smallLinks = [
-  { src: "/hero/Logo-BASIS-f01.png", alt: "Small 1", url: "https://example.com/link1" },
-  { src: "/hero/ecab-icon.png", alt: "Small 2", url: "https://example.com/link2" },
-  { src: "/hero/eclub-icon.png", alt: "Small 3", url: "https://example.com/link3" },
+  { src: "/hero/Basis.png", alt: "Small 1", url: "https://example.com/link1" },
+  { src: "/hero/Eclub.png", alt: "Small 2", url: "https://example.com/link2" },
+  { src: "/hero/ecol.png", alt: "Small 3", url: "https://example.com/link3" },
 ]
 
 export function Hero() {
