@@ -7,6 +7,7 @@ import BenefitsSection from "./components/BenefitsSection";
 import LatestBlogsSection from "./components/LatestBlogsSection";
 import ClientRatings from "./components/ClientRatings";
 import SuccessTogether from "./components/SuccessTogether";
+import ClientsSays from "./components/ClientsSays";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ClientRatings></ClientRatings>
       <BenefitsSection></BenefitsSection>
       <SuccessTogether></SuccessTogether>
+      <ClientsSays></ClientsSays>
       <LatestBlogsSection></LatestBlogsSection>
     </div>
   );
