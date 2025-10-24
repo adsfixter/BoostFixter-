@@ -1,0 +1,41 @@
+.custom-button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* লাল হালকা বর্ডার */
+.custom-button {
+  border: 2px solid #fca5a5; /* Tailwind red-300 */
+}
+
+/* ছোট লাল দাগ — দুই কোণায় */
+.custom-button .corner {
+  position: absolute;
+  width: 16px; /* w-4 */
+  height: 16px; /* h-4 */
+  border-color: #dc2626; /* Tailwind red-600 */
+  border-style: solid;
+}
+
+/* top-right */
+.custom-button .corner.top-right {
+  top: 0;
+  right: 0;
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+
+/* bottom-left */
+.custom-button .corner.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+
+/* hover effect */
+.custom-button:hover {
+  border-color: #dc2626;
+  color: #dc2626;
+}

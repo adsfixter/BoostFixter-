@@ -9,6 +9,7 @@ const Slider = dynamic(() => import("react-slick"), { ssr: false })
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
+
 // Slider images
 const images = [
   "/hero/web-slider-image-min.png",
@@ -74,6 +75,7 @@ export function Hero() {
                 
                 {/* top right */}
                 <span className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 text-secondary transition-all duration-300 group-hover:w-full group-hover:h-full"></span>
+
                 {/* Full border on hover */}
                 {/* <span className="absolute inset-0 transition-all duration-300 border-2 border-transparent pointer-events-none group-hover:border-red-500"></span> */}
                 {/* Content */}
@@ -82,7 +84,7 @@ export function Hero() {
                 </span>
               </Link>
             </div>
-
+            
             {/* Stats */}
             <div className="flex flex-wrap gap-8 pt-8">
               <div className="w-1/3 text-center md:w-1/4">

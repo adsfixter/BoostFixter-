@@ -32,7 +32,7 @@ export default function Navbar() {
             {/* Services Dropdown */}
             <div className="relative group">
               <Link
-                href="/services"
+                href="/Services"
                 className="flex items-center gap-1 font-medium transition hover:text-red-600"
               >
                 Services <ChevronDown size={16} />

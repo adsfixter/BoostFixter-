@@ -1,11 +1,12 @@
 import React from 'react';
+import ServiceHome from '../components/services/service/ServiceHome';
 
-function service(props) {
+function Services() {
     return (
-        <div>
-            <h1>service</h1>
+        <div className='py-20 px-6 bg-white'>
+            <ServiceHome></ServiceHome>
         </div>
     );
 }
 
-export default service;
+export default Services;
