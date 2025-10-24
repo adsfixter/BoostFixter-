@@ -1,27 +1,27 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import dynamic from "next/dynamic"
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
-const Slider = dynamic(() => import("react-slick"), { ssr: false })
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import CustomLink from "../Share/CustomLink";
 
 // Slider images
 const images = [
   "/hero/web-slider-image-min.png",
   "/hero/web-slider-image-min.png",
   "/hero/web-slider-image-min.png",
-]
+];
 
 const smallLinks = [
   { src: "/hero/Basis.png", alt: "Small 1", url: "https://example.com/link1" },
   { src: "/hero/Eclub.png", alt: "Small 2", url: "https://example.com/link2" },
   { src: "/hero/ecol.png", alt: "Small 3", url: "https://example.com/link3" },
-]
+];
 
 export function Hero() {
   const settings = {
@@ -35,7 +35,7 @@ export function Hero() {
     arrows: false,
     pauseOnHover: false,
     cssEase: "linear",
-  }
+  };
 
   return (
     <section className="relative py-10 overflow-hidden text-black bg-white md:py-20">
@@ -43,18 +43,21 @@ export function Hero() {
 
       <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
-
           {/* LEFT CONTENT */}
           <div className="z-10 space-y-6 m">
             <h1 className="text-3xl text-secondary font-bold leading-tight md:text-5xl lg:text-6xl">
               “Your Strategic Digital{" "}
-              <span className="text-secondary">partner for ultimate success.</span>
+              <span className="text-secondary">
+                partner for ultimate success.
+              </span>
             </h1>
 
             <p className="text-base leading-relaxed md:text-lg ">
-              Welcome to IMBD Agency — one of the leading Digital Marketing agencies in Bangladesh. 
-              With our innovative strategies and results-oriented approach, we help businesses thrive 
-              in the digital world. Partner with us to achieve measurable results and drive your growth.
+              Welcome to IMBD Agency — one of the leading Digital Marketing
+              agencies in Bangladesh. With our innovative strategies and
+              results-oriented approach, we help businesses thrive in the
+              digital world. Partner with us to achieve measurable results and
+              drive your growth.
             </p>
 
             {/* Buttons */}
@@ -66,25 +69,9 @@ export function Hero() {
                 Book Free Consultation <ArrowRight size={20} />
               </Link>
 
-              <Link
-                href="#_"
-                className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold group "
-              >
-                {/* bottom left */}
-                <span className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 text-secondary transition-all duration-300  group-hover:w-full group-hover:h-full"></span>
-                
-                {/* top right */}
-                <span className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 text-secondary transition-all duration-300 group-hover:w-full group-hover:h-full"></span>
-
-                {/* Full border on hover */}
-                {/* <span className="absolute inset-0 transition-all duration-300 border-2 border-transparent pointer-events-none group-hover:border-red-500"></span> */}
-                {/* Content */}
-                <span className="relative flex items-center gap-2">
-                  Working Scope With You <ArrowRight size={20} />
-                </span>
-              </Link>
+              <CustomLink text={" Working scope with you"}></CustomLink>
             </div>
-            
+
             {/* Stats */}
             <div className="flex flex-wrap gap-8 pt-8">
               <div className="w-1/3 text-center md:w-1/4">
@@ -108,9 +95,12 @@ export function Hero() {
             <div className="overflow-hidden rounded-2xl w-full h-[400px] md:h-[400px] mb-5 border">
               <Slider {...settings} className="w-full h-full">
                 {images.map((src, i) => (
-                  <div key={i} className="flex items-center justify-center h-full">
+                  <div
+                    key={i}
+                    className="flex items-center justify-center h-full"
+                  >
                     <Image
-                      src={src}            
+                      src={src}
                       alt={`Slide ${i + 1}`}
                       width={800}
                       height={600}
@@ -132,7 +122,7 @@ export function Hero() {
                   className="block overflow-hidden transition rounded-lg hover:shadow-lg"
                 >
                   <Image
-                    src={link.src}        
+                    src={link.src}
                     alt={link.alt}
                     width={100}
                     height={100}
@@ -142,9 +132,8 @@ export function Hero() {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>
-  )
+  );
 }
