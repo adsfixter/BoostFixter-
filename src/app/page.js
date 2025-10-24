@@ -1,15 +1,15 @@
 
-import {Hero} from "./components/Hero";
-import Spotlight from "./components/Spotlight";
-import Services from "./components/Services";
-import ConsultancyForm from "./components/Consultation";
-import BenefitsSection from "./components/BenefitsSection";
-import LatestBlogsSection from "./components/LatestBlogsSection";
-import ClientRatings from "./components/ClientRatings";
-import SuccessTogether from "./components/SuccessTogether";
-import ClientsSays from "./components/ClientsSays";
-import VideoSection from "./components/VideoSection";
-import MemoriesMoments from "./components/MemoriesMoments";
+import {Hero} from "./components/HomePage/Hero";
+import Spotlight from "./components/HomePage/Spotlight";
+import Services from "./components/HomePage/Services";
+import ConsultancyForm from "./components/HomePage/Consultation";
+import BenefitsSection from "./components/HomePage/BenefitsSection";
+import LatestBlogsSection from "./components/HomePage/LatestBlogsSection";
+import ClientRatings from "./components/HomePage/ClientRatings";
+import SuccessTogether from "./components/HomePage/SuccessTogether";
+import ClientsSays from "./components/HomePage/ClientsSays";
+import VideoSection from "./components/HomePage/VideoSection";
+import MemoriesMoments from "./components/HomePage/MemoriesMoments";
 
 export default function Home() {
   return (
