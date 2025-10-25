@@ -41,17 +41,17 @@ const blogs = [
   },
 ];
 
-export default function EnglishBlogs() {
+export default function BanglaBlogs() {
   return (
     <div className="py-20 px-6 bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-10 text-center">
-          Read Blogs in{" "}
-          <span className="relative inline-block">
-            <span className="relative z-10">English</span>
-            <span className="absolute left-0 bottom-2 w-full h-3 bg-secondary z-0"></span>
+          <span className="relative z-100 inline-block">
+            বাংলায়{" "}
+            <span className="absolute left-0 bottom-4 w-full h-3 bg-secondary -z-2"></span>
           </span>
+          <span className=""> ব্লগ পড়ুন</span>
         </h1>
 
         {/* Cards grid */}
