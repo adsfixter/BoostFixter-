@@ -7,6 +7,7 @@ import GraphicsDeliver from '../components/portfolio/GraphicsDeliver'
 import SEOProjects from '../components/portfolio/SEOProjects'
 import BusinessProposes from '../components/portfolio/BusinessProposes'
 import WebApplications from '../components/portfolio/WebApplications'
+import VoiceOver from '../components/portfolio/VoiceOver'
 
 export default function portfolio() {
   return (
@@ -18,6 +19,7 @@ export default function portfolio() {
       <GraphicsDeliver></GraphicsDeliver>
       <WebApplications></WebApplications>
       <SEOProjects></SEOProjects>
+      <VoiceOver></VoiceOver>
       <BusinessProposes></BusinessProposes>
     </div>
   )
