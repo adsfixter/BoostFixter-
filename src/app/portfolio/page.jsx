@@ -6,6 +6,7 @@ import SomeExplainerVideo from '../components/portfolio/SomeExplainerVideo'
 import GraphicsDeliver from '../components/portfolio/GraphicsDeliver'
 import SEOProjects from '../components/portfolio/SEOProjects'
 import BusinessProposes from '../components/portfolio/BusinessProposes'
+import WebApplications from '../components/portfolio/WebApplications'
 
 export default function portfolio() {
   return (
@@ -15,6 +16,7 @@ export default function portfolio() {
       <PortfolioVideo></PortfolioVideo>
       <SomeExplainerVideo></SomeExplainerVideo>
       <GraphicsDeliver></GraphicsDeliver>
+      <WebApplications></WebApplications>
       <SEOProjects></SEOProjects>
       <BusinessProposes></BusinessProposes>
     </div>
