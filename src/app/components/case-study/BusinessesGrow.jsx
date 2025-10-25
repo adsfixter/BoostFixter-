@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function BusinessesGrow() {
   return (
     <section className="bg-white text-gray-900 py-20 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
         <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-16">
           See How Businesses{" "}
