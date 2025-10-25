@@ -2,6 +2,7 @@ import React from "react";
 import ClickSwiperNavation from "../components/Share/ClickSwiperNavation";
 import BusinessesGrow from "../components/case-study/BusinessesGrow";
 import CaseStudiesIndustries from "../components/case-study/CaseStudiesIndustries";
+import GrowthPartner from "../components/case-study/GrowthPartner";
 
 export default function CaseStudy() {
   return (
@@ -11,6 +12,7 @@ export default function CaseStudy() {
       </div>
       <BusinessesGrow></BusinessesGrow>
       <CaseStudiesIndustries></CaseStudiesIndustries>
+      <GrowthPartner></GrowthPartner>
     </div>
   );
 }
