@@ -1,9 +1,10 @@
 import React from 'react'
+import EnglishBlogs from '../components/blogs/EnglishBlogs'
 
 export default function Blogs() {
   return (
     <div>
-      <h1>blogs</h1>
+      <EnglishBlogs></EnglishBlogs>
     </div>
   )
 }
