@@ -6,6 +6,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
+import ClickSwiperNavation from "../Share/ClickSwiperNavation";
 
 const images = [
   { id: 1, image: "/SuccessTogether/1.jpg" },
@@ -31,7 +32,7 @@ const images = [
   { id: 21, image: "/SuccessTogether/RM-Automobiles-Logo.jpg" },
   { id: 22, image: "/SuccessTogether/Surma-Logo.jpg" },
   { id: 23, image: "/SuccessTogether/tecsa-logo.jpg" },
-  { id: 24, image: "/SuccessTogether/Unique-Logo.jpg" }
+  { id: 24, image: "/SuccessTogether/Unique-Logo.jpg" },
 ];
 
 export default function SuccessTogether() {
@@ -49,81 +50,39 @@ export default function SuccessTogether() {
         </h1>
 
         {/* top Swiper navation */}
-        <div className="relative mb-12">
-          <Swiper
-            modules={[Navigation]}
-            navigation={{
-              prevEl: ".prev-btn",
-              nextEl: ".next-btn",
-            }}
-            spaceBetween={20}
-            slidesPerView={4}
-            slidesPerGroup={4}
-            loop={true}
-            speed={3000}
-            breakpoints={{
-              320: { slidesPerView: 1, slidesPerGroup: 1 },
-              640: { slidesPerView: 2, slidesPerGroup: 2 },
-              1024: { slidesPerView: 4, slidesPerGroup: 4 },
-            }}
-          >
-            {images.map((item) => (
-              <SwiperSlide key={item.id}>
-                <div className="flex items-center justify-center h-[160px]">
-                  <Image
-                    src={item.image}
-                    alt={`Logo ${item.id}`}
-                    width={600}
-                    height={600}
-                    className="object-contain h-full w-full"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          {/* navigation button */}
-          <button className="prev-btn absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center hover:bg-secondary hover:text-white transition">
-            <span className="text-xl font-bold">‹</span>
-          </button>
-          <button className="next-btn absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center hover:bg-secondary hover:text-white transition">
-            <span className="text-xl font-bold">›</span>
-          </button>
-        </div>
-
-       {/* bottom loop */}
-<Swiper
-  modules={[Autoplay]}
-  spaceBetween={20}
-  slidesPerView={6}        
-  slidesPerGroup={6}       
-  loop={true}
-  autoplay={{
-    delay: 3000,         
-    disableOnInteraction: false,
-  }}
-  speed={3000}             
-  breakpoints={{
-    320: { slidesPerView: 1, slidesPerGroup: 1 },
-    640: { slidesPerView: 3, slidesPerGroup: 3 },
-    1024: { slidesPerView: 6, slidesPerGroup: 6 },  
-  }}
->
-  {images.map((item) => (
-    <SwiperSlide key={item.id}>
-      <div className="flex items-center justify-center h-[100px]">
-        <Image
-          src={item.image}
-          alt={`Logo ${item.id}`}
-          width={600}
-          height={600}
-          className="object-contain h-full w-full"
-        />
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
-
+        <ClickSwiperNavation></ClickSwiperNavation>
+        {/* bottom loop */}
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={20}
+          slidesPerView={6}
+          slidesPerGroup={6}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          speed={3000}
+          breakpoints={{
+            320: { slidesPerView: 1, slidesPerGroup: 1 },
+            640: { slidesPerView: 3, slidesPerGroup: 3 },
+            1024: { slidesPerView: 6, slidesPerGroup: 6 },
+          }}
+        >
+          {images.map((item) => (
+            <SwiperSlide key={item.id}>
+              <div className="flex items-center justify-center h-[100px]">
+                <Image
+                  src={item.image}
+                  alt={`Logo ${item.id}`}
+                  width={600}
+                  height={600}
+                  className="object-contain h-full w-full"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );
