@@ -96,39 +96,21 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link href="/portfolio" className="font-medium transition hover:text-red-600">
+            {/* <Link href="/portfolio" className="font-medium transition hover:text-red-600">
               Portfolio
             </Link>
             <Link href="/case-study" className="font-medium transition hover:text-red-600">
               Case Study
-            </Link>
+            </Link> */}
             <Link href="/blog" className="font-medium transition hover:text-red-600">
               Blog
             </Link>
 
-            {/* Get in Touch Dropdown */}
-            <div className="relative group">
-              <Link
-                href="/getInTouch/contactUs"
-                className="flex items-center gap-1 font-medium transition hover:text-red-600"
-              >
-                Get in Touch <ChevronDown size={16} />
-              </Link>
-              <div className="absolute right-0 invisible w-48 mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-md opacity-0 group-hover:opacity-100 group-hover:visible">
-                <Link href="/getInTouch/aboutUs" className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600">
-                  About Us
-                </Link>
-                <Link href="/getInTouch/our-team" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
-                  Our Team
-                </Link>
-                <Link href="/getInTouch/career" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
-                  Career
-                </Link>
-                <Link href="/getInTouch/contactUs" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
-                  Contact Us
-                </Link>
-              </div>
-            </div>
+            <Link href="/Contact" className="font-medium transition hover:text-red-600">
+              Contact
+            </Link>
+
+            
           </nav>
 
           {/* Mobile Toggle */}
@@ -177,12 +159,12 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link href="/portfolio" className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600">
+            {/* <Link href="/portfolio" className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600">
               Portfolio
             </Link>
             <Link href="/case-study" className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600">
               Case Study
-            </Link>
+            </Link> */}
             <Link href="/blog" className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600">
               Blog
             </Link>
