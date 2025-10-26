@@ -38,18 +38,16 @@ export default function Navbar() {
                 Services <ChevronDown size={16} />
               </Link>
               <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
-                <Link href="/services/digital-marketing" className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600">
-                  Digital Marketing
+                <Link href="/Services/DesignMedia" className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600">
+                  Design Media
                 </Link>
-                <Link href="/services/development" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
-                  Web Design & Development
+                <Link href="/Services/webDevelopment" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
+                  Web Development
                 </Link>
-                <Link href="/services/creative-solution" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
-                  Creative Solution
+                <Link href="/Services/CyberSecurity" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
+                  Cyber Security
                 </Link>
-                <Link href="/services/video-production" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
-                  Video Production
-                </Link>
+               
               </div>
             </div>
 
