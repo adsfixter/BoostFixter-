@@ -43,27 +43,27 @@ const services = [
 
 function Services() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="px-6 py-20 bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
-        <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
+        <h1 className="mb-4 text-4xl font-extrabold leading-tight sm:text-5xl">
           Our{" "}
           <span className="relative inline-block">
             <span className="relative z-10 ">Services</span>
-            <span className="absolute left-0 bottom-4 w-full h-3 bg-secondary z-0"></span>
+            <span className="absolute left-0 z-0 w-full h-3 bottom-4 bg-secondary"></span>
           </span>
         </h1>
 
         {/* Subtitle and Button */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10">
-          <p className="text-gray-600 max-w-xl mb-4 sm:mb-0">
+        <div className="flex flex-col items-start justify-between mb-10 sm:flex-row sm:items-center">
+          <p className="max-w-xl mb-4 text-gray-600 sm:mb-0">
             Focused on results we seek to raise the level of our customers.
           </p>
           <CustomLink text={"VIEW ALL"}></CustomLink>
         </div>
 
         {/* Cards grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid gap-6 md:grid-cols-3">
           {services.map((service, index) => (
             <ServicesCard
               key={index}
