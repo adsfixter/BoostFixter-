@@ -29,6 +29,28 @@ export default function Navbar() {
               Home
             </Link>
 
+            {/* advertising Dropdown */}
+            <div className="relative group">
+              <Link
+                href="/advertising"
+                className="flex items-center gap-1 font-medium transition hover:text-red-600"
+              >
+                Advertising <ChevronDown size={16} />
+              </Link>
+              <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
+                <Link href="/advertising/DesignMedia" className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600">
+                 Facebook
+                </Link>
+                <Link href="/advertising/webDevelopment" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
+                 TikTok
+                </Link>
+                <Link href="/advertising/CyberSecurity" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
+                  Google
+                </Link>
+               
+              </div>
+            </div>
+
             {/* Services Dropdown */}
             <div className="relative group">
               <Link
