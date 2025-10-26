@@ -73,6 +73,29 @@ export default function Navbar() {
               </div>
             </div>
 
+
+            {/* About us Dropdown */}
+            <div className="relative group">
+              <Link
+                href="/AboutUs"
+                className="flex items-center gap-1 font-medium transition hover:text-red-600"
+              >
+               About Us <ChevronDown size={16} />
+              </Link>
+              <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
+                <Link href="/AboutUs/Portfolio" className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600">
+                 Portfolio
+                </Link>
+                <Link href="/AboutUs/OurTeam" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
+                 Our Team
+                </Link>
+                <Link href="/AboutUs/PrivacyPolicy" className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600">
+                  Privacy Policy
+                </Link>
+               
+              </div>
+            </div>
+
             <Link href="/portfolio" className="font-medium transition hover:text-red-600">
               Portfolio
             </Link>
