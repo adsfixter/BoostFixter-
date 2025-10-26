@@ -3,7 +3,7 @@
 import { Camera, Palette, Users, BookOpen, Calendar, BarChart3 } from "lucide-react";
 import CustomLink from "../../Share/CustomLink";
 
-export default function WhyMediaProduction() {
+export default function MediaProductionServices() {
   const features = [
     {
       icon: <Camera className="h-6 w-6 text-[#2b4b7c]" />,
@@ -48,17 +48,11 @@ export default function WhyMediaProduction() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-bold text-[#3b342b] text-center">
-          Why Your Business Needs Digital Media Production
+         Thrive’s Media Production Services
         </h2>
         <p className="text-secondary mt-2 text-lg font-medium text-center">
-          Deliver Content That Resonates With Your Target Audience
+         Versatility for Your Unique Industry Needs
         </p>
-        <p className="text-gray-600 mt-6">
-          Whether you’re a startup or an established brand, the need to stand out, engage your audience
-          and build a compelling narrative has never been more critical. Investing in multimedia production
-          services is a proven way to thrive in the digital age.
-        </p>
-
         {/* Feature Grid */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((item, index) => (
@@ -75,7 +69,7 @@ export default function WhyMediaProduction() {
           ))}
               </div>
               <div className="mt-8 flex justify-center">
-                  <CustomLink text={"Discuss My Project"}></CustomLink>
+                  <CustomLink text={"Create Something Extraordinary"}></CustomLink>
               </div>
       </div>
     </section>
