@@ -5,6 +5,8 @@ import Reviews from "../components/services/WebDevelopment/Reviews";
 import AboutSection from "../components/aboutUs/about/AboutSection";
 import TeamShowcaseSection from "../components/aboutUs/about/TeamShowcaseSection";
 import MarketingServices from "../components/aboutUs/about/MarketingServices";
+import CoreValuesTree from "../components/aboutUs/about/CoreValuesTree";
+import CompanyHistory from "../components/aboutUs/about/CompanyHistory";
 
 export default function AboutUs() {
   return (
@@ -15,6 +17,8 @@ export default function AboutUs() {
       <AboutSection></AboutSection>
       <TeamShowcaseSection></TeamShowcaseSection>
       <MarketingServices></MarketingServices>
+      {/* <CoreValuesTree></CoreValuesTree> */}
+      <CompanyHistory></CompanyHistory>
     </div>
   );
 }
