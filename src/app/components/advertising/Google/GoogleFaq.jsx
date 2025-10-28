@@ -91,18 +91,18 @@ export default function GoogleFaq() {
   };
 
   return (
-    <main className="py-20 px-6 bg-white">
-    <main className="py-20 px-6 bg-[#697371]">
+    <main className="px-6 py-20 bg-white">
+    
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-900">Media Production FAQs</h1>
+        <h1 className="mb-12 text-4xl font-bold text-center text-gray-900">Media Production FAQs</h1>
 
         <div className="space-y-4">
           {faqs.map((faq) => (
-            <div key={faq.id} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+            <div key={faq.id} className="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(faq.id)}
-                className="w-full text-left px-6 py-4 bg-gray-50 hover:bg-gray-100 flex justify-between items-center"
+                className="flex items-center justify-between w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100"
               >
                 <span className="font-semibold text-gray-900">{faq.question}</span>
                 <span className={`transition-transform duration-300 ${openId === faq.id ? "rotate-45" : "rotate-0"}`}>+</span>
