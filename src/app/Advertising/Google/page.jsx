@@ -14,7 +14,6 @@ import React from 'react'
 
 export default function Google() {
   return (
-    <div>Google</div>
     <div>
       <GoogleHero></GoogleHero>
       <NavigateHero text={"Advertising"} existingPage={"Google Ads Services"}></NavigateHero>
