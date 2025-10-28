@@ -83,7 +83,7 @@ const faqs = [
   },
 ];
 
-export default function GoogleFaq() {
+export default function TikTokFaq() {
   const [openId, setOpenId] = useState(null);
 
   const toggleFAQ = (id) => {
@@ -92,7 +92,6 @@ export default function GoogleFaq() {
 
   return (
     <main className="py-20 px-6 bg-white">
-    <main className="py-20 px-6 bg-[#697371]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-center mb-12 text-gray-900">Media Production FAQs</h1>
 
