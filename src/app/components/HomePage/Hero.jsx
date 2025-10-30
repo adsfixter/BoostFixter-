@@ -9,6 +9,7 @@ const Slider = dynamic(() => import("react-slick"), { ssr: false });
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomLink from "../Share/CustomLink";
+import AnimatedButton from "../Share/AnimatedButton";
 
 // Slider images
 const images = [
@@ -62,12 +63,9 @@ export function Hero() {
 
             {/* Buttons */}
             <div className="flex flex-col w-full gap-4 pt-4 sm:flex-row sm:justify-start sm:items-center">
-              <Link
-                href="#_"
-                className="flex items-center justify-center w-full gap-2 px-6 py-3 font-medium text-white transition bg-secondary rounded-xl sm:w-auto"
-              >
-                Book Free Consultation <ArrowRight size={20} />
-              </Link>
+               <div>
+                <AnimatedButton text="Book For Custemation"></AnimatedButton>
+              </div>
 
               <CustomLink text={" Working scope with you"}></CustomLink>
             </div>
@@ -75,15 +73,15 @@ export function Hero() {
             {/* Stats */}
             <div className="flex flex-wrap gap-8 pt-8">
               <div className="w-1/3 text-center md:w-1/4">
-                <p className="text-2xl font-bold text-[#0f766e]">500+</p>
+                <p className="text-2xl font-bold text-[#0f766e]">100+</p>
                 <p className="text-sm text-gray-600">Projects Completed</p>
               </div>
               <div className="w-1/3 text-center md:w-1/4">
-                <p className="text-2xl font-bold text-[#0f766e]">98%</p>
+                <p className="text-2xl font-bold text-[#0f766e]">95%</p>
                 <p className="text-sm text-gray-600">Client Satisfaction</p>
               </div>
               <div className="w-1/3 text-center md:w-1/4">
-                <p className="text-2xl font-bold text-[#0f766e]">10+</p>
+                <p className="text-2xl font-bold text-[#0f766e]">3+</p>
                 <p className="text-sm text-gray-600">Years Experience</p>
               </div>
             </div>
