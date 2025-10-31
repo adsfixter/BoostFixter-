@@ -7,7 +7,7 @@ export default function CustomButton({ text, link }) {
     <div>
       <Link
         href={link}
-        className=" px-6 py-3 rounded-3xl hover:bg-[#02644F] text-primary border hover:text-secondary flex items-center"
+        className=" px-6 py-3 rounded-3xl hover:bg-[#02644F] text-primary border text-center justify-center hover:text-secondary flex items-center"
       >
         {text} <ArrowUpRight />
       </Link>

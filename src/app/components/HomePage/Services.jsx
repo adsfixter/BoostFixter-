@@ -1,75 +1,79 @@
 import React from "react";
-import ServicesCard from "./ServicesCard";
-import CustomLink from "../Share/CustomLink";
+import Image from "next/image";
+import CustomButton from "../Share/CustomButton";
 
 const services = [
   {
-    icon: "💻",
+    id: 1,
     name: "Digital Marketing",
-    description:
-      "Elevate your online presence with our strategic digital marketing solutions, merging proven tactics and the latest trends to navigate your brand toward substantial growth.",
+    image: "/HomePage/digital_marketing.png",
   },
   {
-    icon: "📱",
-    name: "Social Media Management",
-    description:
-      "Manage and grow your social media presence with tailored strategies that increase engagement and reach.",
-  },
-  {
-    icon: "🎨",
+    id: 2,
     name: "Graphic Design",
-    description:
-      "Create stunning visuals and branding materials that captivate your audience and elevate your brand identity.",
+    image: "/HomePage/graphic_design.png",
   },
   {
-    icon: "⚡",
-    name: "SEO Optimization",
-    description:
-      "Optimize your website to rank higher in search engines and attract targeted organic traffic consistently.",
+    id: 3,
+    name: "Social Media Management",
+    image: "/HomePage/social_media.png",
   },
   {
-    icon: "✍️",
-    name: "Content Creation",
-    description:
-      "Deliver compelling content across platforms that educates, entertains, and converts your audience.",
+    id: 4,
+    name: "Web Design & Development",
+    image: "/HomePage/web_desing.png",
   },
   {
-    icon: "📊",
-    name: "Analytics & Reporting",
-    description:
-      "Track and analyze performance metrics to ensure your campaigns are effective and ROI-focused.",
+    id: 5,
+    name: "Cyber Security",
+    image: "/HomePage/cyber.png",
+  },
+  {
+    id: 6,
+    name: "Reporting & Analytics",
+    image: "/HomePage/reporting.png",
   },
 ];
 
 function Services() {
   return (
-    <section className="px-6 py-20 bg-white">
+    <section className="px-6 bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        {/* Title */}
-        <h1 className="mb-4 text-4xl font-extrabold leading-tight sm:text-5xl">
-          Our{" "}
-          <span className="relative inline-block">
-            <span className="relative z-10 ">Services</span>
-            <span className="absolute left-0 z-0 w-full h-3 bottom-4 bg-secondary"></span>
-          </span>
-        </h1>
-
-        {/* Subtitle and Button */}
-        <div className="flex flex-col items-start justify-between mb-10 sm:flex-row sm:items-center">
-          <p className="max-w-xl mb-4 text-gray-600 sm:mb-0">
-            Focused on results we seek to raise the level of our customers.
-          </p>
-          <CustomLink text={"VIEW ALL"}></CustomLink>
+        {/* Top Header */}
+        <div className="flex justify-between items-center mb-10">
+          <h1 className="text-primary text-3xl lg:text-5xl font-extrabold">
+            Our Services
+          </h1>
+          <div>
+            <CustomButton text={"See All Services"} link={"#"} />
+          </div>
         </div>
 
-        {/* Cards grid */}
-        <div className="grid gap-6 md:grid-cols-3">
-          {services.map((service, index) => (
-            <ServicesCard
-              key={index}
-              index={index}
-              service={service}
-            ></ServicesCard>
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden group"
+            >
+              {/* Image full width */}
+              <div className="relative w-full h-56">
+                <Image
+                  src={service.image}
+                  alt={service.name}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              {/* Text + Button */}
+              <div className="p-6 text-center">
+                <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                  {service.name}
+                </h2>
+                <CustomButton text="Learn More" link="#" />
+              </div>
+            </div>
           ))}
         </div>
       </div>
