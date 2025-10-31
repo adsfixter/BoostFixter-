@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowUpRight } from "lucide-react";
 import "./AnimatedButton.css";
 
 function AnimatedButton({ text = "Get Started", onClick, className = "" }) {
@@ -31,21 +32,9 @@ function AnimatedButton({ text = "Get Started", onClick, className = "" }) {
       />
 
       {/* Button Text + Arrow */}
-      <span className="relative z-10 flex items-center justify-center gap-2 animated-button-content">
+      <span className="relative z-10 text-[#E7FF24] flex items-center justify-center gap-2 animated-button-content">
         {text}
-        <svg
-          className="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M13 7l5 5m0 0l-5 5m5-5H6"
-          />
-        </svg>
+        <ArrowUpRight />
       </span>
     </button>
   );
