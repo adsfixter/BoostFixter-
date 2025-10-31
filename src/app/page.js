@@ -10,13 +10,15 @@ import SuccessTogether from "./components/HomePage/SuccessTogether";
 import ClientsSays from "./components/HomePage/ClientsSays";
 import VideoSection from "./components/HomePage/VideoSection";
 import MemoriesMoments from "./components/HomePage/MemoriesMoments";
+import OurStory from "./components/HomePage/OurStory";
 
 export default function Home() {
   return (
     <div>
       <Hero></Hero>
       <Spotlight></Spotlight>
-      <VideoSection></VideoSection>
+      {/* <VideoSection></VideoSection> */}
+      <OurStory></OurStory>
       <Services></Services>
       <ConsultancyForm></ConsultancyForm>
       <ClientRatings></ClientRatings>

@@ -4,8 +4,9 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --color-primary: #972026;
-  --color-secondary: #EA1E23;
+  --color-primary: #03644F;
+  --color-secondary: #E4FC24;
+  --color-accent: #1F2937;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +16,9 @@
   }
 }
 
-/* Text colors */
+/* =======================
+   🔹 TEXT COLORS
+   ======================= */
 .text-primary {
   color: var(--color-primary);
   transition: color 0.3s ease;
@@ -23,9 +26,30 @@
 
 .text-secondary {
   color: var(--color-secondary);
+  transition: color 0.3s ease;
 }
 
-/* Background colors */
+.text-accent {
+  color: var(--color-accent);
+  transition: color 0.3s ease;
+}
+
+/* 🔸 HOVER STATES */
+.hover\:text-primary:hover {
+  color: var(--color-primary);
+}
+
+.hover\:text-secondary:hover {
+  color: var(--color-secondary);
+}
+
+.hover\:text-accent:hover {
+  color: var(--color-accent);
+}
+
+/* =======================
+   🔹 BACKGROUND COLORS
+   ======================= */
 .bg-primary {
   background-color: var(--color-primary);
   transition: background-color 0.3s ease;
@@ -36,19 +60,51 @@
   transition: background-color 0.3s ease;
 }
 
-/* Hover effects */
-.text-primary:hover,
-.text-hover:hover {
-  color: var(--color-secondary);
+.bg-accent {
+  background-color: var(--color-accent);
+  transition: background-color 0.3s ease;
 }
 
-.bg-primary:hover,
-.bg-hover:hover,
+/* 🔸 HOVER STATES */
+.hover\:bg-primary:hover {
+  background-color: var(--color-primary);
+}
+
 .hover\:bg-secondary:hover {
   background-color: var(--color-secondary);
 }
-/* Border colors */
+
+.hover\:bg-accent:hover {
+  background-color: var(--color-accent);
+}
+
+/* =======================
+   🔹 BORDER COLORS
+   ======================= */
+.border-primary {
+  border-color: var(--color-primary);
+  transition: border-color 0.3s ease;
+}
+
 .border-secondary {
   border-color: var(--color-secondary);
   transition: border-color 0.3s ease;
+}
+
+.border-accent {
+  border-color: var(--color-accent);
+  transition: border-color 0.3s ease;
+}
+
+/* 🔸 BORDER HOVER */
+.hover\:border-primary:hover {
+  border-color: var(--color-primary);
+}
+
+.hover\:border-secondary:hover {
+  border-color: var(--color-secondary);
+}
+
+.hover\:border-accent:hover {
+  border-color: var(--color-accent);
 }

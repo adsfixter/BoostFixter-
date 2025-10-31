@@ -19,43 +19,48 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="flex items-center justify-center rounded-lg">
-              <img src="/BoostFixter_Website.png" alt="BoostFixter Logo" />
+              <img
+                src="/BoostFixter_Website.png"
+                alt="BoostFixter Logo"
+                className="h-8 w-auto"
+              />
             </div>
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="items-center hidden gap-8 text-gray-700 md:flex">
+          <nav className="items-center hidden gap-8 md:flex">
+            {/* Home */}
             <Link
               href="/"
-              className="font-medium transition hover:text-red-600"
+              className="font-medium text-primary transition hover:text-accent"
             >
               Home
             </Link>
 
-            {/* advertising Dropdown */}
+            {/* Advertising Dropdown */}
             <div className="relative group">
               <Link
                 href="/Advertising"
-                className="flex items-center gap-1 font-medium transition hover:text-red-600"
+                className="flex items-center gap-1 font-medium text-primary transition hover:text-accent"
               >
                 Advertising <ChevronDown size={16} />
               </Link>
               <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
                 <Link
                   href="/Advertising/Facebook"
-                  className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600"
+                  className="block px-4 py-2 text-primary transition hover:text-accent hover:bg-gray-50"
                 >
                   Facebook
                 </Link>
                 <Link
                   href="/Advertising/TikTok"
-                  className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600"
+                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
                 >
                   TikTok
                 </Link>
                 <Link
                   href="/Advertising/Google"
-                  className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600"
+                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
                 >
                   Google
                 </Link>
@@ -66,71 +71,73 @@ export default function Navbar() {
             <div className="relative group">
               <Link
                 href="/Services"
-                className="flex items-center gap-1 font-medium transition hover:text-red-600"
+                className="flex items-center gap-1 font-medium text-primary transition hover:text-accent"
               >
                 Services <ChevronDown size={16} />
               </Link>
               <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
                 <Link
                   href="/Services/DesignMedia"
-                  className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600"
+                  className="block px-4 py-2 text-primary transition hover:text-accent hover:bg-gray-50"
                 >
                   Design Media
                 </Link>
                 <Link
                   href="/Services/webDevelopment"
-                  className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600"
+                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
                 >
                   Web Development
                 </Link>
                 <Link
                   href="/Services/CyberSecurity"
-                  className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600"
+                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
                 >
                   Cyber Security
                 </Link>
               </div>
             </div>
 
-            {/* About us Dropdown */}
+            {/* About Us Dropdown */}
             <div className="relative group">
               <Link
                 href="/AboutUs"
-                className="flex items-center gap-1 font-medium transition hover:text-red-600"
+                className="flex items-center gap-1 font-medium text-primary transition hover:text-accent"
               >
                 About Us <ChevronDown size={16} />
               </Link>
               <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
                 <Link
                   href="/AboutUs/Portfolio"
-                  className="block px-4 py-2 hover:bg-gray-50 hover:text-red-600"
+                  className="block px-4 py-2 text-primary transition hover:text-accent hover:bg-gray-50"
                 >
                   Portfolio
                 </Link>
                 <Link
                   href="/AboutUs/OurTeam"
-                  className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600"
+                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
                 >
                   Our Team
                 </Link>
                 <Link
                   href="/AboutUs/PrivacyPolicy"
-                  className="block px-4 py-2 border-t hover:bg-gray-50 hover:text-red-600"
+                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
                 >
                   Privacy Policy
                 </Link>
               </div>
             </div>
+
+            {/* Blog & Contact */}
             <Link
               href="/blog"
-              className="font-medium transition hover:text-red-600"
+              className="font-medium text-primary transition hover:text-accent"
             >
               Blog
             </Link>
 
             <Link
               href="/Contact"
-              className="font-medium transition hover:text-red-600"
+              className="font-medium text-primary transition hover:text-accent"
             >
               Contact
             </Link>
@@ -144,112 +151,6 @@ export default function Navbar() {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <nav className="flex flex-col gap-1 pb-4 mt-2 text-gray-700 md:hidden">
-            <Link
-              href="/"
-              className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600"
-            >
-              Home
-            </Link>
-
-            {/* Mobile Services */}
-            <div>
-              <button
-                onClick={() => toggleDropdown("services")}
-                className="flex items-center justify-between w-full px-3 py-2 text-left rounded hover:bg-gray-100 hover:text-red-600"
-              >
-                Services
-                <ChevronDown
-                  size={16}
-                  className={`${
-                    openDropdown === "services" ? "rotate-180" : ""
-                  } transition-transform`}
-                />
-              </button>
-              {openDropdown === "services" && (
-                <div className="flex flex-col pl-4">
-                  <Link
-                    href="/services/digital-marketing"
-                    className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600"
-                  >
-                    Digital Marketing
-                  </Link>
-                  <Link
-                    href="/services/development"
-                    className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600"
-                  >
-                    Web Design & Development
-                  </Link>
-                  <Link
-                    href="/services/creative-solution"
-                    className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600"
-                  >
-                    Creative Solution
-                  </Link>
-                  <Link
-                    href="/services/video-production"
-                    className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600"
-                  >
-                    Video Production
-                  </Link>
-                </div>
-              )}
-            </div>
-            <Link
-              href="/blog"
-              className="px-3 py-2 rounded hover:bg-gray-100 hover:text-red-600"
-            >
-              Blog
-            </Link>
-
-            {/* Mobile Get in Touch */}
-            <div>
-              <button
-                onClick={() => toggleDropdown("getintouch")}
-                className="flex items-center justify-between w-full px-3 py-2 text-left rounded hover:bg-gray-100 hover:text-red-600"
-              >
-                Get in Touch
-                <ChevronDown
-                  size={16}
-                  className={`${
-                    openDropdown === "getintouch" ? "rotate-180" : ""
-                  } transition-transform`}
-                />
-              </button>
-              {openDropdown === "getintouch" && (
-                <div className="flex flex-col pl-4">
-                  <Link
-                    href="/getInTouch/about-us"
-                    className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600"
-                  >
-                    About Us
-                  </Link>
-                  <Link
-                    href="/getInTouch/our-team"
-                    className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600"
-                  >
-                    Our Team
-                  </Link>
-                  <Link
-                    href="/getInTouch/career"
-                    className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600"
-                  >
-                    Career
-                  </Link>
-                  <Link
-                    href="/getInTouch/contactUs"
-                    className="px-3 py-2 text-sm hover:bg-gray-50 hover:text-red-600"
-                  >
-                    Contact Us
-                  </Link>
-                </div>
-              )}
-            </div>
-          </nav>
-        )}
       </div>
     </header>
   );
