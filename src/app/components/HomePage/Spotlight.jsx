@@ -7,6 +7,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 
+
 const companies = [
   { id: 1, image: "/SuccessTogether/1.jpg", url: "https://example.com/1" },
   { id: 2, image: "/SuccessTogether/2.jpg", url: "https://example.com/2" },
