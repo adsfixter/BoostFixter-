@@ -31,7 +31,7 @@ function AnimatedButton({ text = "Get Started", onClick, className = "" }) {
       />
 
       {/* Button Text + Arrow */}
-      <span className="relative z-10 flex items-center justify-center gap-2 animated-button-content">
+      <span className="relative z-10 text-[#E7FF24] flex items-center justify-center gap-2 animated-button-content">
         {text}
         <svg
           className="w-4 h-4"

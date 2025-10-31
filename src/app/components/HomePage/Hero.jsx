@@ -64,7 +64,7 @@ export function Hero() {
             {/* Buttons */}
             <div className="flex flex-col w-full gap-4 pt-4 sm:flex-row sm:justify-start sm:items-center">
                <div>
-                <AnimatedButton text="Book For Custemation"></AnimatedButton>
+                <AnimatedButton text="Book"></AnimatedButton>
               </div>
 
               <CustomLink text={" Working scope with you"}></CustomLink>

@@ -121,13 +121,6 @@ export default function Navbar() {
                 </Link>
               </div>
             </div>
-
-            {/* <Link href="/portfolio" className="font-medium transition hover:text-red-600">
-              Portfolio
-            </Link>
-            <Link href="/case-study" className="font-medium transition hover:text-red-600">
-              Case Study
-            </Link> */}
             <Link
               href="/blog"
               className="font-medium transition hover:text-red-600"
