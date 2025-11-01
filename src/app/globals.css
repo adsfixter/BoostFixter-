@@ -6,7 +6,7 @@
 
   --color-primary: #03644F;
   --color-secondary: #E4FC24;
-  --color-accent: #1F2937;
+  --color-accent: #013F32;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,20 +50,6 @@
 /* =======================
    🔹 BACKGROUND COLORS
    ======================= */
-.bg-primary {
-  background-color: var(--color-primary);
-  transition: background-color 0.3s ease;
-}
-
-.bg-secondary {
-  background-color: var(--color-secondary);
-  transition: background-color 0.3s ease;
-}
-
-.bg-accent {
-  background-color: var(--color-accent);
-  transition: background-color 0.3s ease;
-}
 
 /* 🔸 HOVER STATES */
 .hover\:bg-primary:hover {
