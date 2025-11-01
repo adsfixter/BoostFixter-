@@ -9,11 +9,11 @@ export default function OurStory() {
         <div className="grid grid-cols-2 gap-4 ">
           {/* left site */}
           <div className="space-y-5">
-            <h1 className="text-3xl lg:text-5xl text-primary">Our Story</h1>
+            <h1 className="text-3xl text-primary">Our Story</h1>
           </div>
           {/* right site */}
           <div className="space-y-9">
-            <h1 className="text-3xl lg:text-5xl font-extrabold text-primary">
+            <h1 className="text-3xl lg:text-5xl font-bold text-primary">
               We're a Results-Driven Digital Marketing Agency
             </h1>
             <p className="text-xl text-accent">

@@ -43,51 +43,40 @@ function Services() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Top Header */}
         <div className="flex justify-between items-center mb-10">
-          <h1 className="text-primary text-3xl lg:text-5xl font-extrabold">
+          <h1 className="text-primary text-3xl lg:text-5xl font-bold">
             Our Services
           </h1>
-          <div>
-            <CustomButton text={"See All Services"} link={"#"} />
-          </div>
+          <CustomButton text="See All Services" link="#" />
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-8">
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className="bg-[#F8F8F8] p-6 rounded-4xl duration-300 overflow-hidden group"
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden group"
+              className="bg-[#F8F8F8] p-6 rounded-4xl transition-shadow duration-300 overflow-hidden group"
             >
-              {/* Image full width */}
+              {/* Image */}
               <div className="relative w-full h-56">
                 <Image
                   src={service.image}
                   alt={service.name}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform rounded-xl duration-500"
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 rounded-xl"
                 />
               </div>
 
               {/* Text + Button */}
-              <div className=" mt-4 text-left">
-                <h2 className="text-2xl font-bold text-primary mb-2">
+              <div className="mt-6 text-left">
+                <h2 className="text-2xl font-medium text-primary mb-2">
                   {service.name}
                 </h2>
                 <Link
-                  href={"#"}
-                className="text-primary flex underline"
-                >Book a Call <ArrowUpRight /></Link>
-              <div className="p-6 text-center">
-                <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                  {service.name}
-                </h2>
-                <CustomButton text="Learn More" link="#" />
+                  href="#"
+                  className="text-primary flex items-center underline gap-1"
+                >
+                  Book a Call <ArrowUpRight size={18} />
+                </Link>
               </div>
             </div>
           ))}
