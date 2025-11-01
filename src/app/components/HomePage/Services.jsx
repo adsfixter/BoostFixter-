@@ -57,6 +57,11 @@ function Services() {
             <div
               key={service.id}
               className="bg-[#F8F8F8] p-6 rounded-4xl duration-300 overflow-hidden group"
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden group"
             >
               {/* Image full width */}
               <div className="relative w-full h-56">
@@ -65,6 +70,7 @@ function Services() {
                   alt={service.name}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform rounded-xl duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
@@ -77,6 +83,11 @@ function Services() {
                   href={"#"}
                 className="text-primary flex underline"
                 >Book a Call <ArrowUpRight /></Link>
+              <div className="p-6 text-center">
+                <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                  {service.name}
+                </h2>
+                <CustomButton text="Learn More" link="#" />
               </div>
             </div>
           ))}
