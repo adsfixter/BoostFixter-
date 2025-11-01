@@ -18,11 +18,11 @@ export default function Home() {
       <Hero></Hero>
       <Spotlight></Spotlight>
       {/* <VideoSection></VideoSection> */}
-      <OurStory></OurStory>
+      {/* <OurStory></OurStory> */}
       <Services></Services>
       <ConsultancyForm></ConsultancyForm>
       <ClientRatings></ClientRatings>
-      <BenefitsSection></BenefitsSection>
+      {/* <BenefitsSection></BenefitsSection> */}
       <SuccessTogether></SuccessTogether>
       <ClientsSays></ClientsSays>
       <MemoriesMoments></MemoriesMoments>
