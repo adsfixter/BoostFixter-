@@ -12,10 +12,11 @@ import ClientsSays from "./components/HomePage/ClientsSays";
 import MemoriesMoments from "./components/HomePage/MemoriesMoments";
 import OurStory from "./components/HomePage/OurStory";
 import HomeReviw from "./components/HomePage/HomeReviw";
+import LatestProjects from "./components/HomePage/LatestProjects";
 
 export default function Home() {
   return (
-    <div>
+    <div className="space-y-36">
       <Hero></Hero>
       <Spotlight></Spotlight>
       {/* <VideoSection></VideoSection> */}
@@ -25,6 +26,8 @@ export default function Home() {
       <Services></Services>
       <ConsultancyForm></ConsultancyForm>
       <ClientRatings></ClientRatings>
+      <BenefitsSection></BenefitsSection>
+      <LatestProjects></LatestProjects>
       {/* <BenefitsSection></BenefitsSection> */}
       <SuccessTogether></SuccessTogether>
       <ClientsSays></ClientsSays>
