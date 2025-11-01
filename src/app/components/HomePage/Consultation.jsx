@@ -1,117 +1,56 @@
-"use client";
+import { ArrowUpRight } from "lucide-react";
+import AnimatedButton from "../Share/AnimatedButton";
 
-import { useState } from "react";
-import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 
-export default function ConsultancyForm() {
-  const [step, setStep] = useState(1);
 
+export default function ContactForm() {
   return (
-    <section className="py-20 px-6 bg-white">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Left Image */}
-        <div className="relative overflow-hidden">
-          <Image
-            src="/Consultancy.png"
-            alt="Consultancy Meeting"
-            width={800}
-            height={600}
-            className="object-cover w-full h-full"
-          />
-        </div>
-
-        {/* Right Form */}
-        <div className="">
-         {/* Title */}
-        <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
-          Book a Free{" "}
-          <span className="relative inline-block">
-            <span className="relative z-10 ">Consultancy</span>
-            <span className="absolute left-0 bottom-4 w-full h-3 bg-secondary z-0"></span>
-          </span>
-        </h1>
-
-          {/* Step Indicators */}
-          <div className="flex items-center justify-between mb-8">
-            {[1, 2, 3].map((s) => (
-              <div key={s} className={`text-center ${step === s ? "text-blue-600" : "text-gray-400"}`}>
-                <div
-                  className={`w-8 h-8 flex items-center justify-center rounded-full border${
-                    step === s ? "border-blue-600 bg-secondary" : "border-blue-600"
-                  }`}
-                >
-                  {s}
-                </div>
-                <p className="text-sm mt-1 font-medium">
-                  {s === 1
-                    ? "Personal Info"
-                    : s === 2
-                    ? "Contact Info"
-                    : "Message"}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Step 1 Form */}
-          {step === 1 && (
-            <div className="space-y-4">
-              <input
-                placeholder="Name"
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              />
-              <input
-                placeholder="Company Name"
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              />
-              <input
-                placeholder="Designation"
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              />
-              <button
-                onClick={() => setStep(2)}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center justify-center"
-              >
-                Next <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
-            </div>
-          )}
-
-          {/* Step 2 Form */}
-          {step === 2 && (
-            <div className="space-y-4">
-              <input
-                placeholder="Email"
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              />
-              <input
-                placeholder="Phone Number"
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              />
-              <button
-                onClick={() => setStep(3)}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center justify-center"
-              >
-                Next <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
-            </div>
-          )}
-
-          {/* Step 3 Form */}
-          {step === 3 && (
-            <div className="space-y-4">
-              <textarea
-                placeholder="Your Message"
-                className="w-full min-h-[120px] border border-gray-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              />
-              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">
-                Submit
-              </button>
-            </div>
-          )}
+    <div className="flex flex-col items-start my-10 rounded-lg p-18 md:flex-row bg-gray-50">
+      <div className="mb-6 mr-8 md:w-1/2 md:mb-0">
+        <h2 className="mb-4 text-4xl font-bold text-green-900 md:text-6xl lg:text-[56px]">Let's get started</h2>
+        <p className="mb-4 text-gray-600 md:w-2/3 md:text-lg">
+          Discuss your idea on a call. After discovery, we'll propose. Once approved, we start the work.
+        </p>
+        
+        <div className="flex items-center gap-0 text-green-800 underline tex-2t-lg font-sgemibold md:text-xl">
+          <a href="#" className="text-green-800 ">Direct Call </a>
+           <ArrowUpRight></ArrowUpRight>
         </div>
       </div>
-    </section>
+      <form className="flex flex-col p-8 space-y-6 bg-white shadow md:w-1/2 rounded-xl">
+        <div className="flex space-x-4">
+          <input
+            type="text"
+            placeholder="Full Name"
+            className="w-1/2 py-2 border-b-2 border-gray-200 focus:outline-none"
+          />
+          <input
+            type="text"
+            placeholder="Company Name"
+            className="w-1/2 py-2 border-b-2 border-gray-200 focus:outline-none"
+          />
+        </div>
+        <div className="flex space-x-4">
+          <input
+            type="text"
+            placeholder="Phone Number"
+            className="w-1/2 py-2 border-b-2 border-gray-200 focus:outline-none"
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            className="w-1/2 py-2 border-b-2 border-gray-200 focus:outline-none"
+          />
+        </div>
+        <textarea
+          placeholder="Project Details"
+          className="py-2 border-b-2 border-gray-200 resize-none focus:outline-none"
+        />
+       <div className="">
+        <AnimatedButton text={"Send Inquiry"} link="#"></AnimatedButton>
+        
+       </div>
+      </form>
+    </div>
   );
 }

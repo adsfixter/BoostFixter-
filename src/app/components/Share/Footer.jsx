@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import CustomButton from "./CustomButton";
 
 export default function Home() {
   return (
@@ -26,10 +27,9 @@ export default function Home() {
                 Global ad solutions built for growth – fast, secure, and
                 performance-driven.
               </p>
-              <button className="bg-green-700 hover:bg-green-800 text-white px-6 py-2.5 rounded-full text-sm font-medium flex items-center gap-2 transition-colors">
-                Contact Us
-                <ArrowRight className="w-4 h-4" />
-              </button>
+              <div className="w-1/2">
+                <CustomButton text={"Contact Us"} link={"#"} ></CustomButton>
+              </div>
             </div>
 
             {/* Quick Links */}
