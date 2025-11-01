@@ -19,9 +19,9 @@ export function Hero() {
         <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
           {/* LEFT CONTENT */}
           <div className="z-10 space-y-6 m">
-            <h1 className="text-5xl font-extrabold text-primary">Leading AI-Powered Global <span className="text-accent">Digital Growth </span>Marketing Agency</h1>
+            <h1 className="text-6xl font-bold text-primary">Leading AI-Powered Global <span className="text-accent">Digital Growth </span>Marketing Agency</h1>
 
-           <p className="text-lg text-accent font-medium">Bangladesh's top digital marketing agency. Innovative strategies drive online success and business growth.</p>
+           <p className="text-lg text-accent font-bold">Bangladesh's top digital marketing agency. Innovative strategies drive online success and business growth.</p>
 
             {/* Buttons */}
             <div className="flex flex-col w-full gap-4 pt-4 sm:flex-row sm:justify-start sm:items-center">

@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import CustomButton from "../Share/CustomButton";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 const services = [
   {
@@ -50,11 +52,11 @@ function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-8">
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden group"
+              className="bg-white border-gray-200 duration-300 overflow-hidden group"
             >
               {/* Image full width */}
               <div className="relative w-full h-56">
@@ -62,16 +64,19 @@ function Services() {
                   src={service.image}
                   alt={service.name}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform rounded-2xl duration-500"
                 />
               </div>
 
               {/* Text + Button */}
-              <div className="p-6 text-center">
-                <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <div className=" mt-4 text-left">
+                <h2 className="text-xl font-medium text-primary mb-2">
                   {service.name}
                 </h2>
-                <CustomButton text="Learn More" link="#" />
+                <Link
+                  href={"#"}
+                className="text-primary flex underline"
+                >More <ArrowUpRight /></Link>
               </div>
             </div>
           ))}

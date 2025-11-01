@@ -12,6 +12,7 @@ import VideoSection from "./components/HomePage/VideoSection";
 import MemoriesMoments from "./components/HomePage/MemoriesMoments";
 import OurStory from "./components/HomePage/OurStory";
 import HomeReviw from "./components/HomePage/HomeReviw";
+import LatestProjects from "./components/HomePage/LatestProjects";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <ConsultancyForm></ConsultancyForm>
       <ClientRatings></ClientRatings>
       <BenefitsSection></BenefitsSection>
+      <LatestProjects></LatestProjects>
       <SuccessTogether></SuccessTogether>
       <ClientsSays></ClientsSays>
       <MemoriesMoments></MemoriesMoments>
