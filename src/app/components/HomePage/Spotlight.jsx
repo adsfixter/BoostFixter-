@@ -35,18 +35,9 @@ const companies = [
 
 export default function Spotlight() {
   return (
-    <section className="bg-white px-6">
+    <section className="bg-[#F8F8F8] px-6">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        {/* Title */}
-        <h1 className="text-4xl text-accent sm:text-5xl font-extrabold leading-tight mb-6">
-          In the{" "}
-          <span className="relative inline-block">
-            <span className="relative z-10">Spotlight</span>
-            <span className="absolute left-0 bottom-2 w-full h-2 bg-primary z-0"></span>
-          </span>
-        </h1>
-
-        <div className="bg-[#F8F8F8] py-10">
+        <div className=" py-10">
           {/* top Marquee */}
           <Marquee
             pauseOnHover={true}
