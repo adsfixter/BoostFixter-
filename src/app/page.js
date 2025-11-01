@@ -16,7 +16,7 @@ import LatestProjects from "./components/HomePage/LatestProjects";
 
 export default function Home() {
   return (
-    <div>
+    <div className="space-y-36">
       <Hero></Hero>
       <Spotlight></Spotlight>
       {/* <VideoSection></VideoSection> */}

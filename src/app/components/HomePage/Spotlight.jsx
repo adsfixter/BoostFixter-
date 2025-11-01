@@ -58,7 +58,7 @@ export default function Spotlight() {
                   alt={`Company ${company.id} logo`}
                   width={150}
                   height={100}
-                  className="object-contain rounded-xl shadow-sm hover:scale-105 transition-transform duration-300"
+                  className="object-contain w-full hover:scale-105 transition-transform duration-300"
                 />
               </a>
             ))}
@@ -84,7 +84,7 @@ export default function Spotlight() {
                   alt={`Company ${company.id} logo`}
                   width={150}
                   height={100}
-                  className="object-contain rounded-xl shadow-sm hover:scale-105 transition-transform duration-300"
+                  className="object-contain w-full hover:scale-105 transition-transform duration-300"
                 />
               </a>
             ))}
