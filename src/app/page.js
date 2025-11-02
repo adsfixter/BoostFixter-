@@ -28,13 +28,9 @@ export default function Home() {
       <ClientRatings></ClientRatings>
       <LatestProjects></LatestProjects>
       <ClientsSays></ClientsSays>
-      
       <ConsultancyForm></ConsultancyForm>
        <LatestBlogsSection></LatestBlogsSection>
-      
-      
       {/* <SuccessTogether></SuccessTogether> */}
-      
       {/* <MemoriesMoments></MemoriesMoments> */}
      
     </div>
