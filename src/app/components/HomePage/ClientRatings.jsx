@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const ratings = [
@@ -34,28 +33,28 @@ export default function ClientRatings() {
     <section className="bg-[#F8F8F8] px-6  md:px-12 md:py-32">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
-        <h1 className="text-5xl font-bold text-accent mb-16">Explore Client <br/> Ratings Showcase</h1>
-       
-         
-          <div className="flex justify-between items-center gap-4">
-            {ratings.map((rating) => (
-              <a
-                key={rating.id}
-                href={rating.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className=""
-              >
-                <img
-                  src={rating.image}
-                  alt={`Client Rating ${rating.id}`}
-                  className=" w-full h-[50px]"
-                />
-              </a>
-            ))}
-          </div>
+        <h1 className="text-5xl font-bold text-accent mb-16">
+          Explore Client <br /> Ratings Showcase
+        </h1>
+
+        <div className="flex justify-between items-center gap-4">
+          {ratings.map((rating) => (
+            <a
+              key={rating.id}
+              href={rating.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
+              <img
+                src={rating.image}
+                alt={`Client Rating ${rating.id}`}
+                className=" w-full h-[50px]"
+              />
+            </a>
+          ))}
         </div>
-    
+      </div>
     </section>
   );
 }

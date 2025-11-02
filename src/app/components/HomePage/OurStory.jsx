@@ -4,7 +4,7 @@ import CustomButton from "../Share/CustomButton";
 
 export default function OurStory() {
   return (
-    <div className="px-6">
+    <div className="px-6 py-40 bg-[#F9FAFC]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-4 ">
           {/* left site */}

@@ -1,17 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import dynamic from "next/dynamic";
-import { motion } from "framer-motion"; // ✅ Animation
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion"; // Animation
 import AnimatedButton from "../Share/AnimatedButton";
 import CustomButton from "../Share/CustomButton";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden text-black bg-white md:py-20">
+    <section className="relative overflow-hidden py-40">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-white to-white" />
 
       <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">

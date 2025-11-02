@@ -8,27 +8,27 @@ const services = [
   {
     id: 1,
     name: "Digital Marketing",
-    image: "/HomePage/digital_marketing.png",
+    image: "/service/digital_marketing.png",
   },
   {
     id: 2,
     name: "Graphic Design",
-    image: "/HomePage/graphic_design.png",
+    image: "/service/graphic_design.png",
   },
   {
     id: 3,
     name: "Social Media Management",
-    image: "/HomePage/social_media.png",
+    image: "/service/social_media.png",
   },
   {
     id: 4,
     name: "Web Design & Development",
-    image: "/HomePage/web_desing.png",
+    image: "/service/web_desing.png",
   },
   {
     id: 5,
     name: "Cyber Security",
-    image: "/HomePage/cyber.png",
+    image: "/service/cyber.png",
   },
   {
     id: 6,
@@ -39,10 +39,10 @@ const services = [
 
 function Services() {
   return (
-    <section className="px-6 bg-white">
+    <section className="px-6 bg-white py-40">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Top Header */}
-        <div className="flex justify-between items-center mb-10">
+        <div className="flex justify-between items-center mb-16">
           <h1 className="text-primary text-3xl lg:text-5xl font-bold">
             Our Services
           </h1>
