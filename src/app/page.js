@@ -24,14 +24,19 @@ export default function Home() {
       <OurStory></OurStory>
        <HomeReviw></HomeReviw>
       <Services></Services>
-      <ConsultancyForm></ConsultancyForm>
-      <ClientRatings></ClientRatings>
       <BenefitsSection></BenefitsSection>
+      <ClientRatings></ClientRatings>
       <LatestProjects></LatestProjects>
-      {/* <SuccessTogether></SuccessTogether> */}
       <ClientsSays></ClientsSays>
+      
+      <ConsultancyForm></ConsultancyForm>
+       <LatestBlogsSection></LatestBlogsSection>
+      
+      
+      {/* <SuccessTogether></SuccessTogether> */}
+      
       {/* <MemoriesMoments></MemoriesMoments> */}
-      <LatestBlogsSection></LatestBlogsSection>
+     
     </div>
   );
 }

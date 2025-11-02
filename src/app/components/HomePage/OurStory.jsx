@@ -3,7 +3,7 @@ import CustomButton from "../Share/CustomButton";
 
 export default function OurStory() {
   return (
-    <section className=" py-20 bg-[#F9FAFC]">
+    <section className=" py-20 bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2">
           {/* LEFT SIDE */}

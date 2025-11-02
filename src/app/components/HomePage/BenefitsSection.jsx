@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function BenefitsSection() {
   return (
-    <section className="bg-[#F8F8F8] py-20">
+    <section className="bg-white py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* top div */}
         <div className="flex justify-between gap-4">

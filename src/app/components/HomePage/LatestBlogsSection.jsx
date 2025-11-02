@@ -50,7 +50,7 @@ const cardVariants = {
 
 export default function LatestBlog() {
   return (
-    <section className=" bg-gray-100 py-20">
+    <section className="bg-white py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-center justify-between gap-6 mb-16 sm:flex-row">
@@ -69,7 +69,7 @@ export default function LatestBlog() {
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.3 }}
               variants={cardVariants}
-              className="relative overflow-hidden transition-all duration-600 bg-white  rounded-2xl  group  hover:-translate-y-2"
+              className="relative overflow-hidden bg-[#F8F8F8] transition-all duration-600 rounded-2xl group hover:-translate-y-2"
             >
               {/* Blog Image */}
               <div className="relative w-full h-52">
@@ -85,10 +85,10 @@ export default function LatestBlog() {
               </div>
 
               {/* Blog Info */}
-              <div className="relative z-10 p-6 bg-white">
+              <div className="relative z-10 p-6">
                 {/* Author Info */}
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="relative w-10 h-10 overflow-hidden border-2 border-green-500 rounded-full">
+                  <div className="relative w-10 h-10 overflow-hidden rounded-full">
                     <Image
                       src={blog.authorImage}
                       alt={blog.author}

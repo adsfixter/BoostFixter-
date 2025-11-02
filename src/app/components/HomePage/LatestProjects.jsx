@@ -71,7 +71,7 @@ const projects3 = [
 
 export default function LatestProjects() {
   return (
-    <div className=" bg-gray-100 py-20">
+    <div className=" bg-white py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* top div */}
         <div className="flex justify-between mb-12">
