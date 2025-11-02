@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomeReviw() {
   return (
-    <div className="px-6">
+    <div className="px-6 bg-gray-100 py-40">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* 1 card */}
         <div className="bg-[#F8F8F8] p-8">

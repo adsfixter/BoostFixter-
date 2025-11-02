@@ -30,7 +30,7 @@ const ratings = [
 
 export default function ClientRatings() {
   return (
-    <section className="bg-[#F8F8F8] px-6  md:px-12 md:py-32">
+    <section className="bg-gray-50 px-6 py-40">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
         <h1 className="text-5xl font-bold text-accent mb-16">

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ClientSay() {
   return (
-    <section className="px-6 bg-white">
+    <section className="px-6 py-40 bg-gray-100">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h1 className="text-accent text-3xl lg:text-6xl font-bold mb-10">
           What Our <br />
