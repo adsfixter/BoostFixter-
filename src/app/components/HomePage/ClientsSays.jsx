@@ -3,76 +3,67 @@
 import Image from "next/image";
 
 export default function ClientSay() {
+  const testimonials = [
+    {
+      id: 1,
+      name: "Farzana Munni",
+      role: "Founder & CEO @MetLife",
+      image: "/HomePage/farzana.png",
+      feedback:
+        "In today's digital age, apps have become an integral part of our daily lives. From communication and entertainment to productivity and learning, there's an app for just about everything.",
+      marginTop: "mt-14",
+    },
+    {
+      id: 2,
+      name: "Mubin Mia",
+      role: "Founder & CEO @Betopia",
+      image: "/HomePage/mubin.png",
+      feedback:
+        "In today's digital age, apps have become an integral part of our daily lives. From communication and entertainment to productivity and learning, there's an app for just about everything.",
+      marginTop: "mt-0",
+    },
+    {
+      id: 3,
+      name: "Kazi Maruf",
+      role: "CEO @Unicare",
+      image: "/HomePage/kazi.png",
+      feedback:
+        "In today's digital age, apps have become an integral part of our daily lives. From communication and entertainment to productivity and learning, there's an app for just about everything.",
+      marginTop: "mt-14",
+    },
+  ];
+
   return (
-    <section className=" py-20 bg-gray-50">
+    <section className="py-20 bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h1 className="text-accent text-3xl lg:text-6xl font-bold mb-10">
           What Our <br />
           Clients Say
         </h1>
-        {/* main card */}
+
+        {/* main card grid */}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
-          {/* 1 card */}
-          <div className="space-y-4 mt-14">
-            <div>
-              <Image
-                src={"/HomePage/farzana.png"}
-                width={100}
-                height={400}
-                className="w-full"
-                alt="farzana munni"
-              ></Image>
+          {testimonials.map((client) => (
+            <div
+              key={client.id}
+              className={`space-y-4 ${client.marginTop}`}
+            >
+              <div>
+                <Image
+                  src={client.image}
+                  width={100}
+                  height={400}
+                  className="w-full h-[280px] object-cover rounded-3xl"
+                  alt={client.name}
+                />
+              </div>
+              <h1 className="text-accent text-3xl font-bold">{client.name}</h1>
+              <h2 className="text-lg text-gray-500 font-bold">{client.role}</h2>
+              <p className="text-accent font-normal text-lg">
+                {client.feedback}
+              </p>
             </div>
-            <h1 className="text-accent text-3xl font-bold">Farzana Munni</h1>
-            <h1 className="text-lg text-gray-500 font-bold">
-              Founder & CEO @MetLife
-            </h1>
-            <p className="text-accent font-normal text-lg">
-              In today's digital age, apps have become an integral part of our
-              daily lives. From communication and entertainment to productivity
-              and learning, there's an app for just about everything.
-            </p>
-          </div>
-          {/* 2 card */}
-          <div className="space-y-4">
-            <div>
-              <Image
-                src={"/HomePage/mubin.png"}
-                width={100}
-                height={400}
-                className="w-full h-[550px]"
-                alt="farzana munni"
-              ></Image>
-            </div>
-            <h1 className="text-accent text-3xl font-bold">Mubin Mia</h1>
-            <h1 className="text-lg text-gray-500 font-bold">
-              Founder & CEO @Betopia
-            </h1>
-            <p className="text-accent font-normal text-lg">
-              In today's digital age, apps have become an integral part of our
-              daily lives. From communication and entertainment to productivity
-              and learning, there's an app for just about everything.
-            </p>
-          </div>
-          {/* 3 card */}
-          <div className="space-y-4 mt-14">
-            <div>
-              <Image
-                src={"/HomePage/kazi.png"}
-                width={100}
-                height={400}
-                className="w-full "
-                alt="farzana munni"
-              ></Image>
-            </div>
-            <h1 className="text-accent text-3xl font-bold">Kazi Maruf</h1>
-            <h1 className="text-lg text-gray-500 font-bold">CEO @Unicare</h1>
-            <p className="text-accent font-normal text-lg">
-              In today's digital age, apps have become an integral part of our
-              daily lives. From communication and entertainment to productivity
-              and learning, there's an app for just about everything.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>
