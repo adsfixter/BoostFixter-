@@ -1,75 +1,176 @@
-import React from 'react'
-import CustomButton from '../Share/CustomButton'
-import Image from 'next/image'
+import React from "react";
+import CustomButton from "../Share/CustomButton";
+import Image from "next/image";
+import Marquee from "react-fast-marquee";
+const projects1 = [
+  {
+    id: 1,
+    image: "/project/project1.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+  {
+    id: 2,
+    image: "/project/project2.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+  {
+    id: 3,
+    image: "/project/project3.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+  {
+    id: 4,
+    image: "/project/project4.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+];
+const projects2 = [
+  {
+    id: 5,
+    image: "/project/project5.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+  {
+    id: 6,
+    image: "/project/project6.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+  {
+    id: 7,
+    image: "/project/project7.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+  {
+    id: 8,
+    image: "/project/project8.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+];
+const projects3 = [
+  {
+    id: 9,
+    image: "/project/project9.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+  {
+    id: 10,
+    image: "/project/project10.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+  {
+    id: 11,
+    image: "/project/project11.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+  {
+    id: 12,
+    image: "/project/project12.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+]
 
 export default function LatestProjects() {
   return (
-      <div className='px-6'>
-          <div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
-              {/* top div */}
-              <div className='flex justify-between mb-12'>
-                  <h1 className='text-accent font-bold text-3xl lg:text-6xl'>Our Latest Projects <br/>
-                      We Have Done!</h1>
-                  <CustomButton text={"See Our All Projects"} link={"#"}></CustomButton>
-              </div>
-              {/* main card div */}
-              <div className='grid grid-cols-2 gap-4 justify-between'>
-                  {/* left card div */}
-                  <div className='space-y-20'>
-                      {/* card 1 */}
-                      <div className='space-y-3'>
-                          <Image
-                              width={200}
-                              height={200}
-                              alt='e-commerce'
-                              src={"/HomePage/digital_marketing.png"}
-                              className='w-[600px] h-[450px]'
-                          ></Image>
-                          <h1 className='text-primary font-normal text-2xl'>TrendTrunk</h1>
-                          <p className='text-[#676E72] font-extrabold text-4xl'>E-commerce</p>
-                      </div>
-                      {/* card 2 */}
-                        <div className='space-y-3'>
-                          <Image
-                              width={200}
-                              height={200}
-                              alt='e-commerce'
-                              src={"/HomePage/digital_marketing.png"}
-                              className='w-[600px] h-[450px]'
-                          ></Image>
-                          <h1 className='text-primary font-normal text-2xl'>Hey House</h1>
-                          <p className='text-[#676E72] font-extrabold text-4xl'>Real Estate</p>
-                      </div>
-                  </div>
-                  {/* right site card div */}
-                    <div className='mt-30 space-y-20'>
-                      {/* card 3 */}
-                       <div className='space-y-3'>
-                          <Image
-                              width={200}
-                              height={200}
-                              alt='e-commerce'
-                              src={"/HomePage/digital_marketing.png"}
-                              className='w-[600px] h-[450px]'
-                          ></Image>
-                          <h1 className='text-primary font-normal text-2xl'>Green Eats</h1>
-                          <p className='text-[#676E72] font-extrabold text-4xl'>Food Delivery</p>
-                      </div>
-                      {/* card 4 */}
-                        <div className='space-y-3'>
-                          <Image
-                              width={200}
-                              height={200}
-                              alt='e-commerce'
-                              src={"/HomePage/digital_marketing.png"}
-                              className='w-[600px] h-[450px]'
-                          ></Image>
-                          <h1 className='text-primary font-normal text-2xl'>Dentix</h1>
-                          <p className='text-[#676E72] font-extrabold text-4xl'>Dental Clinic</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+    <div className=" bg-gray-100 py-20">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        {/* top div */}
+        <div className="flex justify-between mb-12">
+          <h1 className="text-accent font-bold text-3xl lg:text-6xl">
+            Our Latest Projects <br />
+            We Have Done!
+          </h1>
+          <CustomButton text={"See Our All Projects"} link={"#"}></CustomButton>
+        </div>
+        {/* animation main card */}
+        <div className=" py-10 space-y-6">
+          {/* top Marquee */}
+          <Marquee
+            pauseOnHover={true}
+            gradient={false}
+            speed={50}
+            className="pb-4"
+          >
+            {projects1.map((project) => (
+              <a
+                key={project.id}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" mx-8 flex items-center justify-center" 
+              >
+                <div className="w-full h-[140px] flex items-center justify-center">
+                  {" "}
+                 
+                  <Image
+                    src={project.image}
+                    alt={`Company ${project.id} logo`}
+                    width={180}
+                    height={100}
+                    className=" object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </a>
+            ))}
+          </Marquee>
+          {/* midel Marquee */}
+          <Marquee
+            direction=""
+            pauseOnHover={true}
+            gradient={false}
+            speed={50}
+            className="pb-4"
+          >
+            {projects2.map((project) => (
+              <a
+                key={project.id}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" mx-8 flex items-center justify-center" 
+              >
+                <div className="w-full h-[140px] flex items-center justify-center">
+                  {" "}
+                  <Image
+                    src={project.image}
+                    alt={`Company ${project.id} logo`}
+                    width={180}
+                    height={100}
+                    className=" object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </a>
+            ))}
+          </Marquee>
+          {/* buttom Marquee */}
+          <Marquee
+            pauseOnHover={true}
+            gradient={false}
+            speed={50}
+            className="pb-4"
+          >
+            {projects3.map((project) => (
+              <a
+                key={project.id}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" mx-8 flex items-center justify-center"
+              >
+                <div className="w-full h-[140px] flex items-center justify-center">
+                  {" "}
+                  <Image
+                    src={project.image}
+                    alt={`Company ${project.id} logo`}
+                    width={180}
+                    height={100}
+                    className=" object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </a>
+            ))}
+          </Marquee>
+        </div>
+      </div>
     </div>
-  )
+  );
 }

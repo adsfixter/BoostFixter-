@@ -1,9 +1,9 @@
 
-import {Hero} from "./components/HomePage/Hero";
+
 import Spotlight from "./components/HomePage/Spotlight";
 import Services from "./components/HomePage/Services";
 import ConsultancyForm from "./components/HomePage/Consultation";
-// import BenefitsSection from "./components/HomePage/BenefitsSection";
+import BenefitsSection from "./components/HomePage/BenefitsSection";
 import LatestBlogsSection from "./components/HomePage/LatestBlogsSection";
 import ClientRatings from "./components/HomePage/ClientRatings";
 import SuccessTogether from "./components/HomePage/SuccessTogether";
@@ -13,25 +13,24 @@ import MemoriesMoments from "./components/HomePage/MemoriesMoments";
 import OurStory from "./components/HomePage/OurStory";
 import HomeReviw from "./components/HomePage/HomeReviw";
 import LatestProjects from "./components/HomePage/LatestProjects";
+import Hero from "./components/HomePage/Hero";
 
 export default function Home() {
   return (
-    <div className="space-y-36">
+    <div>
       <Hero></Hero>
       <Spotlight></Spotlight>
       {/* <VideoSection></VideoSection> */}
-      {/* <OurStory></OurStory> */}
       <OurStory></OurStory>
-      <HomeReviw></HomeReviw>
+       <HomeReviw></HomeReviw>
       <Services></Services>
       <ConsultancyForm></ConsultancyForm>
       <ClientRatings></ClientRatings>
       <BenefitsSection></BenefitsSection>
       <LatestProjects></LatestProjects>
-      {/* <BenefitsSection></BenefitsSection> */}
-      <SuccessTogether></SuccessTogether>
+      {/* <SuccessTogether></SuccessTogether> */}
       <ClientsSays></ClientsSays>
-      <MemoriesMoments></MemoriesMoments>
+      {/* <MemoriesMoments></MemoriesMoments> */}
       <LatestBlogsSection></LatestBlogsSection>
     </div>
   );

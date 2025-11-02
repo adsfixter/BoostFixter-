@@ -1,5 +1,4 @@
 import React from 'react'
-import ServicesCard from '../../HomePage/ServicesCard';
 const services = [
   {
     icon: "💻",
@@ -44,9 +43,7 @@ export default function AllServices() {
       <div className='py-20 px-6 bg-white'>
           <div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
               {/* Cards grid */}
-                      <div className="grid md:grid-cols-3 gap-6">
-                        {services.map((service, index) => <ServicesCard key={index} index={index} service={service}></ServicesCard>)}
-                      </div>
+                      
           </div>
     </div>
   )
