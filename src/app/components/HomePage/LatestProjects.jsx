@@ -2,7 +2,7 @@ import React from "react";
 import CustomButton from "../Share/CustomButton";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-const projects = [
+const projects1 = [
   {
     id: 1,
     image: "/project/project1.png",
@@ -23,6 +23,8 @@ const projects = [
     image: "/project/project4.png",
     url: "https://www.apexfootwearltd.com/",
   },
+];
+const projects2 = [
   {
     id: 5,
     image: "/project/project5.png",
@@ -43,6 +45,8 @@ const projects = [
     image: "/project/project8.png",
     url: "https://www.apexfootwearltd.com/",
   },
+];
+const projects3 = [
   {
     id: 9,
     image: "/project/project9.png",
@@ -58,11 +62,16 @@ const projects = [
     image: "/project/project11.png",
     url: "https://www.apexfootwearltd.com/",
   },
-];
+  {
+    id: 12,
+    image: "/project/project12.png",
+    url: "https://www.apexfootwearltd.com/",
+  },
+]
 
 export default function LatestProjects() {
   return (
-    <div className="px-6 bg-gray-100 py-40">
+    <div className=" bg-gray-100 py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* top div */}
         <div className="flex justify-between mb-12">
@@ -81,17 +90,17 @@ export default function LatestProjects() {
             speed={50}
             className="pb-4"
           >
-            {projects.map((project) => (
+            {projects1.map((project) => (
               <a
                 key={project.id}
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" mx-2 flex items-center justify-center" // 👈 gap কমানোর জন্য mx-8 → mx-4
+                className=" mx-8 flex items-center justify-center" 
               >
                 <div className="w-full h-[140px] flex items-center justify-center">
                   {" "}
-                  {/* 👈 image একটু বড় */}
+                 
                   <Image
                     src={project.image}
                     alt={`Company ${project.id} logo`}
@@ -103,7 +112,7 @@ export default function LatestProjects() {
               </a>
             ))}
           </Marquee>
-          {/* top Marquee */}
+          {/* midel Marquee */}
           <Marquee
             direction=""
             pauseOnHover={true}
@@ -111,17 +120,16 @@ export default function LatestProjects() {
             speed={50}
             className="pb-4"
           >
-            {projects.map((project) => (
+            {projects2.map((project) => (
               <a
                 key={project.id}
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" mx-2 flex items-center justify-center" // 👈 gap কমানোর জন্য mx-8 → mx-4
+                className=" mx-8 flex items-center justify-center" 
               >
                 <div className="w-full h-[140px] flex items-center justify-center">
                   {" "}
-                  {/* 👈 image একটু বড় */}
                   <Image
                     src={project.image}
                     alt={`Company ${project.id} logo`}
@@ -133,24 +141,23 @@ export default function LatestProjects() {
               </a>
             ))}
           </Marquee>
-          {/* top Marquee */}
+          {/* buttom Marquee */}
           <Marquee
             pauseOnHover={true}
             gradient={false}
             speed={50}
             className="pb-4"
           >
-            {projects.map((project) => (
+            {projects3.map((project) => (
               <a
                 key={project.id}
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" mx-2 flex items-center justify-center" // 👈 gap কমানোর জন্য mx-8 → mx-4
+                className=" mx-8 flex items-center justify-center"
               >
                 <div className="w-full h-[140px] flex items-center justify-center">
                   {" "}
-                  {/* 👈 image একটু বড় */}
                   <Image
                     src={project.image}
                     alt={`Company ${project.id} logo`}

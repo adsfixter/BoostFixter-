@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export default function ClientSay() {
   return (
-    <section className="px-6 py-40 bg-gray-100">
+    <section className=" py-20 bg-gray-50">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h1 className="text-accent text-3xl lg:text-6xl font-bold mb-10">
           What Our <br />
           Clients Say
         </h1>
         {/* main card */}
-        <div className="flex gap-4">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
           {/* 1 card */}
           <div className="space-y-4 mt-14">
             <div>

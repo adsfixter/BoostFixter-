@@ -30,7 +30,7 @@ const images = [
 
 export default function MemoriesMoments() {
   return (
-    <div className='py-20 px-6 bg-gray-50'>
+    <div className='py-16 px-6 bg-gray-50'>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-12">

@@ -13,134 +13,78 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50  bg-white/90 backdrop-blur">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex items-center justify-center rounded-lg">
-              <img
-                src="/BoostFixter_Website.png"
-                alt="BoostFixter Logo"
-                className="h-8 w-auto"
-              />
-            </div>
+            <img
+              src="/BoostFixter_Website.png"
+              alt="BoostFixter Logo"
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Menu */}
           <nav className="items-center hidden gap-8 md:flex">
-            {/* Home */}
-            <Link
-              href="/"
-              className="font-medium text-primary transition hover:text-accent"
-            >
-              Home
-            </Link>
-
-            {/* Advertising Dropdown */}
-            <div className="relative group">
-              <Link
-                href="/Advertising"
-                className="flex items-center gap-1 font-medium text-primary transition hover:text-accent"
-              >
-                Advertising <ChevronDown size={16} />
-              </Link>
-              <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
+            {[
+              { label: "Home", href: "/" },
+              {
+                label: "Advertising",
+                links: [
+                  { href: "/Advertising/Facebook", label: "Facebook" },
+                  { href: "/Advertising/TikTok", label: "TikTok" },
+                  { href: "/Advertising/Google", label: "Google" },
+                ],
+              },
+              {
+                label: "Services",
+                links: [
+                  { href: "/Services/DesignMedia", label: "Design Media" },
+                  { href: "/Services/webDevelopment", label: "Web Development" },
+                  { href: "/Services/CyberSecurity", label: "Cyber Security" },
+                ],
+              },
+              {
+                label: "About Us",
+                links: [
+                  { href: "/AboutUs/Portfolio", label: "Portfolio" },
+                  { href: "/AboutUs/OurTeam", label: "Our Team" },
+                  { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
+                ],
+              },
+              { label: "Blog", href: "/blog" },
+              { label: "Contact", href: "/Contact" },
+            ].map((item, index) =>
+              item.links ? (
+                <div key={index} className="relative group">
+                  <button className="flex items-center gap-1 font-medium text-primary transition hover:text-accent">
+                    {item.label} <ChevronDown size={16} />
+                  </button>
+                  <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
+                    {item.links.map((sub, i) => (
+                      <Link
+                        key={i}
+                        href={sub.href}
+                        className={`block px-4 py-2 text-primary transition hover:text-accent hover:bg-gray-50 ${
+                          i !== 0 ? "border-t" : ""
+                        }`}
+                      >
+                        {sub.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
                 <Link
-                  href="/Advertising/Facebook"
-                  className="block px-4 py-2 text-primary transition hover:text-accent hover:bg-gray-50"
+                  key={index}
+                  href={item.href}
+                  className="font-medium text-primary transition hover:text-accent"
                 >
-                  Facebook
+                  {item.label}
                 </Link>
-                <Link
-                  href="/Advertising/TikTok"
-                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
-                >
-                  TikTok
-                </Link>
-                <Link
-                  href="/Advertising/Google"
-                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
-                >
-                  Google
-                </Link>
-              </div>
-            </div>
-
-            {/* Services Dropdown */}
-            <div className="relative group">
-              <Link
-                href="/Services"
-                className="flex items-center gap-1 font-medium text-primary transition hover:text-accent"
-              >
-                Services <ChevronDown size={16} />
-              </Link>
-              <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
-                <Link
-                  href="/Services/DesignMedia"
-                  className="block px-4 py-2 text-primary transition hover:text-accent hover:bg-gray-50"
-                >
-                  Design Media
-                </Link>
-                <Link
-                  href="/Services/webDevelopment"
-                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
-                >
-                  Web Development
-                </Link>
-                <Link
-                  href="/Services/CyberSecurity"
-                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
-                >
-                  Cyber Security
-                </Link>
-              </div>
-            </div>
-
-            {/* About Us Dropdown */}
-            <div className="relative group">
-              <Link
-                href="/AboutUs"
-                className="flex items-center gap-1 font-medium text-primary transition hover:text-accent"
-              >
-                About Us <ChevronDown size={16} />
-              </Link>
-              <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
-                <Link
-                  href="/AboutUs/Portfolio"
-                  className="block px-4 py-2 text-primary transition hover:text-accent hover:bg-gray-50"
-                >
-                  Portfolio
-                </Link>
-                <Link
-                  href="/AboutUs/OurTeam"
-                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
-                >
-                  Our Team
-                </Link>
-                <Link
-                  href="/AboutUs/PrivacyPolicy"
-                  className="block px-4 py-2 border-t text-primary transition hover:text-accent hover:bg-gray-50"
-                >
-                  Privacy Policy
-                </Link>
-              </div>
-            </div>
-
-            {/* Blog & Contact */}
-            <Link
-              href="/blog"
-              className="font-medium text-primary transition hover:text-accent"
-            >
-              Blog
-            </Link>
-
-            <Link
-              href="/Contact"
-              className="font-medium text-primary transition hover:text-accent"
-            >
-              Contact
-            </Link>
+              )
+            )}
           </nav>
 
           {/* Mobile Toggle */}
@@ -151,6 +95,85 @@ export default function Navbar() {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden border-t border-gray-200 bg-white shadow-sm py-4">
+            {[
+              { label: "Home", href: "/" },
+              {
+                label: "Advertising",
+                name: "advertising",
+                links: [
+                  { href: "/Advertising/Facebook", label: "Facebook" },
+                  { href: "/Advertising/TikTok", label: "TikTok" },
+                  { href: "/Advertising/Google", label: "Google" },
+                ],
+              },
+              {
+                label: "Services",
+                name: "services",
+                links: [
+                  { href: "/Services/DesignMedia", label: "Design Media" },
+                  { href: "/Services/webDevelopment", label: "Web Development" },
+                  { href: "/Services/CyberSecurity", label: "Cyber Security" },
+                ],
+              },
+              {
+                label: "About Us",
+                name: "about",
+                links: [
+                  { href: "/AboutUs/Portfolio", label: "Portfolio" },
+                  { href: "/AboutUs/OurTeam", label: "Our Team" },
+                  { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
+                ],
+              },
+              { label: "Blog", href: "/blog" },
+              { label: "Contact", href: "/Contact" },
+            ].map((item, index) => (
+              <div key={index} className="px-4">
+                {item.links ? (
+                  <>
+                    <button
+                      onClick={() => toggleDropdown(item.name)}
+                      className="flex justify-between items-center w-full py-2 font-medium text-primary hover:text-accent"
+                    >
+                      {item.label}
+                      <ChevronDown
+                        size={16}
+                        className={`transition-transform ${
+                          openDropdown === item.name ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {openDropdown === item.name && (
+                      <div className="pl-4">
+                        {item.links.map((sub, i) => (
+                          <Link
+                            key={i}
+                            href={sub.href}
+                            className="block py-1 text-gray-600 hover:text-accent"
+                            onClick={() => setIsOpen(false)}
+                          >
+                            {sub.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className="block py-2 font-medium text-primary hover:text-accent"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </header>
   );

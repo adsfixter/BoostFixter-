@@ -39,7 +39,7 @@ const services = [
 
 function Services() {
   return (
-    <section className="px-6 bg-gray-50 py-40">
+    <section className=" bg-gray-50 py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Top Header */}
         <div className="flex justify-between items-center mb-16">
