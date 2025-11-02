@@ -4,22 +4,21 @@ import {
   Instagram,
   Youtube,
   Download,
-  ArrowRight,
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import CustomButton from "./CustomButton";
 
 export default function Footer() {
   return (
     <div className="flex flex-col">
-      <footer className=" bg-[#F8F8F8] pt-20 pb-4">
+      <footer className="bg-[#F8F8F8] pt-5 pb-4">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-12 lg:gap-12">
+          {/* ===== Grid Section ===== */}
+          <div className="grid grid-cols-2 gap-8 mb-4 md:grid-cols-4 lg:grid-cols-12 lg:gap-12">
             {/* Brand Section */}
-            <div className="lg:col-span-4">
+            <div className="col-span-2 lg:col-span-4 md:col-span-2">
               <Link href="/" className="flex items-center gap-2">
-                <div className="flex items-center mb-4 runded-lg jbustify-center m">
+                <div className="flex items-center justify-center mb-4 rounded-lg">
                   <img
                     src="/BoostFixter_Website.png"
                     alt="BoostFixter Logo"
@@ -27,51 +26,45 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <p className="mb-6 text-md leading-relaxed text-[#013F32]">
+              <p className="mb-4 text-md leading-relaxed text-[#013F32]">
                 Global ad solutions built for growth – fast, secure, and
                 performance-driven.
               </p>
-              <div className="w-1/2">
+              <div className="max-w-2/3">
                 <CustomButton text={"Contact Us"} link={"#"}></CustomButton>
               </div>
             </div>
 
             {/* Quick Links */}
-            <div className="lg:col-span-3">
-              <h3 className="mb-4  text-lg md:text-xl font-semibold text-[#013F32]">
+            <div className="col-span-1 lg:col-span-3 md:col-span-1">
+              <h3 className="text-lg md:text-xl font-semibold text-[#013F32]">
                 Quick Links
               </h3>
-              <ul className="space-y-3">
-                {[
-                  "Home",
-                  "Our Services",
-                  "About Us",
-                  "Portfolio",
-                  "Our Team",
-                  "Career",
-                  "Blog",
-                ].map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#021c17]"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
+              <ul className="space-y-1">
+                {["About Us", "Portfolio", "Our Team", "Career", "Blog"].map(
+                  (link) => (
+                    <li key={link}>
+                      <a
+                        href="#"
+                        className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#021c17]"
+                      >
+                        {link}
+                      </a>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
 
             {/* Contacts */}
-            <div className="lg:col-span-5">
+            <div className="col-span-1 lg:col-span-5 md:col-span-1">
               <h3 className="mb-4 text-lg md:text-xl font-semibold text-[#013F32]">
                 Contacts
               </h3>
-              <div className="space-y-4">
+              <div>
                 <div className="flex items-start gap-3">
                   <svg
-                    className="w-8 h-8  text-[#013F32] mt-0.5 flex-shrink-0"
+                    className="w-8 h-8 text-[#013F32] mt-0.5 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -84,7 +77,7 @@ export default function Footer() {
                     />
                   </svg>
                   <a
-                    href="tel:+13072893060"
+                    href="tel:+8801953825344"
                     className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#042720]"
                   >
                     +8801953-825344
@@ -92,7 +85,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-start gap-3">
                   <svg
-                    className="w-8 h-8  text-[#013F32] mt-0.5 flex-shrink-0"
+                    className="w-8 h-8 text-[#013F32] mt-0.5 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -105,7 +98,7 @@ export default function Footer() {
                     />
                   </svg>
                   <a
-                    href="mailto:hello@boostfixter.com"
+                    href="mailto:boostfixter@gmail.com"
                     className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#031d17]"
                   >
                     boostfixter@gmail.com
@@ -113,7 +106,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-start gap-3">
                   <svg
-                    className="w-8 h-8  text-[#013F32] mt-0.5 flex-shrink-0"
+                    className="w-8 h-8 text-[#013F32] mt-0.5 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -140,9 +133,10 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Bottom Section */}
-          <div className="pt-8">
-            <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+          {/* ===== Bottom Section ===== */}
+          <div className="space-y-2">
+            {/* social + deck inline even on mobile */}
+            <div className="flex flex-row flex-wrap items-center justify-between gap-4">
               {/* Social Icons */}
               <div className="flex items-center gap-4">
                 <a
@@ -161,19 +155,7 @@ export default function Footer() {
                   href="#"
                   className="flex items-center justify-center w-10 h-10 transition-colors bg-[#013F32] rounded-full hover:bg-green-700"
                 >
-                  <Instagram className="w-5 h-5 text-white " />
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center justify-center w-10 h-10 transition-colors bg-[#013F32] rounded-full hover:bg-green-700"
-                >
-                  <svg
-                    className="w-5 h-5 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
+                  <Instagram className="w-5 h-5 text-white" />
                 </a>
                 <a
                   href="#"
@@ -186,13 +168,13 @@ export default function Footer() {
               {/* Company Deck Download */}
               <a
                 href="#"
-                className="flex items-center gap-3 px-6 py-3 transition-colors text-primary"
+                className="flex items-center gap-3 px-6 transition-colors text-primary"
               >
-                <div className="flex items-center justify-center text-white p-3 rounded-full bg-[#013F32]">
+                <div className="flex items-center justify-center text-white px-3 rounded-full bg-[#013F32]">
                   <Download size={28} />
                 </div>
                 <div className="text-left">
-                  <div className="text-sm font-semibold md:text-md lg:text-lg">
+                  <div className="text-sm font-semibold md:text-md lg:text-md">
                     Company Deck
                   </div>
                   <div className="text-sm opacity-90">PDF, 3 MB</div>
@@ -200,8 +182,8 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Copyright and Links */}
-            <div className="flex flex-col items-center justify-between gap-4 mt-8 text-sm text-[#013F32] md:flex-row">
+            {/* Copyright */}
+            <div className="flex flex-col items-center justify-between gap-4 text-sm text-[#013F32] md:flex-row">
               <p>© 2025 BoostFixter. All rights reserved.</p>
               <div className="flex items-center gap-6">
                 <a href="#" className="transition-colors hover:text-green-700">
