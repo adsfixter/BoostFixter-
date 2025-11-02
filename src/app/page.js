@@ -21,8 +21,8 @@ export default function Home() {
       <Spotlight></Spotlight>
       {/* <VideoSection></VideoSection> */}
       <OurStory></OurStory>
+       <HomeReviw></HomeReviw>
       <Services></Services>
-      <HomeReviw></HomeReviw>
       <ConsultancyForm></ConsultancyForm>
       <ClientRatings></ClientRatings>
       <BenefitsSection></BenefitsSection>

@@ -37,7 +37,7 @@ const images = [
 
 export default function SuccessTogether() {
   return (
-    <div className="py-20 px-6 bg-white">
+    <div className="py-40 px-6 bg-gray-50">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* title */}
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-8">
