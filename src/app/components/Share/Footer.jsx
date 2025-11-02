@@ -10,11 +10,11 @@ import Image from "next/image";
 import Link from "next/link";
 import CustomButton from "./CustomButton";
 
-export default function Home() {
+export default function Footer() {
   return (
     <div className="flex flex-col">
-      <footer className=" bg-[#F8F8F8]">
-        <div className="px-6 py-12 mx-auto max-w-7xl">
+      <footer className=" bg-[#F8F8F8] pt-20 pb-4">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-12 lg:gap-12">
             {/* Brand Section */}
             <div className="lg:col-span-4">
@@ -147,7 +147,7 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <a
                   href="#"
-                  className="flex items-center justify-center w-10 h-10 transition-colorsbg-[#013F32] rounded-full hover:bg-green-700"
+                  className="flex items-center justify-center w-10 h-10 transition-colors bg-[#013F32] rounded-full hover:bg-green-700"
                 >
                   <Facebook className="w-5 h-5 text-white" />
                 </a>
