@@ -4,16 +4,16 @@ import CustomButton from "../Share/CustomButton";
 
 export default function OurStory() {
   return (
-    <div className="px-6">
+    <div className="px-6 py-40 bg-[#F9FAFC]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-4 ">
           {/* left site */}
           <div className="space-y-5">
-            <h1 className="text-3xl lg:text-5xl text-primary">Our Story</h1>
+            <h1 className="text-3xl text-primary">Our Story</h1>
           </div>
           {/* right site */}
           <div className="space-y-9">
-            <h1 className="text-3xl lg:text-5xl font-extrabold text-primary">
+            <h1 className="text-3xl lg:text-5xl font-bold text-primary">
               We're a Results-Driven Digital Marketing Agency
             </h1>
             <p className="text-xl text-accent">

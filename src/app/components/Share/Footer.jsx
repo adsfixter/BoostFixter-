@@ -12,15 +12,19 @@ import CustomButton from "./CustomButton";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen my-10">
-      <footer className="border-t bg-[#F8F8F8]">
+    <div className="flex flex-col">
+      <footer className=" bg-[#F8F8F8]">
         <div className="px-6 py-12 mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-12 lg:gap-12">
             {/* Brand Section */}
             <div className="lg:col-span-4">
               <Link href="/" className="flex items-center gap-2">
                 <div className="flex items-center mb-4 runded-lg jbustify-center m">
-                  <img src="/BoostFixter_Website.png" alt="BoostFixter Logo" className="w-3/4" />
+                  <img
+                    src="/BoostFixter_Website.png"
+                    alt="BoostFixter Logo"
+                    className="w-3/4"
+                  />
                 </div>
               </Link>
               <p className="mb-6 text-md leading-relaxed text-[#013F32]">
@@ -28,7 +32,7 @@ export default function Home() {
                 performance-driven.
               </p>
               <div className="w-1/2">
-                <CustomButton text={"Contact Us"} link={"#"} ></CustomButton>
+                <CustomButton text={"Contact Us"} link={"#"}></CustomButton>
               </div>
             </div>
 
@@ -83,7 +87,7 @@ export default function Home() {
                     href="tel:+13072893060"
                     className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#042720]"
                   >
-                    +1307-289-3060
+                    +8801953-825344
                   </a>
                 </div>
                 <div className="flex items-start gap-3">
@@ -104,7 +108,7 @@ export default function Home() {
                     href="mailto:hello@boostfixter.com"
                     className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#031d17]"
                   >
-                    hello@boostfixter.com
+                    boostfixter@gmail.com
                   </a>
                 </div>
                 <div className="flex items-start gap-3">
@@ -127,7 +131,7 @@ export default function Home() {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <p className="text-md font-semibold text-[#013F32] text-[#013F32]">
+                  <p className="text-md font-semibold text-[#013F32]">
                     Rafiq Place, Level 5C, Opp. BM College Mosque Gate Barisal,
                     Barisal, Bangladesh.
                   </p>
@@ -182,13 +186,15 @@ export default function Home() {
               {/* Company Deck Download */}
               <a
                 href="#"
-                className="flex items-center gap-3 px-6 py-3 transition-colors  text-[#013F32] hover:bg-green-800"
+                className="flex items-center gap-3 px-6 py-3 transition-colors text-primary"
               >
                 <div className="flex items-center justify-center text-white p-3 rounded-full bg-[#013F32]">
-                  <Download size={28}/>
+                  <Download size={28} />
                 </div>
                 <div className="text-left">
-                  <div className="text-sm font-semibold md:text-md lg:text-lg">Company Deck</div>
+                  <div className="text-sm font-semibold md:text-md lg:text-lg">
+                    Company Deck
+                  </div>
                   <div className="text-sm opacity-90">PDF, 3 MB</div>
                 </div>
               </a>
