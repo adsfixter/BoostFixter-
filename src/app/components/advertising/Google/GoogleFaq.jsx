@@ -92,6 +92,8 @@ export default function GoogleFaq() {
 
   return (
     <main className="px-6 py-20 bg-white">
+    
+   
    
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h1 className="mb-12 text-4xl font-bold text-center text-gray-900">Media Production FAQs</h1>
