@@ -15,14 +15,14 @@ export default function Hero() {
         <div className="grid items-center gap-10 md:grid-cols-2">
           {/* LEFT CONTENT */}
           <div className="z-10 space-y-5 text-center md:text-left mb-14">
-            <h1 className="text-3xl font-bold leading-tight text-primary sm:text-4xl md:text-5xl lg:text-6xl">
-              Leading AI-Powered Global{" "}
-              <span className="text-accent">Digital Growth </span>
+            <h1 className="text-2xl font-bold text-primary sm:text-4xl md:text-5xl lg:text-6xl">
+              Leading AI-Powered Global
+              Digital Growth
               Marketing Agency
             </h1>
 
-            <p className="text-base font-medium text-accent sm:text-lg md:text-xl">
-              Bangladesh's top digital marketing agency. Innovative strategies
+            <p className="text-base font-medium text-accent sm:text-lg md:text-2xl">
+              Bangladesh's top digital marketing agency. Innovative <br/> strategies
               drive online success and business growth.
             </p>
 
@@ -33,10 +33,21 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* <div className="relative flex justify-center items-center">
+            <video
+              src="/HomePage/animationHero.webm"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-contain"
+            ></video>
+          </div> */}
+
           {/* RIGHT CONTENT */}
           <div className="relative flex items-center justify-center md:-mt-10 lg:-mt-10 mt-12 ">
-            {/* Image 1 */}
-            <motion.div
+          {/* Image 1 */}
+          <motion.div
               animate={{
                 y: [0, -15, 0],
                 x: [0, 10, 0],
@@ -57,8 +68,8 @@ export default function Hero() {
               />
             </motion.div>
 
-            {/* Image 2 */}
-            <motion.div
+          {/* Image 2 */}
+          <motion.div
               animate={{
                 y: [0, 20, 0],
                 x: [0, -10, 0],

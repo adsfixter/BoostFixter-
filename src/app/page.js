@@ -32,7 +32,6 @@ export default function Home() {
        <LatestBlogsSection></LatestBlogsSection>
       {/* <SuccessTogether></SuccessTogether> */}
       {/* <MemoriesMoments></MemoriesMoments> */}
-     
     </div>
   );
 }
