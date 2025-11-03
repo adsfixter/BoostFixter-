@@ -28,10 +28,10 @@ const projects = [
 
 export default function LatestProjects() {
   return (
-    <div className=" bg-white py-16 ">
+    <div className="bg-[#F8F8F8] pb-20 pt-10">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* top div */}
-        <div className="flex justify-between items-center mb-12">
+        <div className="flex justify-between items-center mb-10">
           <h1 className="text-accent font-semibold text-3xl lg:text-5xl">
             Our Latest Projects <br />
             We Have Done!
