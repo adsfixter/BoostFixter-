@@ -16,7 +16,7 @@ export default function AboutUs() {
 
     
       {/* Hero Section */}
-      <section
+      {/* <section
         className="relative bg-cover bg-center bg-no-repeat h-[40vh] flex items-center my-10 justify-center"
         style={{
           backgroundImage:
@@ -41,17 +41,17 @@ export default function AboutUs() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       <AboutHomePage></AboutHomePage>
       {/* <FeaturesSection></FeaturesSection> */}
-      <Reviews></Reviews>
-      <AboutSection></AboutSection>
-      <TeamShowcaseSection></TeamShowcaseSection>
-      <MarketingServices></MarketingServices>
+      {/* <Reviews></Reviews> */}
+      {/* <AboutSection></AboutSection> */}
+      {/* <TeamShowcaseSection></TeamShowcaseSection> */}
+      {/* <MarketingServices></MarketingServices> */}
       {/* <CoreValuesTree></CoreValuesTree> */}
-      <CompanyHistory></CompanyHistory>
+      {/* <CompanyHistory></CompanyHistory> */}
     </div>
   );
 }
