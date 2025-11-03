@@ -12,6 +12,12 @@ import {
 import Link from "next/link";
 import CustomButton from "./CustomButton";
 import AnimatedButton from "./AnimatedButton";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -42,7 +48,7 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div className="col-span-1 lg:col-span-3 md:col-span-1">
-              <h3 className="text-lg md:text-xl font-semibold text-[#013F32]">
+              <h3 className="text-lg md:text-xl mb-3 font-semibold text-[#013F32]">
                 Quick Links
               </h3>
               <ul className="space-y-1">
@@ -51,7 +57,7 @@ export default function Footer() {
                     <li key={link}>
                       <a
                         href="#"
-                        className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#021c17]"
+                        className="text-md font-medium text-[#013F32] transition-colors hover:text-[#021c17]"
                       >
                         {link}
                       </a>
@@ -63,10 +69,10 @@ export default function Footer() {
 
             {/* Contacts */}
             <div className="col-span-1 lg:col-span-5 md:col-span-1">
-              <h3 className="mb-4 text-lg md:text-xl font-semibold text-[#013F32]">
+              <h3 className="mb-3 text-lg md:text-xl font-semibold text-[#013F32]">
                 Contacts
               </h3>
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {/* Phone */}
                 <div className="flex items-center gap-3">
                   <Phone className="w-6 h-6 text-[#013F32] mt-1 flex-shrink-0" />
@@ -92,9 +98,9 @@ export default function Footer() {
                 {/* Address */}
                 <div className="flex items-start gap-3">
                   <MapPin className="w-6 h-6 text-[#013F32] mt-1 flex-shrink-0" />
-                  <p className="text-md font-semibold text-[#013F32]">
-                    Rafiq Place, Level 5C, Opposite. <br/> BM College Mosque Gate, Barisal,
-                    Bangladesh.
+                  <p className="text-md font-medium text-[#013F32]">
+                    Rafiq Place, Level 5C, Opposite. <br /> BM College Mosque
+                    Gate, Barisal, Bangladesh.
                   </p>
                 </div>
               </div>
@@ -108,40 +114,39 @@ export default function Footer() {
               <div className="flex items-center gap-4">
                 <a
                   href="#"
-                  className="flex items-center justify-center w-10 h-10 transition-colors bg-[#013F32] rounded-full hover:bg-green-700"
+                  className="flex items-center justify-center w-8 h-8 bg-[#013F32] rounded-full hover:bg-green-700"
                 >
-                  <Facebook className="w-5 h-5 text-white" />
+                  <FaFacebookF className="text-secondary w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  className="flex items-center justify-center w-10 h-10 transition-colors bg-[#013F32] rounded-full hover:bg-green-700"
+                  className="flex items-center justify-center w-8 h-8 bg-[#013F32] rounded-full hover:bg-green-700"
                 >
-                  <Linkedin className="w-5 h-5 text-white" />
+                  <FaLinkedinIn className="text-secondary w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  className="flex items-center justify-center w-10 h-10 transition-colors bg-[#013F32] rounded-full hover:bg-green-700"
+                  className="flex items-center justify-center w-8 h-8 bg-[#013F32] rounded-full hover:bg-green-700"
                 >
-                  <Instagram className="w-5 h-5 text-white" />
+                  <FaInstagram className="text-secondary w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  className="flex items-center justify-center w-10 h-10 transition-colors bg-[#013F32] rounded-full hover:bg-green-700"
+                  className="flex items-center justify-center w-8 h-8 bg-[#013F32] rounded-full hover:bg-green-700"
                 >
-                  <Youtube className="w-5 h-5 text-white" />
+                  <FaYoutube className="text-secondary w-5 h-5" />
                 </a>
               </div>
-
               {/* Company Deck Download */}
               <a
                 href="#"
-                className="flex items-start gap-3 px-6 transition-colors text-primary"
+                className="flex items-center gap-3 transition-colors text-primary mb-4"
               >
-                <div className="flex items-start justify-start text-white p-2 rounded-full bg-[#013F32]">
-                  <Download size={26} />
+                <div className="flex items-center justify-center text-secondary p-2 rounded-full bg-[#013F32]">
+                  <Download size={36} />
                 </div>
-                <div className="text-left">
-                  <div className="text-sm font-semibold md:text-md lg:text-md">
+                <div className="text-start">
+                  <div className="text-sm font-semibold md:text-md lg:text-lg">
                     Company Deck
                   </div>
                   <div className="text-xs opacity-90">PDF, 3 MB</div>
