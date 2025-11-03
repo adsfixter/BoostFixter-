@@ -62,7 +62,7 @@ export default function Footer() {
                 Contacts
               </h3>
               <div>
-                <div className="flex items-center justify-center gap-3 text-sm md:text-md font-semibold text-[#013F32]">
+                <div className="flex items-start gap-3">
                   <svg
                     className="w-8 h-8 text-[#013F32] mt-0.5 flex-shrink-0"
                     fill="none"
@@ -83,7 +83,7 @@ export default function Footer() {
                     +8801953-825344
                   </a>
                 </div>
-                <div className="flex items-center justify-center gap-3 text-sm md:text-md font-semibold text-[#013F32]">
+                <div className="flex items-start gap-3">
                   <svg
                     className="w-8 h-8 text-[#013F32] mt-0.5 flex-shrink-0"
                     fill="none"
@@ -99,12 +99,12 @@ export default function Footer() {
                   </svg>
                   <a
                     href="mailto:boostfixter@gmail.com"
-                    className=" transition-colors hover:text-[#031d17]"
+                    className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#031d17]"
                   >
                     boostfixter@gmail.com
                   </a>
                 </div>
-                <div className="flex items-start justify-center gap-3 text-sm md:text-md font-semibold text-[#013F32]">
+                <div className="flex items-start gap-3">
                   <svg
                     className="w-8 h-8 text-[#013F32] mt-0.5 flex-shrink-0"
                     fill="none"
@@ -124,7 +124,7 @@ export default function Footer() {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <p className="text-sm md:text-md font-semibold text-[#013F32]">
+                  <p className="text-md font-semibold text-[#013F32]">
                     Rafiq Place, Level 5C, Opp. BM College Mosque Gate Barisal,
                     Barisal, Bangladesh.
                   </p>
