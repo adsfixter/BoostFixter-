@@ -11,7 +11,7 @@ export default function ClientSay() {
       image: "/HomePage/farzana.png",
       feedback:
         "In today's digital age, apps have become an integral part of our daily lives. From communication and entertainment to productivity and learning, there's an app for just about everything.",
-      marginTop: "mt-14",
+      marginTop: "mt-0",
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export default function ClientSay() {
       image: "/HomePage/kazi.png",
       feedback:
         "In today's digital age, apps have become an integral part of our daily lives. From communication and entertainment to productivity and learning, there's an app for just about everything.",
-      marginTop: "mt-14",
+      marginTop: "mt-0",
     },
   ];
 
@@ -37,7 +37,6 @@ export default function ClientSay() {
     <section className="py-20 bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h1 className="text-accent text-3xl lg:text-6xl font-bold mb-10">
-          What Our <br />
           Clients Say
         </h1>
 
