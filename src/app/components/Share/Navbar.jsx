@@ -12,55 +12,66 @@ export default function Navbar() {
     setOpenDropdown(openDropdown === name ? null : name);
   };
 
+  const navItems = [
+    { label: "Home", href: "/" },
+    {
+      label: "Advertising",
+      href: "/Advertising",
+      name: "advertising",
+      links: [
+        { href: "/Advertising/Facebook", label: "Facebook" },
+        { href: "/Advertising/TikTok", label: "TikTok" },
+        { href: "/Advertising/Google", label: "Google" },
+      ],
+    },
+    {
+      label: "Services",
+      href: "/Services",
+      name: "services",
+      links: [
+        { href: "/Services/DesignMedia", label: "Design Media" },
+        { href: "/Services/webDevelopment", label: "Web Development" },
+        { href: "/Services/CyberSecurity", label: "Cyber Security" },
+      ],
+    },
+    {
+      label: "About Us",
+      href: "/AboutUs",
+      name: "about",
+      links: [
+        { href: "/AboutUs/Portfolio", label: "Portfolio" },
+        { href: "/AboutUs/OurTeam", label: "Our Team" },
+        { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
+      ],
+    },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact", href: "/Contact" },
+  ];
+
   return (
-    <header className="sticky top-0 z-50  bg-white/90 backdrop-blur">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <img
               src="/BoostFixter_Website.png"
               alt="BoostFixter Logo"
-              className="h-8 w-auto"
+              className="w-auto h-8"
             />
           </Link>
 
           {/* Desktop Menu */}
           <nav className="items-center hidden gap-8 md:flex">
-            {[
-              { label: "Home", href: "/" },
-              {
-                label: "Advertising",
-                links: [
-                  { href: "/Advertising/Facebook", label: "Facebook" },
-                  { href: "/Advertising/TikTok", label: "TikTok" },
-                  { href: "/Advertising/Google", label: "Google" },
-                ],
-              },
-              {
-                label: "Services",
-                links: [
-                  { href: "/Services/DesignMedia", label: "Design Media" },
-                  { href: "/Services/webDevelopment", label: "Web Development" },
-                  { href: "/Services/CyberSecurity", label: "Cyber Security" },
-                ],
-              },
-              {
-                label: "About Us",
-                links: [
-                  { href: "/AboutUs/Portfolio", label: "Portfolio" },
-                  { href: "/AboutUs/OurTeam", label: "Our Team" },
-                  { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
-                ],
-              },
-              { label: "Blog", href: "/blog" },
-              { label: "Contact", href: "/Contact" },
-            ].map((item, index) =>
+            {navItems.map((item, index) =>
               item.links ? (
                 <div key={index} className="relative group">
-                  <button className="flex items-center gap-1 font-medium text-primary transition hover:text-accent">
+                  <Link
+                    href={item.href}
+                    className="flex items-center gap-1 font-medium transition text-primary hover:text-accent"
+                  >
                     {item.label} <ChevronDown size={16} />
-                  </button>
+                  </Link>
                   <div className="absolute left-0 invisible mt-2 transition-all duration-200 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 w-52 group-hover:opacity-100 group-hover:visible">
                     {item.links.map((sub, i) => (
                       <Link
@@ -79,7 +90,7 @@ export default function Navbar() {
                 <Link
                   key={index}
                   href={item.href}
-                  className="font-medium text-primary transition hover:text-accent"
+                  className="font-medium transition text-primary hover:text-accent"
                 >
                   {item.label}
                 </Link>
@@ -98,47 +109,22 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden border-t border-gray-200 bg-white shadow-sm py-4">
-            {[
-              { label: "Home", href: "/" },
-              {
-                label: "Advertising",
-                name: "advertising",
-                links: [
-                  { href: "/Advertising/Facebook", label: "Facebook" },
-                  { href: "/Advertising/TikTok", label: "TikTok" },
-                  { href: "/Advertising/Google", label: "Google" },
-                ],
-              },
-              {
-                label: "Services",
-                name: "services",
-                links: [
-                  { href: "/Services/DesignMedia", label: "Design Media" },
-                  { href: "/Services/webDevelopment", label: "Web Development" },
-                  { href: "/Services/CyberSecurity", label: "Cyber Security" },
-                ],
-              },
-              {
-                label: "About Us",
-                name: "about",
-                links: [
-                  { href: "/AboutUs/Portfolio", label: "Portfolio" },
-                  { href: "/AboutUs/OurTeam", label: "Our Team" },
-                  { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
-                ],
-              },
-              { label: "Blog", href: "/blog" },
-              { label: "Contact", href: "/Contact" },
-            ].map((item, index) => (
+          <div className="py-4 bg-white border-t border-gray-200 shadow-sm md:hidden">
+            {navItems.map((item, index) => (
               <div key={index} className="px-4">
                 {item.links ? (
                   <>
                     <button
                       onClick={() => toggleDropdown(item.name)}
-                      className="flex justify-between items-center w-full py-2 font-medium text-primary hover:text-accent"
+                      className="flex items-center justify-between w-full py-2 font-medium text-primary hover:text-accent"
                     >
-                      {item.label}
+                      <Link
+                        href={item.href}
+                        onClick={() => setIsOpen(false)}
+                        className="flex-1 text-left"
+                      >
+                        {item.label}
+                      </Link>
                       <ChevronDown
                         size={16}
                         className={`transition-transform ${

@@ -1,148 +1,109 @@
+"use client";
 import {
   Facebook,
   Linkedin,
   Instagram,
   Youtube,
   Download,
-  ArrowRight,
+  Phone,
+  Mail,
+  MapPin,
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import CustomButton from "./CustomButton";
+import AnimatedButton from "./AnimatedButton";
 
 export default function Footer() {
   return (
     <div className="flex flex-col">
-      <footer className=" bg-[#F8F8F8] pt-20 pb-4">
+      <footer className="bg-[#F8F8F8] pt-10 pb-4">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-12 lg:gap-12">
+          {/* ===== Grid Section ===== */}
+          <div className="grid grid-cols-2 gap-8 mb-4 md:grid-cols-4 lg:grid-cols-12 lg:gap-12">
             {/* Brand Section */}
-            <div className="lg:col-span-4">
+            <div className="col-span-2 lg:col-span-4 md:col-span-2">
               <Link href="/" className="flex items-center gap-2">
-                <div className="flex items-center mb-4 runded-lg jbustify-center m">
+                <div className="flex items-center justify-center mb-4 rounded-lg">
                   <img
                     src="/BoostFixter_Website.png"
                     alt="BoostFixter Logo"
-                    className="w-3/4"
+                    className=""
                   />
                 </div>
               </Link>
-              <p className="mb-6 text-md leading-relaxed text-[#013F32]">
+              <p className="mb-4 text-md leading-relaxed text-[#013F32]">
                 Global ad solutions built for growth – fast, secure, and
                 performance-driven.
               </p>
-              <div className="w-1/2">
-                <CustomButton text={"Contact Us"} link={"#"}></CustomButton>
+              <div className="max-w-2/3">
+                <AnimatedButton text="Contact Us"></AnimatedButton>
               </div>
             </div>
 
             {/* Quick Links */}
-            <div className="lg:col-span-3">
-              <h3 className="mb-4  text-lg md:text-xl font-semibold text-[#013F32]">
+            <div className="col-span-1 lg:col-span-3 md:col-span-1">
+              <h3 className="text-lg md:text-xl font-semibold text-[#013F32]">
                 Quick Links
               </h3>
-              <ul className="space-y-3">
-                {[
-                  "Home",
-                  "Our Services",
-                  "About Us",
-                  "Portfolio",
-                  "Our Team",
-                  "Career",
-                  "Blog",
-                ].map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#021c17]"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
+              <ul className="space-y-1">
+                {["About Us", "Portfolio", "Our Team", "Career", "Blog"].map(
+                  (link) => (
+                    <li key={link}>
+                      <a
+                        href="#"
+                        className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#021c17]"
+                      >
+                        {link}
+                      </a>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
 
             {/* Contacts */}
-            <div className="lg:col-span-5">
+            <div className="col-span-1 lg:col-span-5 md:col-span-1">
               <h3 className="mb-4 text-lg md:text-xl font-semibold text-[#013F32]">
                 Contacts
               </h3>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <svg
-                    className="w-8 h-8  text-[#013F32] mt-0.5 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
+              <div className="space-y-3">
+                {/* Phone */}
+                <div className="flex items-center gap-3">
+                  <Phone className="w-6 h-6 text-[#013F32] mt-1 flex-shrink-0" />
                   <a
-                    href="tel:+13072893060"
+                    href="tel:+8801953825344"
                     className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#042720]"
                   >
                     +8801953-825344
                   </a>
                 </div>
-                <div className="flex items-start gap-3">
-                  <svg
-                    className="w-8 h-8  text-[#013F32] mt-0.5 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
+
+                {/* Email */}
+                <div className="flex gap-3 items-center">
+                  <Mail className="w-6 h-6 text-[#013F32] mt-1 flex-shrink-0" />
                   <a
-                    href="mailto:hello@boostfixter.com"
+                    href="mailto:boostfixter@gmail.com"
                     className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#031d17]"
                   >
                     boostfixter@gmail.com
                   </a>
                 </div>
+
+                {/* Address */}
                 <div className="flex items-start gap-3">
-                  <svg
-                    className="w-8 h-8  text-[#013F32] mt-0.5 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
+                  <MapPin className="w-6 h-6 text-[#013F32] mt-1 flex-shrink-0" />
                   <p className="text-md font-semibold text-[#013F32]">
-                    Rafiq Place, Level 5C, Opp. BM College Mosque Gate Barisal,
-                    Barisal, Bangladesh.
+                    Rafiq Place, Level 5C, Opposite. <br/> BM College Mosque Gate, Barisal,
+                    Bangladesh.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Bottom Section */}
-          <div className="pt-8">
-            <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+          {/* ===== Bottom Section ===== */}
+          <div className="space-y-2 mt-10">
+            <div className="flex flex-row-reverse flex-wrap items-center justify-between gap-4">
               {/* Social Icons */}
               <div className="flex items-center gap-4">
                 <a
@@ -161,19 +122,7 @@ export default function Footer() {
                   href="#"
                   className="flex items-center justify-center w-10 h-10 transition-colors bg-[#013F32] rounded-full hover:bg-green-700"
                 >
-                  <Instagram className="w-5 h-5 text-white " />
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center justify-center w-10 h-10 transition-colors bg-[#013F32] rounded-full hover:bg-green-700"
-                >
-                  <svg
-                    className="w-5 h-5 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
+                  <Instagram className="w-5 h-5 text-white" />
                 </a>
                 <a
                   href="#"
@@ -186,22 +135,22 @@ export default function Footer() {
               {/* Company Deck Download */}
               <a
                 href="#"
-                className="flex items-center gap-3 px-6 py-3 transition-colors text-primary"
+                className="flex items-start gap-3 px-6 transition-colors text-primary"
               >
-                <div className="flex items-center justify-center text-white p-3 rounded-full bg-[#013F32]">
-                  <Download size={28} />
+                <div className="flex items-start justify-start text-white p-2 rounded-full bg-[#013F32]">
+                  <Download size={26} />
                 </div>
                 <div className="text-left">
-                  <div className="text-sm font-semibold md:text-md lg:text-lg">
+                  <div className="text-sm font-semibold md:text-md lg:text-md">
                     Company Deck
                   </div>
-                  <div className="text-sm opacity-90">PDF, 3 MB</div>
+                  <div className="text-xs opacity-90">PDF, 3 MB</div>
                 </div>
               </a>
             </div>
 
-            {/* Copyright and Links */}
-            <div className="flex flex-col items-center justify-between gap-4 mt-8 text-sm text-[#013F32] md:flex-row">
+            {/* Copyright */}
+            <div className="flex flex-col items-center justify-between gap-4 text-sm text-[#013F32] md:flex-row">
               <p>© 2025 BoostFixter. All rights reserved.</p>
               <div className="flex items-center gap-6">
                 <a href="#" className="transition-colors hover:text-green-700">

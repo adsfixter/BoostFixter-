@@ -30,29 +30,30 @@ const ratings = [
 
 export default function ClientRatings() {
   return (
-    <section className="bg-[#F8F8F8] py-20">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        {/* Title */}
-        <h1 className="text-2xl lg:text-5xl font-bold text-accent mb-16">
-         Ratings Showcase
-        </h1>
-
-        <div className="flex flex-wrap justify-center md:justify-between items-center gap-6">
-          {ratings.map((rating) => (
-            <a
-              key={rating.id}
-              href={rating.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-[120px] sm:w-[150px] h-[60px]"
-            >
-              <img
-                src={rating.image}
-                alt={`Client Rating ${rating.id}`}
-                className="object-contain w-full h-full transition-transform duration-300 hover:scale-105"
-              />
-            </a>
-          ))}
+    <section className=" pb-20 pt-10">
+      {/* Title */}
+      <h1 className="text-2xl lg:text-5xl font-bold text-accent mb-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        Ratings Showcase
+      </h1>
+      <div className="bg-[#F8F8F8] py-10">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="flex flex-wrap justify-center md:justify-between items-center gap-6">
+            {ratings.map((rating) => (
+              <a
+                key={rating.id}
+                href={rating.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-[120px] sm:w-[150px] h-[60px]"
+              >
+                <img
+                  src={rating.image}
+                  alt={`Client Rating ${rating.id}`}
+                  className="object-contain w-full h-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
