@@ -50,10 +50,10 @@ const cardVariants = {
 
 export default function LatestBlog() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white pb-20 pt-10">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col items-center justify-between gap-6 mb-16 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-6 mb-10 sm:flex-row">
           <h2 className="text-4xl font-extrabold text-center text-green-900 sm:text-left">
             See Our <br /> Latest Blog
           </h2>

@@ -21,7 +21,7 @@ export default function Hero() {
               Marketing Agency
             </h1>
 
-            <p className="text-base font-medium text-accent sm:text-lg md:text-2xl">
+            <p className="text-base text-accent sm:text-lg md:text-xl leading-relaxed">
               Bangladesh's top digital marketing agency. Innovative <br/> strategies
               drive online success and business growth.
             </p>

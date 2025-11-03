@@ -42,7 +42,7 @@ function Services() {
     <section className="bg-white pb-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Top Header */}
-        <div className="flex justify-between items-center mb-16">
+        <div className="flex justify-between items-center mb-10">
           <h1 className="text-primary text-3xl lg:text-5xl font-bold">
             Our Services
           </h1>

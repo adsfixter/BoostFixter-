@@ -3,7 +3,6 @@
 import React from "react"
 
 export default function BenefitsSection() {
-  // ✅ Benefits Data
   const benefitsData = [
     {
       id: 1,
@@ -32,14 +31,10 @@ export default function BenefitsSection() {
   ]
 
   return (
-    <section className="px-4 py-16 bg-[#F8F8F8]">
-      <div className="mx-auto max-w-7xl">
+    <section className="px-4 pb-20 pt-10 bg-[#F8F8F8]">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="px-4 mx-auto max-w-7xl ">
-         
           <h2 className="mb-10 text-2xl font-bold lg:text-5xl text-accent">Benefits with Us</h2>
-        </div>
-
         {/* Benefit Cards */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {benefitsData.map((benefit) => (

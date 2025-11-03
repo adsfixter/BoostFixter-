@@ -34,7 +34,7 @@ export default function ClientSay() {
   ];
 
   return (
-    <section className=" bg-white">
+    <section className=" bg-white pb-20 pt-10">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h1 className="text-accent text-3xl lg:text-6xl font-bold mb-10">
           Clients Say
