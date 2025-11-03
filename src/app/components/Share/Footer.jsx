@@ -62,7 +62,7 @@ export default function Footer() {
                 Contacts
               </h3>
               <div>
-                <div className="flex items-start gap-3">
+                <div className="flex items-center justify-center gap-3 text-sm md:text-md font-semibold text-[#013F32]">
                   <svg
                     className="w-8 h-8 text-[#013F32] mt-0.5 flex-shrink-0"
                     fill="none"
@@ -83,7 +83,7 @@ export default function Footer() {
                     +8801953-825344
                   </a>
                 </div>
-                <div className="flex items-start gap-3">
+                <div className="flex items-center justify-center gap-3 text-sm md:text-md font-semibold text-[#013F32]">
                   <svg
                     className="w-8 h-8 text-[#013F32] mt-0.5 flex-shrink-0"
                     fill="none"
@@ -99,12 +99,12 @@ export default function Footer() {
                   </svg>
                   <a
                     href="mailto:boostfixter@gmail.com"
-                    className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#031d17]"
+                    className=" transition-colors hover:text-[#031d17]"
                   >
                     boostfixter@gmail.com
                   </a>
                 </div>
-                <div className="flex items-start gap-3">
+                <div className="flex items-start justify-center gap-3 text-sm md:text-md font-semibold text-[#013F32]">
                   <svg
                     className="w-8 h-8 text-[#013F32] mt-0.5 flex-shrink-0"
                     fill="none"
@@ -124,7 +124,7 @@ export default function Footer() {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <p className="text-md font-semibold text-[#013F32]">
+                  <p className="text-sm md:text-md font-semibold text-[#013F32]">
                     Rafiq Place, Level 5C, Opp. BM College Mosque Gate Barisal,
                     Barisal, Bangladesh.
                   </p>
@@ -170,14 +170,14 @@ export default function Footer() {
                 href="#"
                 className="flex items-center gap-3 px-6 transition-colors text-primary"
               >
-                <div className="flex items-center justify-center text-white px-3 rounded-full bg-[#013F32]">
-                  <Download size={28} />
+                <div className="flex  items-center justify-center text-white p-2 rounded-full bg-[#013F32]">
+                  <Download size={26} />
                 </div>
                 <div className="text-left">
                   <div className="text-sm font-semibold md:text-md lg:text-md">
                     Company Deck
                   </div>
-                  <div className="text-sm opacity-90">PDF, 3 MB</div>
+                  <div className="text-xs opacity-90">PDF, 3 MB</div>
                 </div>
               </a>
             </div>

@@ -32,12 +32,12 @@ export default function BenefitsSection() {
   ]
 
   return (
-    <section className="px-6 py-16 bg-[#F8F8F8]">
-      <div className="max-w-6xl mx-auto">
+    <section className="px-4 py-16 bg-[#F8F8F8]">
+      <div className="mx-auto max-w-7xl">
         {/* Heading */}
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="px-4 mx-auto max-w-7xl ">
          
-          <h2 className="mb-16 text-2xl font-bold lg:text-5xl text-accent">Benefits with Us</h2>
+          <h2 className="mb-10 text-2xl font-bold lg:text-5xl text-accent">Benefits with Us</h2>
         </div>
 
         {/* Benefit Cards */}
