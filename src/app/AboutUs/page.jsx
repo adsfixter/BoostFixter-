@@ -8,11 +8,15 @@ import MarketingServices from "../components/aboutUs/about/MarketingServices";
 // import CoreValuesTree from "../components/aboutUs/about/CoreValuesTree";
 import CompanyHistory from "../components/aboutUs/about/CompanyHistory";
 import Link from "next/link";
+import OurVision from "../components/aboutUs/about/OurVision";
+import WorkProcess from "../components/aboutUs/about/WorkProcess";
 
 export default function AboutUs() {
   return (
     <div>
       <AboutHomePage></AboutHomePage>
+      <OurVision></OurVision>
+      <WorkProcess></WorkProcess>
       {/* <FeaturesSection></FeaturesSection> */}
       {/* <Reviews></Reviews> */}
       {/* <AboutSection></AboutSection> */}

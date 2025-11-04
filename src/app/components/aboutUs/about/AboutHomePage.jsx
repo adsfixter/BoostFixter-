@@ -13,22 +13,22 @@ export default function AboutHomePage() {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto text-center px-4">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
-        <h2 className="lg:text-5xl text-2xl font-extrabold text-accent mb-4">
+        <h2 className="lg:text-5xl text-2xl font-extrabold text-accent mb-4 text-center">
           Behind the Magic
         </h2>
 
         {/* Description */}
-        <p className="text-[#676E72] text-2xl font-medium mb-10 max-w-2xl mx-auto">
-          We revolutionize digital strategies with cutting-edge, future-ready
-          enabling businesses to expand in the dynamic world of marketing
+        <p className="text-[#676E72] text-2xl font-medium mb-10 text-center">
+          We revolutionize digital strategies with cutting-edge, future-ready 
+          enabling <br/> businesses to expand in the dynamic world of marketing
           technology.
         </p>
 
         {/* Image Scrolling Section */}
         <Marquee
-          direction="right"
+          direction="left"
           speed={40}
           pauseOnHover={true}
           gradient={false}
