@@ -36,7 +36,7 @@ export default function ClientSay() {
   return (
     <section className="pt-10 pb-20 bg-white ">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <h1 className="mb-4 text-3xl font-extrabold leading-snug text-primary sm:text-3xl md:text-4xl lg:text-5xl">
+        <h1 className="mb-4 text-3xl font-extrabold leading-snug text-accent sm:text-3xl md:text-4xl lg:text-5xl">
           Clients Say
         </h1>
 

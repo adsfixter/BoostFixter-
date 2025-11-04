@@ -8,7 +8,7 @@ export default function ContactForm() {
         <div className="flex flex-col items-start my-10 rounded-lg md:flex-row ">
           {/* text div - 30% */}
           <div className="mb-6 md:w-[40%] md:mb-0">
-            <h2 className="mb-10 text-3xl font-extrabold leading-snug text-primary sm:text-3xl md:text-4xl lg:text-5xl">
+            <h2 className="mb-4 text-3xl font-extrabold leading-snug text-accent sm:text-3xl md:text-4xl lg:text-5xl">
               Let's Get <br/> Started
             </h2>
             <p className="mb-4 text-lg text-gray-600">
