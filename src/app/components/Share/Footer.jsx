@@ -89,7 +89,16 @@ export default function Footer() {
                   <Mail className="w-6 h-6 text-[#013F32] mt-1 flex-shrink-0" />
                   <a
                     href="mailto:boostfixter@gmail.com"
-                    className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#031d17]"
+                    className="
+    text-sm           
+    sm:text-base     
+    md:text-lg       
+    font-normal md:font-semibold 
+    text-[#013F32]
+    hover:text-[#031d17]
+    transition-colors duration-300 
+    break-all         
+  "
                   >
                     boostfixter@gmail.com
                   </a>
