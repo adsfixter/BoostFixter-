@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 const ratings = [
@@ -30,30 +32,30 @@ const ratings = [
 
 export default function ClientRatings() {
   return (
-    <section className=" pb-20 pt-10">
-      {/* Title */}
-      <h1 className="text-2xl lg:text-5xl font-bold text-accent mb-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        Ratings Showcase
-      </h1>
-      <div className="bg-[#F8F8F8] py-10">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center md:justify-between items-center gap-6">
-            {ratings.map((rating) => (
-              <a
-                key={rating.id}
-                href={rating.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-[120px] sm:w-[150px] h-[60px]"
-              >
-                <img
-                  src={rating.image}
-                  alt={`Client Rating ${rating.id}`}
-                  className="object-contain w-full h-full transition-transform duration-300 hover:scale-105"
-                />
-              </a>
-            ))}
-          </div>
+    <section className="px-4 my-10 pb-10 pt-10 bg-[#F8F8F8]">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        {/* Heading */}
+        <h2 className="mb-4 text-3xl font-extrabold leading-snug text-primary sm:text-3xl md:text-4xl lg:text-5xl">
+          Ratings Showcase
+        </h2>
+
+        {/* Rating Logos */}
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+          {ratings.map((rating) => (
+            <a
+              key={rating.id}
+              href={rating.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center p-4 transition-transform duration-300 bg-white rounded-2xl hover:scale-105"
+            >
+              <img
+                src={rating.image}
+                alt={`Client Rating ${rating.id}`}
+                className="object-contain w-full h-12 sm:h-14 md:h-16 lg:h-20"
+              />
+            </a>
+          ))}
         </div>
       </div>
     </section>
