@@ -33,7 +33,7 @@ const services = [
   {
     id: 6,
     name: "Reporting & Analytics",
-    image: "/HomePage/reporting.png",
+    image: "/service/reporting.png",
   },
 ];
 
