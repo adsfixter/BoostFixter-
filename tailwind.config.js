@@ -10,6 +10,9 @@ module.exports = {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
       },
+      fontFamily: {
+        nunito: ["var(--font-nunito)", "sans-serif"],
+      },
     },
   },
   plugins: [],

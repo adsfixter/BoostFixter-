@@ -12,16 +12,14 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-white to-white" />
 
       <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="grid items-center gap-10 md:grid-cols-2">
+        <div className="flex flex-col  md:flex-row items-center gap-80">
           {/* LEFT CONTENT */}
           <div className="z-10 space-y-5 text-center md:text-left mb-14">
             <h1 className="text-2xl font-bold text-primary sm:text-4xl md:text-5xl lg:text-6xl">
-              Leading AI-Powered Global
-              Digital Growth
-              Marketing Agency
+              Leading AI-Powered <br/>Global Digital Growth <br/>Marketing Agency
             </h1>
 
-            <p className="text-base text-accent sm:text-lg md:text-xl leading-relaxed">
+            <p className="text-base text-accent sm:text-lg md:text-xl ">
               Bangladesh's top digital marketing agency. Innovative <br/> strategies
               drive online success and business growth.
             </p>
