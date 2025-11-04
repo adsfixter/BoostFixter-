@@ -54,7 +54,7 @@ export default function LatestBlog() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-center justify-between gap-6 mb-10 sm:flex-row">
-          <h2 className="mb-4 text-3xl font-extrabold leading-snug text-accent sm:text-3xl md:text-4xl lg:text-5xl">
+          <h2 className="px-4 mb-10 text-2xl font-bold text-primary lg:text-5xl text-accent max-w-7xl sm:px-6 lg:px-8">
             Our Latest Blog
           </h2>
           <CustomButton text={"See All Blogs"} link={"#"} />

@@ -47,7 +47,7 @@ export default function OurStory() {
 
           {/* RIGHT SIDE */}
           <div className="space-y-6 text-center md:text-left">
-            <h1 className="text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
+            <h1 className="space-x-0 text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
               We're a Results-Driven <br className="hidden sm:block" />
               Digital Marketing Agency
             </h1>
