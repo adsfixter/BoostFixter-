@@ -18,7 +18,7 @@ export default function AboutUs() {
       <AboutHomePage></AboutHomePage>
       <OurVision></OurVision>
       <WorkProcess></WorkProcess>
-      {/* <Squad></Squad> */}
+      <Squad></Squad>
       {/* <FeaturesSection></FeaturesSection> */}
       {/* <Reviews></Reviews> */}
       {/* <AboutSection></AboutSection> */}

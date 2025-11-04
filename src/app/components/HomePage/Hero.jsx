@@ -12,16 +12,17 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-white to-white" />
 
       <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex flex-col  md:flex-row items-center gap-80">
-          {/* LEFT CONTENT */}
-          <div className="z-10 space-y-5 text-center md:text-left mb-14">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-10 lg:gap-80">
+          {/* LEFT CONTENT (Text Section) */}
+          <div className="z-10 space-y-5 text-center md:text-left mt-10 md:mt-0">
             <h1 className="text-2xl font-bold text-primary sm:text-4xl md:text-5xl lg:text-6xl">
-              Leading AI-Powered <br/>Global Digital Growth <br/>Marketing Agency
+              Leading AI-Powered <br /> Global Digital Growth <br /> Marketing
+              Agency
             </h1>
 
-            <p className="text-base text-accent sm:text-lg md:text-xl ">
-              Bangladesh's top digital marketing agency. Innovative <br/> strategies
-              drive online success and business growth.
+            <p className="text-base text-accent sm:text-lg md:text-xl">
+              Bangladesh's top digital marketing agency. Innovative <br />{" "}
+              strategies drive online success and business growth.
             </p>
 
             {/* Buttons */}
@@ -31,21 +32,10 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* <div className="relative flex justify-center items-center">
-            <video
-              src="/HomePage/animationHero.webm"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-contain"
-            ></video>
-          </div> */}
-
-          {/* RIGHT CONTENT */}
-          <div className="relative flex items-center justify-center md:-mt-10 lg:-mt-10 mt-12 ">
-          {/* Image 1 */}
-          <motion.div
+          {/* RIGHT CONTENT (Image Section) */}
+          <div className="relative flex items-center justify-center md:-mt-10 lg:-mt-10">
+            {/* Image 1 */}
+            <motion.div
               animate={{
                 y: [0, -15, 0],
                 x: [0, 10, 0],
@@ -66,8 +56,8 @@ export default function Hero() {
               />
             </motion.div>
 
-          {/* Image 2 */}
-          <motion.div
+            {/* Image 2 */}
+            <motion.div
               animate={{
                 y: [0, 20, 0],
                 x: [0, -10, 0],
