@@ -5,13 +5,13 @@ export default function ContactForm() {
   return (
     <section className=" pb-10 pt-10 bg-[#F8F8F8]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex flex-col items-start my-10 rounded-lg  md:flex-row ">
+        <div className="flex flex-col items-start my-10 rounded-lg md:flex-row ">
           {/* text div - 30% */}
           <div className="mb-6 md:w-[40%] md:mb-0">
-            <h2 className="text-2xl lg:text-5xl font-bold text-accent mb-10">
+            <h2 className="mb-10 text-3xl font-extrabold leading-snug text-primary sm:text-3xl md:text-4xl lg:text-5xl">
               Let's Get <br/> Started
             </h2>
-            <p className="mb-4 text-gray-600 text-lg">
+            <p className="mb-4 text-lg text-gray-600">
               Discuss your idea on a call. After <br/> discovery, we'll propose. Once
               approved, <br/> we start the work.
             </p>
