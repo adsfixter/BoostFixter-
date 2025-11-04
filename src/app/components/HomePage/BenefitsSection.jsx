@@ -46,7 +46,7 @@ export default function BenefitsSection() {
                 {/* <div className="w-1 h-8 mt-1 bg-teal-700 rounded-full" /> */}
                 <h3 className="text-lg font-bold leading-relaxed text-accent sm:text-xl md:text-2xl">{benefit.title}</h3>
               </div>
-              <p className="text-base leading-relaxed text-accent sm:text-lg md:text-xl">{benefit.description}</p>
+              <p className="text-base text-accent sm:text-lg md:text-xl">{benefit.description}</p>
             </div>
           ))}
         </div>
