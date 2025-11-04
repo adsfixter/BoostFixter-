@@ -14,38 +14,38 @@ export default function Navbar() {
 
   const navItems = [
     { label: "Home", href: "/" },
-    {
-      label: "Advertising",
-      href: "/Advertising",
-      name: "advertising",
-      links: [
-        { href: "/Advertising/Facebook", label: "Facebook" },
-        { href: "/Advertising/TikTok", label: "TikTok" },
-        { href: "/Advertising/Google", label: "Google" },
-      ],
-    },
-    {
-      label: "Services",
-      href: "/Services",
-      name: "services",
-      links: [
-        { href: "/Services/DesignMedia", label: "Design Media" },
-        { href: "/Services/webDevelopment", label: "Web Development" },
-        { href: "/Services/CyberSecurity", label: "Cyber Security" },
-      ],
-    },
+    // {
+    //   label: "Advertising",
+    //   href: "/Advertising",
+    //   name: "advertising",
+    //   links: [
+    //     { href: "/Advertising/Facebook", label: "Facebook" },
+    //     { href: "/Advertising/TikTok", label: "TikTok" },
+    //     { href: "/Advertising/Google", label: "Google" },
+    //   ],
+    // },
+    // {
+    //   label: "Services",
+    //   href: "/Services",
+    //   name: "services",
+    //   links: [
+    //     { href: "/Services/DesignMedia", label: "Design Media" },
+    //     { href: "/Services/webDevelopment", label: "Web Development" },
+    //     { href: "/Services/CyberSecurity", label: "Cyber Security" },
+    //   ],
+    // },
     {
       label: "About Us",
       href: "/AboutUs",
       name: "about",
-      links: [
-        { href: "/AboutUs/Portfolio", label: "Portfolio" },
-        { href: "/AboutUs/OurTeam", label: "Our Team" },
-        { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
-      ],
+      // links: [
+      //   { href: "/AboutUs/Portfolio", label: "Portfolio" },
+      //   { href: "/AboutUs/OurTeam", label: "Our Team" },
+      //   { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
+      // ],
     },
-    { label: "Blog", href: "/blog" },
-    { label: "Contact", href: "/Contact" },
+    // { label: "Blog", href: "/blog" },
+    // { label: "Contact", href: "/Contact" },
   ];
 
   return (

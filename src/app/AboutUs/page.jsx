@@ -10,6 +10,7 @@ import CompanyHistory from "../components/aboutUs/about/CompanyHistory";
 import Link from "next/link";
 import OurVision from "../components/aboutUs/about/OurVision";
 import WorkProcess from "../components/aboutUs/about/WorkProcess";
+import Squad from "../components/aboutUs/about/Squad";
 
 export default function AboutUs() {
   return (
@@ -17,6 +18,7 @@ export default function AboutUs() {
       <AboutHomePage></AboutHomePage>
       <OurVision></OurVision>
       <WorkProcess></WorkProcess>
+      {/* <Squad></Squad> */}
       {/* <FeaturesSection></FeaturesSection> */}
       {/* <Reviews></Reviews> */}
       {/* <AboutSection></AboutSection> */}
