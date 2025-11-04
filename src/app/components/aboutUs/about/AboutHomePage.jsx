@@ -16,6 +16,9 @@ export default function AboutHomePage() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
         <h2 className="lg:text-5xl text-2xl font-extrabold text-accent mb-4 text-center">
+      <div className="max-w-6xl mx-auto text-center px-4">
+        {/* Title */}
+        <h2 className="lg:text-5xl text-2xl font-extrabold text-accent mb-4">
           Behind the Magic
         </h2>
 
@@ -23,12 +26,16 @@ export default function AboutHomePage() {
         <p className="text-[#676E72] text-2xl font-medium mb-10 text-center">
           We revolutionize digital strategies with cutting-edge, future-ready 
           enabling <br/> businesses to expand in the dynamic world of marketing
+        <p className="text-[#676E72] text-2xl font-medium mb-10 max-w-2xl mx-auto">
+          We revolutionize digital strategies with cutting-edge, future-ready
+          enabling businesses to expand in the dynamic world of marketing
           technology.
         </p>
 
         {/* Image Scrolling Section */}
         <Marquee
           direction="left"
+          direction="right"
           speed={40}
           pauseOnHover={true}
           gradient={false}
