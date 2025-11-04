@@ -11,6 +11,8 @@ import Link from "next/link";
 import OurVision from "../components/aboutUs/about/OurVision";
 import WorkProcess from "../components/aboutUs/about/WorkProcess";
 import Squad from "../components/aboutUs/about/Squad";
+import CareerOpportunities from "../components/aboutUs/about/CareerOpportunities";
+import TalkAbout from "../components/aboutUs/about/TalkAbout";
 
 export default function AboutUs() {
   return (
@@ -19,6 +21,8 @@ export default function AboutUs() {
       <OurVision></OurVision>
       <WorkProcess></WorkProcess>
       <Squad></Squad>
+      <CareerOpportunities></CareerOpportunities>
+      <TalkAbout></TalkAbout>
       {/* <FeaturesSection></FeaturesSection> */}
       {/* <Reviews></Reviews> */}
       {/* <AboutSection></AboutSection> */}

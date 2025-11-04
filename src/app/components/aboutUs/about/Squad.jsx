@@ -1,54 +1,64 @@
+"use client";
+
 import React from "react";
 import CustomButton from "../../Share/CustomButton";
+import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const squad = [
   {
     id: 1,
-    image: "https://randomuser.me/api/portraits/men/11.jpg",
-    name: "Omar Faruk",
-    roll: "101",
+    image: "/About/pookie.png",
+    name: "Pookie",
+    role: "Chef Happiness Officer",
   },
   {
     id: 2,
-    image: "https://randomuser.me/api/portraits/women/21.jpg",
-    name: "Nusrat Jahan",
-    roll: "102",
+    image: "/About/milon.png",
+    name: "Md Milon Hossin",
+    role: "Founder & CEO",
   },
   {
     id: 3,
-    image: "https://randomuser.me/api/portraits/men/31.jpg",
-    name: "Rakib Hasan",
-    roll: "103",
+    image: "/About/uzzal.png",
+    name: "Md Uzzal",
+    role: "Finance & Accounts Manager",
   },
   {
     id: 4,
-    image: "https://randomuser.me/api/portraits/women/41.jpg",
-    name: "Mim Akter",
-    roll: "104",
+    image: "/About/Abdul-Kadir.png",
+    name: "AK Farhan",
+    role: "Technical Support Officer",
   },
   {
     id: 5,
-    image: "https://randomuser.me/api/portraits/men/51.jpg",
-    name: "Sakib Alamin",
-    roll: "105",
+    image: "/About/Iran-Rana.png",
+    name: "Iran Rana",
+    role: "Senior Marketing Executive",
   },
   {
     id: 6,
-    image: "https://randomuser.me/api/portraits/women/61.jpg",
-    name: "Jannat Ara",
-    roll: "106",
+    image: "/About/Md-Jahed-Hossen.png",
+    name: "Md Jahed Hossen",
+    role: "Brand Strategist(Marketing)",
   },
   {
     id: 7,
-    image: "https://randomuser.me/api/portraits/men/71.jpg",
-    name: "Mahmudul Hasan",
-    roll: "107",
+    image: "/About/Md-Mosaraf-Hosen.png",
+    name: "Md Mosaraf Hossen",
+    role: "Web Developer",
   },
   {
     id: 8,
-    image: "https://randomuser.me/api/portraits/women/81.jpg",
-    name: "Rima Khatun",
-    roll: "108",
+    image: "/About/Md-Shobuj-Hosen.png",
+    name: "Md Shobuj Hossen",
+    role: "Chef Technical Manager",
+  },
+  {
+    id: 9,
+    image: "/About/Miraz-Hossen.png",
+    name: "Miraz Hossen",
+    role: "Marketing Executive",
   },
 ];
 
@@ -61,28 +71,36 @@ export default function Squad() {
           <h1 className="text-primary text-3xl lg:text-5xl font-bold mb-10">
             BoostFixter Squad
           </h1>
-          <CustomButton text={"Meet The Team"} link={"#"}></CustomButton>
+          <CustomButton text={"Meet The Team"} link={"#"} />
         </div>
 
-        {/* content div */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {/* content div with marquee */}
+        <Marquee
+          speed={50} // scroll speed
+          gradient={false} // no fade effect at edges
+          pauseOnHover={true} // pause on hover
+        >
           {squad.map((member) => (
             <div
               key={member.id}
-              className="flex flex-col items-center text-center bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+              className="mx-4 flex flex-col items-center text-center"
             >
-              <img
+              <Image
                 src={member.image}
+                width={240}
+                height={280}
+                className="w-60 h-60 object-cover rounded-2xl"
                 alt={member.name}
-                className="w-24 h-24 rounded-full object-cover mb-4"
               />
-              <h3 className="text-lg font-semibold text-gray-800">
+              <h1 className="text-accent text-2xl font-bold mt-4">
                 {member.name}
-              </h3>
-              <p className="text-gray-500">Roll: {member.roll}</p>
+              </h1>
+              <h2 className="text-lg text-gray-500 font-semibold">
+                {member.role}
+              </h2>
             </div>
           ))}
-        </div>
+        </Marquee>
       </div>
     </div>
   );
