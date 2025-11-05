@@ -15,7 +15,7 @@ export default function AboutHomePage() {
     <section className="py-20 bg-gray-50">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
-        <div className="max-w-6xl px-4 mx-auto text-center">
+        <div className="max-w-7xl px-4 mx-auto text-center">
           <h2 className="mb-4 text-2xl font-extrabold lg:text-5xl text-accent">
             Behind the Magic
           </h2>

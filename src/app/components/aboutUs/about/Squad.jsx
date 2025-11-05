@@ -83,13 +83,13 @@ export default function Squad() {
           {squad.map((member) => (
             <div
               key={member.id}
-              className="mx-4 flex flex-col items-center text-center"
+              className="mx-2 flex flex-col items-center text-center"
             >
               <Image
                 src={member.image}
                 width={240}
                 height={280}
-                className="w-60 h-60 object-cover rounded-2xl"
+                className="w-60 h-70 object-cover rounded-2xl"
                 alt={member.name}
               />
               <h1 className="text-accent text-2xl font-bold mt-4">
