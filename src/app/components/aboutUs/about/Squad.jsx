@@ -83,19 +83,19 @@ export default function Squad() {
           {squad.map((member) => (
             <div
               key={member.id}
-              className="mx-2 flex flex-col items-center text-center"
+              className="mx-2 flex flex-col"
             >
               <Image
                 src={member.image}
                 width={240}
                 height={280}
-                className="w-60 h-70 object-cover rounded-2xl"
+                className="w-[350px] h-105 object-cover rounded-2xl"
                 alt={member.name}
               />
-              <h1 className="text-accent text-2xl font-bold mt-4">
+              <h1 className="subtitle mt-4">
                 {member.name}
               </h1>
-              <h2 className="text-lg text-gray-500 font-semibold">
+              <h2 className="-mt-1.5 text-gray-500 font-semibold">
                 {member.role}
               </h2>
             </div>

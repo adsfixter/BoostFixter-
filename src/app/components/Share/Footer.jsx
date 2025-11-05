@@ -37,18 +37,25 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <p className="mb-4 text-md leading-relaxed text-[#013F32]">
-                Global ad solutions built for growth – fast, secure, and
+              <p className="text-sm           
+    sm:text-base     
+    md:text-lg       
+    font-normal md:font-semibold 
+    text-[#013F32]
+    hover:text-[#031d17]
+    transition-colors duration-300 
+    break-all     ">
+                Global ad solutions built for growth fast, secure, and
                 performance-driven.
               </p>
-              <div className="max-w-2/3">
+              <div className="max-w-2/3 mt-5">
                 <AnimatedButton text="Contact Us"></AnimatedButton>
               </div>
             </div>
 
             {/* Quick Links */}
             <div className="col-span-1 lg:col-span-3 md:col-span-1">
-              <h3 className="text-lg md:text-xl mb-3 font-semibold text-[#013F32]">
+              <h3 className="text-lg md:text-xl mb-3 font-bold text-[#013F32]">
                 Quick Links
               </h3>
               <ul className="space-y-1">
@@ -57,7 +64,14 @@ export default function Footer() {
                     <li key={link}>
                       <a
                         href="#"
-                        className="text-md font-medium text-[#013F32] transition-colors hover:text-[#021c17]"
+                        className=" text-sm           
+    sm:text-base     
+    md:text-lg       
+    font-normal md:font-semibold 
+    text-[#013F32]
+    hover:text-[#031d17]
+    transition-colors duration-300 
+    break-all     "
                       >
                         {link}
                       </a>
@@ -69,7 +83,7 @@ export default function Footer() {
 
             {/* Contacts */}
             <div className="col-span-1 lg:col-span-5 md:col-span-1">
-              <h3 className="mb-3 text-lg md:text-xl font-semibold text-[#013F32]">
+              <h3 className="mb-3 text-lg md:text-xl font-bold text-[#013F32]">
                 Contacts
               </h3>
               <div className="space-y-2">
@@ -78,7 +92,14 @@ export default function Footer() {
                   <Phone className="w-6 h-6 text-[#013F32] mt-1 flex-shrink-0" />
                   <a
                     href="tel:+8801953825344"
-                    className="text-md font-semibold text-[#013F32] transition-colors hover:text-[#042720]"
+                    className=" text-sm           
+    sm:text-base     
+    md:text-lg       
+    font-normal md:font-semibold 
+    text-[#013F32]
+    hover:text-[#031d17]
+    transition-colors duration-300 
+    break-all     "
                   >
                     +8801953-825344
                   </a>
@@ -107,7 +128,14 @@ export default function Footer() {
                 {/* Address */}
                 <div className="flex items-start gap-3">
                   <MapPin className="w-6 h-6 text-[#013F32] mt-1 flex-shrink-0" />
-                  <p className="text-md font-medium text-[#013F32]">
+                  <p className=" text-sm           
+    sm:text-base     
+    md:text-lg       
+    font-normal md:font-semibold 
+    text-[#013F32]
+    hover:text-[#031d17]
+    transition-colors duration-300 
+    break-all     ">
                     Rafiq Place, Level 5C, Opposite. <br /> BM College Mosque
                     Gate, Barisal, Bangladesh.
                   </p>

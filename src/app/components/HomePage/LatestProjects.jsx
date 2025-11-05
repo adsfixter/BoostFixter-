@@ -32,7 +32,7 @@ export default function LatestProjects() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* top div */}
         <div className="flex items-center justify-between mb-10">
-          <h1 className="mb-10 text-2xl font-bold lg:text-5xl text-accent">
+          <h1 className="title">
             We Have Done!
           </h1>
           <CustomButton text={"See Our All Projects"} link={"#"}></CustomButton>

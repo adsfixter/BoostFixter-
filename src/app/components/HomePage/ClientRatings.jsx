@@ -32,10 +32,10 @@ export default function ClientRatings() {
   return (
     <section className="pt-10 pb-20 ">
       {/* Title */}
-      <h1 className="px-4 mx-auto mb-10 text-2xl font-bold text-primary lg:text-5xl text-accent max-w-7xl sm:px-6 lg:px-8">
+      <h1 className="px-4 mx-auto title max-w-7xl sm:px-6 lg:px-8">
         Ratings Showcase
       </h1>
-      <div className="bg-[#F8F8F8] py-10">
+      <div className="bg-[#F8F8F8] py-10 mt-10">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-6 md:justify-between">
             {ratings.map((rating) => (
