@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React from "react"
+import React from "react";
 
 export default function BenefitsSection() {
   const benefitsData = [
@@ -28,15 +28,17 @@ export default function BenefitsSection() {
       description:
         "Experience transparent communication, regular updates, and ongoing support as we prioritize your success.",
     },
-  ]
+  ];
 
   return (
     <section className="px-4 pb-20 pt-10 bg-[#F8F8F8]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Heading */}
-          <h2 className="px-4 mx-auto mb-10 text-2xl font-bold text-primary lg:text-5xl text-accent max-w-7xl sm:px-6 lg:px-8">Benefits with Us</h2>
+        <h2 className="title">
+          Benefits with Us
+        </h2>
         {/* Benefit Cards */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mt-10">
           {benefitsData.map((benefit) => (
             <div
               key={benefit.id}
@@ -44,13 +46,17 @@ export default function BenefitsSection() {
             >
               <div className="flex items-start gap-3 mb-3">
                 {/* <div className="w-1 h-8 mt-1 bg-teal-700 rounded-full" /> */}
-                <h3 className="text-lg font-bold leading-relaxed text-accent sm:text-xl md:text-2xl">{benefit.title}</h3>
+                <h3 className="subtitle">
+                  {benefit.title}
+                </h3>
               </div>
-              <p className="text-base text-accent sm:text-lg md:text-xl">{benefit.description}</p>
+              <p className="description">
+                {benefit.description}
+              </p>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

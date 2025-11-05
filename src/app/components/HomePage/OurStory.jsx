@@ -52,7 +52,7 @@ export default function OurStory() {
               Digital Marketing Agency
             </h1>
 
-            <p className="text-base text-accent sm:text-lg md:text-xl ">
+            <p className="description">
               Established in 2023, BoostFixter empowers businesses with
               AI-powered digital marketing strategies and innovative solutions
               that drive growth and measurable results.

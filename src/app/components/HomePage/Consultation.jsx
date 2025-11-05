@@ -8,15 +8,15 @@ export default function ContactForm() {
         <div className="flex flex-col items-start my-10 rounded-lg md:flex-row ">
           {/* text div - 30% */}
           <div className="mb-6 md:w-[40%] md:mb-0">
-            <h2 className="mb-4 text-3xl font-extrabold text-accent sm:text-3xl md:text-4xl lg:text-5xl">
+            <h2 className="title">
               Let's Get <br/> Started
             </h2>
-            <p className="mb-4 text-lg text-gray-600">
+            <p className="description">
               Discuss your idea on a call. After <br/> discovery, we'll propose. Once
               approved, <br/> we start the work.
             </p>
 
-            <div className="flex items-center gap-0 text-green-800 underline tex-2t-lg font-sgemibold md:text-xl">
+            <div className="flex items-center gap-0 text-green-800 underline tex-2t-lg font-sgemibold md:text-xl mt-6">
               <a href="#" className="text-green-800 ">
                 Direct Call{" "}
               </a>

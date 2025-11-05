@@ -43,7 +43,7 @@ function Services() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Top Header */}
         <div className="flex items-center justify-between mb-10">
-          <h1 className="mb-4 text-3xl font-extrabold leading-snug text-accent sm:text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="title">
             Our Services
           </h1>
           <div className="">
