@@ -20,11 +20,11 @@ export default function AboutHomePage() {
         </h2>
 
         {/* Description */}
-        <p className="text-[#676E72] max-w-[70%] mx-auto text-2xl font-medium mb-10 text-center">
+        {/* <p className="text-[#676E72] max-w-[70%] mx-auto text-2xl font-medium mb-10 text-center">
           We revolutionize digital strategies with cutting-edge, future-ready
           enabling
           businesses to expand in the dynamic world of marketing technology.
-        </p>
+        </p> */}
 
         {/* Image Scrolling Section */}
         <Marquee
