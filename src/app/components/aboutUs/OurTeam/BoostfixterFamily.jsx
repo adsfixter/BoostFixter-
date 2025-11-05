@@ -71,8 +71,8 @@ const squad = [
   {
     id: 10,
     image: "/About/Md-Hasnat-Nion.png",
-    image2: "/About/Md-Hasnat-Nion-2.png",
-    name: "Md Limon Howlader",
+    image2:"/About/Md-Hashat-Nion-2.png",
+    name: "Md Hasnat Nion",
     role: "Marketing Executive",
   },
   {
