@@ -50,12 +50,12 @@ const cardVariants = {
 
 export default function LatestBlog() {
   return (
-    <section className="bg-white pb-20 pt-10">
+    <section className="pt-10 pb-20 bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-center justify-between gap-6 mb-10 sm:flex-row">
-          <h2 className="text-4xl font-extrabold text-center text-green-900 sm:text-left">
-            See Our <br /> Latest Blog
+          <h2 className="px-4 mb-10 text-2xl font-bold text-primary lg:text-5xl text-accent max-w-7xl sm:px-6 lg:px-8">
+            Our Latest Blog
           </h2>
           <CustomButton text={"See All Blogs"} link={"#"} />
         </div>
@@ -81,7 +81,7 @@ export default function LatestBlog() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:opacity-100"></div>
               </div>
 
               {/* Blog Info */}
@@ -108,12 +108,12 @@ export default function LatestBlog() {
                 <p className="mb-2 text-xs text-gray-400">{blog.date}</p>
 
                 {/* Title */}
-                <h3 className="mb-4 text-lg font-semibold text-accent transition-colors duration-300">
+                <h3 className="mb-4 text-lg font-semibold transition-colors duration-300 text-accent">
                   {blog.title}
                 </h3>
 
                 {/* Read More Button */}
-                <button className="flex items-center gap-2 text-sm font-medium text-primary transition-all duration-300 group-hover:gap-3 hover:text-accent">
+                <button className="flex items-center gap-2 text-sm font-medium transition-all duration-300 text-primary group-hover:gap-3 hover:text-accent">
                   Read More <ArrowRight size={16} />
                 </button>
               </div>

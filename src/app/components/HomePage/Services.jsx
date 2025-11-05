@@ -33,24 +33,26 @@ const services = [
   {
     id: 6,
     name: "Reporting & Analytics",
-    image: "/HomePage/reporting.png",
+    image: "/service/reporting.png",
   },
 ];
 
 function Services() {
   return (
-    <section className="bg-white pb-20">
+    <section className="pb-20 bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Top Header */}
-        <div className="flex justify-between items-center mb-10">
-          <h1 className="text-primary text-3xl lg:text-5xl font-bold">
+        <div className="flex items-center justify-between mb-10">
+          <h1 className="mb-4 text-3xl font-extrabold leading-snug text-accent sm:text-3xl md:text-4xl lg:text-5xl">
             Our Services
           </h1>
-          <CustomButton text="See All Services" link="#" />
+          <div className="">
+            <CustomButton text="See All Services" link="#" />
+          </div>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.id}
@@ -62,18 +64,18 @@ function Services() {
                   src={service.image}
                   alt={service.name}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 rounded-xl"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl"
                 />
               </div>
 
               {/* Text + Button */}
               <div className="mt-6 text-left">
-                <h2 className="text-2xl font-medium text-primary mb-2">
+                <h2 className="mb-2 text-2xl font-medium text-primary">
                   {service.name}
                 </h2>
                 <Link
                   href="#"
-                  className="text-primary flex items-center underline gap-1"
+                  className="flex items-center gap-1 underline text-primary"
                 >
                   Book a Call <ArrowUpRight size={18} />
                 </Link>

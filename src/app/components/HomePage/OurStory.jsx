@@ -7,9 +7,9 @@ import Star from "../../../../public/HomePage/Star.png";
 
 export default function OurStory() {
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-20 overflow-hidden bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-2 items-center">
+        <div className="grid items-center gap-10 md:grid-cols-2">
           {/* LEFT SIDE */}
           <div className="space-y-6 text-center md:text-left">
             <h2 className="text-2xl font-semibold text-primary sm:text-3xl">
@@ -17,7 +17,7 @@ export default function OurStory() {
             </h2>
 
             {/* IMAGE SECTION */}
-            <div className="relative flex justify-center md:justify-start mt-10">
+            <div className="relative flex justify-center mt-10 md:justify-start">
               {/* Static Ellipse */}
               <Image
                 alt="Ellipse"
@@ -40,14 +40,14 @@ export default function OurStory() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute top-[10%] left-[40%] -translate-x-[50%] -translate-y-[50%] w-[80px] sm:w-[100px] md:w-[170px]"
+                className="absolute top-[18%] md:top-[25%] left-[75%] -translate-x-[50%] xl:left-[40%]  md:left-[70%] lg:left-[50%] -translate-y-[50%] w-[130px] sm:w-[100px] md:w-[170px]"
               />
             </div>
           </div>
 
           {/* RIGHT SIDE */}
           <div className="space-y-6 text-center md:text-left">
-            <h1 className="text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
+            <h1 className="space-x-0 text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
               We're a Results-Driven <br className="hidden sm:block" />
               Digital Marketing Agency
             </h1>

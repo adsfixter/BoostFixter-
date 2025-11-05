@@ -31,14 +31,14 @@ export default function LatestProjects() {
     <div className="bg-[#F8F8F8] pb-20 pt-10">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* top div */}
-        <div className="flex justify-between items-center mb-10">
-          <h1 className="text-2xl lg:text-5xl font-bold text-accent mb-10">
+        <div className="flex items-center justify-between mb-10">
+          <h1 className="mb-10 text-2xl font-bold lg:text-5xl text-accent">
             We Have Done!
           </h1>
           <CustomButton text={"See Our All Projects"} link={"#"}></CustomButton>
         </div>
         {/* animation main card */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+        <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2">
           {
             projects.map((project) => (
               <div key={project.id}>
@@ -50,7 +50,7 @@ export default function LatestProjects() {
                   className="w-full"
                 ></Image>
                 <Link
-                  className="text-accent font-normal text-lg flex mt-4 text-center justify-center underline "
+                  className="flex justify-center mt-4 text-lg font-normal text-center underline text-accent "
                 href={project.link}
                 >{project.name}<ArrowUpRight /></Link>
               </div>

@@ -15,9 +15,10 @@ export default function AboutHomePage() {
     <section className="py-20 bg-gray-50">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
-        <h2 className="lg:text-5xl text-2xl font-extrabold text-accent mb-4 text-center">
-          Behind the Magic
-        </h2>
+        <div className="max-w-6xl px-4 mx-auto text-center">
+          <h2 className="mb-4 text-2xl font-extrabold lg:text-5xl text-accent">
+            Behind the Magic
+          </h2>
 
         {/* Description */}
         {/* <p className="text-[#676E72] max-w-[70%] mx-auto text-2xl font-medium mb-10 text-center">
@@ -25,24 +26,36 @@ export default function AboutHomePage() {
           enabling
           businesses to expand in the dynamic world of marketing technology.
         </p> */}
+        </p>
+       <p className="text-[#676E72] text-2xl font-medium mb-10 text-center">
+  We revolutionize digital strategies with cutting-edge, future-ready enabling{" "}
+  <span className="hidden sm:inline"><br /></span>
+  businesses to expand in the dynamic world of marketing technology.
+</p>
+          {/* Description */}
+          <p className="text-[#676E72] text-2xl font-medium mb-10 max-w-2xl mx-auto">
+            We revolutionize digital strategies with cutting-edge, future-ready
+            enabling businesses to expand in the dynamic world of marketing technology.
+          </p>
 
-        {/* Image Scrolling Section */}
-        <Marquee
-          direction="left"
-          speed={40}
-          pauseOnHover={true}
-          gradient={false}
-        >
-          {images.map((img, index) => (
-            <div key={index} className="mx-4">
-              <img
-                src={img}
-                alt={`about-${index}`}
-                className="w-64 h-64 object-cover rounded-2xl shadow-lg"
-              />
-            </div>
-          ))}
-        </Marquee>
+          {/* Image Scrolling Section */}
+          <Marquee
+            direction="left"
+            speed={40}
+            pauseOnHover={true}
+            gradient={false}
+          >
+            {images.map((img, index) => (
+              <div key={index} className="mx-4">
+                <img
+                  src={img}
+                  alt={`about-${index}`}
+                  className="object-cover w-64 h-64 shadow-lg rounded-2xl"
+                />
+              </div>
+            ))}
+          </Marquee>
+        </div>
       </div>
     </section>
   );

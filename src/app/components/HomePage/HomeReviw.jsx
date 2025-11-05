@@ -10,16 +10,16 @@ export default function HomeReviw() {
   });
 
   return (
-    <div ref={ref} className="bg-white pb-20">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div ref={ref} className="pb-20 bg-white">
+      <div className="grid grid-cols-1 gap-4 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 sm:grid-cols-2 lg:grid-cols-4">
         {/* 1 card */}
         <div className="bg-[#F8F8F8] p-8">
-          <p className="text-gray-400 text-4xl mb-2">01</p>
+          <p className="mb-2 text-4xl text-gray-400">01</p>
           <div className="mt-20">
-            <h3 className="text-accent font-medium text-3xl mb-6">
+            <h3 className="mb-6 text-3xl font-semibold text-gray-400">
               Projects Completed
             </h3>
-            <p className="text-primary text-4xl font-bold">
+            <p className="text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
               <CountUp start={0} end={inView ? 100 : 0} duration={3} redraw={true} /> +
             </p>
           </div>
@@ -27,12 +27,12 @@ export default function HomeReviw() {
 
         {/* 2 card */}
         <div className="bg-[#F8F8F8] p-8">
-          <p className="text-gray-400 text-4xl mb-2">02</p>
+          <p className="mb-2 text-4xl text-gray-400">02</p>
           <div className="mt-20">
-            <h3 className="text-accent font-medium text-3xl mb-6">
+            <h3 className="mb-6 text-3xl font-semibold text-gray-400">
               Happy <br /> Clients
             </h3>
-            <p className="text-primary text-4xl font-bold">
+            <p className="text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
               <CountUp start={0} end={inView ? 95 : 0} duration={3} redraw={true} /> %
             </p>
           </div>
@@ -40,12 +40,12 @@ export default function HomeReviw() {
 
         {/* 3 card */}
         <div className="bg-[#F8F8F8] p-8">
-          <p className="text-gray-400 text-4xl mb-2">03</p>
+          <p className="mb-2 text-4xl text-gray-400">03</p>
           <div className="mt-20">
-            <h3 className="text-accent font-medium text-3xl mb-6">
+            <h3 className="mb-6 text-3xl font-semibold text-gray-400">
               Years of <br /> Services
             </h3>
-            <p className="text-primary text-4xl font-bold">
+            <p className="text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
               <CountUp start={0} end={inView ? 3 : 0} duration={2} redraw={true} /> +
             </p>
           </div>
@@ -53,12 +53,12 @@ export default function HomeReviw() {
 
         {/* 4 card */}
         <div className="bg-[#F8F8F8] p-8">
-          <p className="text-gray-400 text-4xl mb-2">04</p>
+          <p className="mb-2 text-4xl text-gray-400">04</p>
           <div className="mt-20">
-            <h3 className="text-accent font-medium text-3xl mb-6">
+            <h3 className="mb-6 text-3xl font-semibold text-gray-400">
               Team <br /> Members
             </h3>
-            <p className="text-primary text-4xl font-bold">
+            <p className="text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
               <CountUp start={0} end={inView ? 20 : 0} duration={2.5} redraw={true} /> +
             </p>
           </div>
