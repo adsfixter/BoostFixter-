@@ -7,17 +7,17 @@ import Star from "../../../../public/HomePage/Star.png";
 
 export default function OurStory() {
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-10 overflow-hidden bg-white md:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-2 items-center">
+        <div className="grid items-center gap-10 md:grid-cols-2">
           {/* LEFT SIDE */}
           <div className="space-y-6 text-center md:text-left">
-            <h2 className="text-2xl font-semibold text-primary sm:text-3xl">
+            <h2 className="text-3xl font-extrabold leading-snug text-left text-primary sm:text-3xl md:text-4xl lg:text-5xl">
               Our Story
             </h2>
 
             {/* IMAGE SECTION */}
-            <div className="relative flex justify-center md:justify-start mt-10">
+            <div className="relative flex justify-center mt-10 md:justify-start">
               {/* Static Ellipse */}
               <Image
                 alt="Ellipse"
@@ -40,7 +40,7 @@ export default function OurStory() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute top-[10%] left-[40%] -translate-x-[50%] -translate-y-[50%] w-[80px] sm:w-[100px] md:w-[170px]"
+               className="absolute top-[18%] md:top-[25%] left-[75%] -translate-x-[50%] xl:left-[40%]  md:left-[70%] lg:left-[50%] -translate-y-[50%] w-[130px] sm:w-[100px] md:w-[170px]"
               />
             </div>
           </div>

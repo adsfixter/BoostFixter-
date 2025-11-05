@@ -2,67 +2,58 @@
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { FaProjectDiagram, FaSmile, FaClock, FaUsers } from "react-icons/fa";
 
 export default function HomeReviw() {
   const { ref, inView } = useInView({
-    triggerOnce: false, 
-    threshold: 0.1, 
+    triggerOnce: false,
+    threshold: 0.1,
   });
 
+  const cards = [
+    {
+      icon: <FaProjectDiagram className="text-5xl text-primary" />,
+      title: "Projects Completed",
+      end: 100,
+      suffix: "+",
+      duration: 3,
+    },
+    {
+      icon: <FaSmile className="text-5xl text-primary" />,
+      title: "Happy Clients",
+      end: 95,
+      suffix: "%",
+      duration: 3,
+    },
+    {
+      icon: <FaClock className="text-5xl text-primary" />,
+      title: "Years of Services",
+      end: 3,
+      suffix: "+",
+      duration: 2,
+    },
+    {
+      icon: <FaUsers className="text-5xl text-primary" />,
+      title: "Team Members",
+      end: 20,
+      suffix: "+",
+      duration: 2.5,
+    },
+  ];
+
   return (
-    <div ref={ref} className="bg-white pb-20">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {/* 1 card */}
-        <div className="bg-[#F8F8F8] p-8">
-          <p className="text-gray-400 text-4xl mb-2">01</p>
-          <div className="mt-20">
-            <h3 className="text-accent font-medium text-3xl mb-6">
-              Projects Completed
-            </h3>
-            <p className="text-primary text-4xl font-bold">
-              <CountUp start={0} end={inView ? 100 : 0} duration={3} redraw={true} /> +
+    <div ref={ref} className="pb-20 bg-white">
+      <div className="grid grid-cols-1 gap-4 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 sm:grid-cols-2 lg:grid-cols-4">
+        {cards.map((card, index) => (
+          <div key={index} className="bg-[#F8F8F8] p-8 flex flex-col items-center">
+            <div className="mb-6">{card.icon}</div>
+            <h3 className="mb-6 text-3xl font-medium text-center text-accent">{card.title}</h3>
+            <p className="text-4xl font-bold text-primary">
+              <CountUp start={0} end={inView ? card.end : 0} duration={card.duration} redraw={true} />
+              {card.suffix}
             </p>
           </div>
-        </div>
-
-        {/* 2 card */}
-        <div className="bg-[#F8F8F8] p-8">
-          <p className="text-gray-400 text-4xl mb-2">02</p>
-          <div className="mt-20">
-            <h3 className="text-accent font-medium text-3xl mb-6">
-              Happy <br /> Clients
-            </h3>
-            <p className="text-primary text-4xl font-bold">
-              <CountUp start={0} end={inView ? 95 : 0} duration={3} redraw={true} /> %
-            </p>
-          </div>
-        </div>
-
-        {/* 3 card */}
-        <div className="bg-[#F8F8F8] p-8">
-          <p className="text-gray-400 text-4xl mb-2">03</p>
-          <div className="mt-20">
-            <h3 className="text-accent font-medium text-3xl mb-6">
-              Years of <br /> Services
-            </h3>
-            <p className="text-primary text-4xl font-bold">
-              <CountUp start={0} end={inView ? 3 : 0} duration={2} redraw={true} /> +
-            </p>
-          </div>
-        </div>
-
-        {/* 4 card */}
-        <div className="bg-[#F8F8F8] p-8">
-          <p className="text-gray-400 text-4xl mb-2">04</p>
-          <div className="mt-20">
-            <h3 className="text-accent font-medium text-3xl mb-6">
-              Team <br /> Members
-            </h3>
-            <p className="text-primary text-4xl font-bold">
-              <CountUp start={0} end={inView ? 20 : 0} duration={2.5} redraw={true} /> +
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
