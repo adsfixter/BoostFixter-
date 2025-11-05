@@ -97,3 +97,93 @@ body{
 .hover\:border-accent:hover {
   border-color: var(--color-accent);
 }
+
+
+/* title custom css start */
+
+.title {
+  margin-bottom: 1rem; /* mb-4 */
+  font-weight: 700; /* font-extrabold */
+  color: var(--accent-color, #013F32); /* text-accent (custom variable বা fallback color) */
+  font-size: 1.875rem; /* text-3xl => default */
+  line-height: 1; /* Adjust line height for better readability */
+
+  /* Responsive breakpoints */
+}
+
+@media (min-width: 640px) { /* sm:text-3xl */
+  .title {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 768px) { /* md:text-4xl */
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) { /* lg:text-5xl */
+  .title {
+    font-size: 3rem;
+    
+  }
+}
+/* subtitle custom css start */
+
+.subtitle {
+  margin-bottom: 0.2rem; /* mb-4 */
+  font-weight: 700; /* bold */
+  color: var(--accent-color, #013F32); /* text-accent (custom variable বা fallback color) */
+  font-size: 1.125rem; /* text-3xl => default */
+  line-height: 1.625; /* Adjust line height for better readability */
+
+  /* Responsive breakpoints */
+}
+
+@media (min-width: 640px) { /* sm:text-3xl */
+  .subtitle {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) { /* md:text-4xl */
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) { /* lg:text-5xl */
+  .subtitle {
+    font-size: 1.5rem;
+    
+  }
+}
+
+
+/* subtitle custom css end */
+
+/* description custom css start */
+
+.description {
+  font-size: 1rem; /* text-base */
+  color: var(--accent-color, #013F32); /* text-accent (custom variable বা fallback color) */
+  line-height: 1.4;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 640px) { /* sm:text-lg */
+  .description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) { /* md:text-xl */
+  .description {
+    font-size: 1.25rem;
+    
+  }
+}
+
+/* description custom css end */
+

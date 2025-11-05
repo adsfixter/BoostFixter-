@@ -54,7 +54,7 @@ export default function LatestBlog() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-center justify-between gap-6 mb-10 sm:flex-row">
-          <h2 className="text-4xl font-extrabold text-center text-green-900 sm:text-left">
+          <h2 className=" title ">
             Our Latest Blog
           </h2>
           <CustomButton text={"See All Blogs"} link={"#"} />
@@ -97,7 +97,7 @@ export default function LatestBlog() {
                     />
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-gray-800">
+                    <h4 className="text-xl font-semibold text-gray-800">
                       {blog.author}
                     </h4>
                     <p className="text-xs text-gray-500">{blog.authorRole}</p>
@@ -108,7 +108,7 @@ export default function LatestBlog() {
                 <p className="mb-2 text-xs text-gray-400">{blog.date}</p>
 
                 {/* Title */}
-                <h3 className="mb-4 text-lg font-semibold transition-colors duration-300 text-accent">
+                <h3 className="description">
                   {blog.title}
                 </h3>
 

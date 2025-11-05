@@ -36,12 +36,12 @@ export default function ClientSay() {
   return (
     <section className="pt-10 pb-20 bg-white ">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <h1 className="mb-4 text-3xl font-extrabold leading-snug text-primary sm:text-3xl md:text-4xl lg:text-5xl">
+        <h1 className="title">
           Clients Say
         </h1>
 
         {/* main card grid */}
-        <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2">
+        <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 mt-10">
           {testimonials.map((client) => (
             <div
               key={client.id}
@@ -56,9 +56,9 @@ export default function ClientSay() {
                   alt={client.name}
                 />
               </div>
-              <h1 className="text-3xl font-bold text-accent">{client.name}</h1>
-              <h2 className="text-lg font-bold text-gray-500">{client.role}</h2>
-              <p className="text-lg font-normal text-accent">
+              <h1 className="subtitle ">{client.name}</h1>
+              <h2 className="-mt-1.5 font-bold text-gray-500">{client.role}</h2>
+              <p className="description">
                 {client.feedback}
               </p>
             </div>

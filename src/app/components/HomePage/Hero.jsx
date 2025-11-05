@@ -11,8 +11,8 @@ export default function Hero() {
       <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col-reverse items-center justify-between gap-12 md:flex-row lg:gap-24">
           {/* ---------- LEFT CONTENT ---------- */}
-          <div className="z-10 w-full space-y-6 text-center md:w-1/2 md:text-left">
-            <h1 className="text-3xl font-extrabold leading-snug text-primary sm:text-3xl md:text-4xl lg:text-5xl">
+          <div className="z-10 w-full space-y-6 text-center md:text-left">
+            <h1 className="text-3xl font-extrabold text-primary sm:text-3xl md:text-5xl lg:text-6xl">
               Leading AI-Powered Global Digital Growth Marketing Agency
             </h1>
 
