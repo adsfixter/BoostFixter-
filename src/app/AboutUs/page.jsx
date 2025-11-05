@@ -17,7 +17,7 @@ import TalkAbout from "../components/aboutUs/about/TalkAbout";
 export default function AboutUs() {
   return (
     <div>
-      {/* <AboutHomePage></AboutHomePage> */}
+      <AboutHomePage></AboutHomePage>
       <OurVision></OurVision>
       <WorkProcess></WorkProcess>
       <Squad></Squad>
