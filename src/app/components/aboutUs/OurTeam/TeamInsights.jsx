@@ -6,31 +6,31 @@ import Image from "next/image";
 const squad = [
   {
     id: 1,
-    image: "/HomePage/Nusrat-Jahan.png",
-    name: "Nusrat Jahan",
-    role: "Co-Founder @ StyleVista Fashion",
+    image: "/About/Akash-Gharami.png",
+    name: "Akash Gharami",
+    role: "Creative Designer",
     description:
-      "Professional communication, smart planning, and excellent execution. Our brand visibility increased noticeably.",
+      "In today's digital age, apps have become an integral part of our daily lives. From communication and entertainment to productivity and learning, there's an app for just about everything.",
   },
   {
     id: 2,
-    image: "/HomePage/Arif-Mahmud.png",
-    name: "Arif Mahmud",
-    role: "CEO @ GreenLine Organic Mart",
+    image: "/About/Md-Jahed-Hossen.png",
+    name: "Md Jahed Hossen",
+    role: "Brand Strategist (Marketing)",
     description:
-      "Professional communication, smart planning, and excellent execution. Our brand visibility increased noticeably.",
+      "In today's digital age, apps have become an integral part of our daily lives. From communication and entertainment to productivity and learning, there's an app for just about everything.",
   },
   {
     id: 3,
-    image: "/HomePage/Sadia-Anwar.png",
-    name: "Sadia Anwar",
-    role: "Founder @ Herb & Heal Skincare",
+    image: "/About/Md-Omar-Faruk.png",
+    name: "Md Omar Faruk",
+    role: "Full Stack Developar",
     description:
-      "Professional communication, smart planning, and excellent execution. Our brand visibility increased noticeably.",
+      "In today's digital age, apps have become an integral part of our daily lives. From communication and entertainment to productivity and learning, there's an app for just about everything.",
   },
 ];
 
-export default function ClientsSays() {
+export default function TeamInsights() {
   return (
     <div className="pb-20 pt-10">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">

@@ -27,15 +27,15 @@ export default function TalkAbout() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="md:w-[40%] text-center md:text-right">
-            <Image
-              src={"/About/Office_.png"}
-              width={200}
-              height={200}
-              alt="Farhan"
-              className="w-full h-[320px]"
-            ></Image>
-          </div>
+         <div className="md:w-[40%] text-center md:text-right">
+  <Image
+    src={"/About/Office_.png"}
+    alt="Farhan"
+    width={400}
+    height={320}
+    className="w-full h-auto object-cover rounded-3xl"
+  />
+</div>
         </div>
       </div>
     </div>

@@ -68,33 +68,22 @@ export default function Squad() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* top div */}
         <div className="flex justify-between items-center">
-          <h1 className="title">
-            BoostFixter Squad
-          </h1>
+          <h1 className="title">BoostFixter Squad</h1>
           <CustomButton text={"Meet The Team"} link={"#"} />
         </div>
 
         {/* content div with marquee */}
-        <Marquee
-          speed={50} // scroll speed
-          gradient={false} // no fade effect at edges
-          pauseOnHover={true} // pause on hover
-        >
+        <Marquee speed={50} gradient={false} pauseOnHover>
           {squad.map((member) => (
-            <div
-              key={member.id}
-              className="mx-2 flex flex-col mt-10"
-            >
+            <div key={member.id} className="mx-2 flex flex-col mt-10">
               <Image
                 src={member.image}
-                width={240}
-                height={280}
-                className="w-[350px] h-105 object-cover rounded-2xl"
+                width={350}
+                height={420}
+                className="w-[350px] h-[420px] object-cover rounded-2xl"
                 alt={member.name}
               />
-              <h1 className="subtitle mt-4">
-                {member.name}
-              </h1>
+              <h1 className="subtitle mt-4">{member.name}</h1>
               <h2 className="-mt-1.5 text-gray-500 font-semibold">
                 {member.role}
               </h2>

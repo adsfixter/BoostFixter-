@@ -31,7 +31,7 @@ export default function Hero() {
           {/* ---------- RIGHT CONTENT ---------- */}
           <div className="relative flex justify-center w-full md:w-1/2">
             {/* Wrapper to maintain aspect ratio */}
-            <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-[400px] md:h-[400px] lg:w-[460px] lg:h-[460px]">
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-[360px] md:h-[360px] lg:w-[400px] lg:h-[400px]">
               {/* Image 1 */}
               <motion.div
                 animate={{
