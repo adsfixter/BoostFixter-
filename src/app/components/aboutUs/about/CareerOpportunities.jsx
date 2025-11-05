@@ -8,7 +8,7 @@ import CustomButton from "../../Share/CustomButton";
 
 export default function CareerOpportunities() {
   return (
-    <section className="py-20 bg-[#F8F8F8] overflow-hidden">
+    <section className="pb-20 pt-10 bg-[#F8F8F8] overflow-hidden">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 items-center">
           {/* LEFT SIDE */}
@@ -48,11 +48,11 @@ export default function CareerOpportunities() {
 
           {/* RIGHT SIDE */}
           <div className="space-y-6 text-center md:text-left">
-            <h1 className="text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
+            <h1 className="title">
               Grow, create, and lead with BoostFixter
             </h1>
 
-            <p className="text-base text-accent sm:text-lg md:text-xl ">
+            <p className="description ">
               Choose BoostFixter to embrace your skills and passion. We are your
               growth partner, encouraging creativity and individual development
               while creating excellent user experiences in a fast-paced,

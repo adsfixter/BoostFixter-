@@ -9,11 +9,11 @@ export default function TalkAbout() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
           {/* LEFT SIDE */}
           <div className="space-y-6 text-center md:text-left md:w-[60%]">
-            <h1 className="text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
+            <h1 className="title">
               Let's Talk <br /> About Your Dream
             </h1>
 
-            <p className="text-base text-accent sm:text-lg md:text-xl">
+            <p className="description">
               Have a project in mind? Let’s collaborate and create something{" "}
               <br />
               extraordinary. Reach out to us, and we’ll help turn your ideas{" "}
@@ -29,7 +29,7 @@ export default function TalkAbout() {
           {/* RIGHT SIDE */}
           <div className="md:w-[40%] text-center md:text-right">
             <Image
-              src={"/About/farhan.png"}
+              src={"/About/Office_.png"}
               width={200}
               height={200}
               alt="Farhan"
