@@ -16,12 +16,12 @@ export default function AboutHomePage() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
         <div className="max-w-7xl px-4 mx-auto text-center">
-          <h2 className="mb-4 text-2xl font-extrabold lg:text-5xl text-accent">
+          <h2 className="title">
             Behind the Magic
           </h2>
 
         {/* Description */}
-        <p className="text-[#676E72] max-w-[70%] mx-auto text-2xl font-medium mb-10 text-center">
+        <p className="description">
           We revolutionize digital strategies with cutting-edge, future-ready
           enabling
           businesses to expand in the dynamic world of marketing technology.
