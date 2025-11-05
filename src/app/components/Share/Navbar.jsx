@@ -38,11 +38,11 @@ export default function Navbar() {
       label: "About Us",
       href: "/AboutUs",
       name: "about",
-      // links: [
+       links: [
       //   { href: "/AboutUs/Portfolio", label: "Portfolio" },
-      //   { href: "/AboutUs/OurTeam", label: "Our Team" },
+         { href: "/AboutUs/OurTeam", label: "Our Team" },
       //   { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
-      // ],
+       ],
     },
     // { label: "Blog", href: "/blog" },
     // { label: "Contact", href: "/Contact" },
