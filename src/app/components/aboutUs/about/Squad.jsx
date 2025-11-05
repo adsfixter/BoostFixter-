@@ -64,11 +64,11 @@ const squad = [
 
 export default function Squad() {
   return (
-    <div className="py-20">
+    <div className="pb-20 pt-10">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* top div */}
         <div className="flex justify-between items-center">
-          <h1 className="text-primary text-3xl lg:text-5xl font-bold mb-10">
+          <h1 className="title">
             BoostFixter Squad
           </h1>
           <CustomButton text={"Meet The Team"} link={"#"} />
@@ -83,7 +83,7 @@ export default function Squad() {
           {squad.map((member) => (
             <div
               key={member.id}
-              className="mx-2 flex flex-col"
+              className="mx-2 flex flex-col mt-10"
             >
               <Image
                 src={member.image}

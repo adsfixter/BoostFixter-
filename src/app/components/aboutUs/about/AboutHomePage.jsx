@@ -21,7 +21,7 @@ export default function AboutHomePage() {
           </h2>
 
         {/* Description */}
-        <p className="description">
+        <p className="description max-w-[70%] mx-auto mb-10">
           We revolutionize digital strategies with cutting-edge, future-ready
           enabling
           businesses to expand in the dynamic world of marketing technology.
