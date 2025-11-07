@@ -28,11 +28,11 @@ export default function Navbar() {
       label: "Services",
       href: "/Services",
       name: "services",
-      links: [
-        { href: "/Services/DesignMedia", label: "Design Media" },
-        { href: "/Services/webDevelopment", label: "Web Development" },
-        { href: "/Services/CyberSecurity", label: "Cyber Security" },
-      ],
+      // links: [
+      //   { href: "/Services/DesignMedia", label: "Design Media" },
+      //   { href: "/Services/webDevelopment", label: "Web Development" },
+      //   { href: "/Services/CyberSecurity", label: "Cyber Security" },
+      // ],
     },
     {
       label: "About Us",
