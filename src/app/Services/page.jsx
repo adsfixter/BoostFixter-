@@ -9,13 +9,13 @@ import DigitalMarketingComponent from '../components/services/service/DigitalMar
 
 function Services() {
     return (
-        <div className=''>
+        <div className={"w-full overflow-x-hidden space-y-5"}>
             <ServiceHome></ServiceHome>
-           <DigitalMarketingComponent></DigitalMarketingComponent>
+            <DigitalMarketingComponent></DigitalMarketingComponent>
             <VisualCreativeComponent></VisualCreativeComponent>
             <WebDevelopmentComponent></WebDevelopmentComponent>
             <SyberSecurityComponent></SyberSecurityComponent>
-            <NeedConsultation></NeedConsultation>
+            <NeedConsultation></NeedConsultation> 
             
         </div>
     );
