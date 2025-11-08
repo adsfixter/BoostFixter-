@@ -14,16 +14,16 @@ export default function Navbar() {
 
   const navItems = [
     { label: "Home", href: "/" },
-    // {
-    //   label: "Advertising",
-    //   href: "/Advertising",
-    //   name: "advertising",
-    //   links: [
-    //     { href: "/Advertising/Facebook", label: "Facebook" },
-    //     { href: "/Advertising/TikTok", label: "TikTok" },
-    //     { href: "/Advertising/Google", label: "Google" },
-    //   ],
-    // },
+    {
+      label: "Advertising",
+      href: "/Advertising",
+      name: "advertising",
+      links: [
+        // { href: "/Advertising/Facebook", label: "Facebook" },
+        // { href: "/Advertising/TikTok", label: "TikTok" },
+        // { href: "/Advertising/Google", label: "Google" },
+      ],
+    },
     {
       label: "Services",
       href: "/Services",
