@@ -60,49 +60,50 @@ export default function DigitalMarketingComponent() {
   ];
 
   return (
-    <div className="bg-[#F8F8F8]">
+    <div className="bg-[#F8F8F8] w-full overflow-x-hidden">
       {/* -------- Hero Section -------- */}
-      <section className="px-4 py-14 md:py-16">
-        <div className="grid items-center grid-cols-1 gap-10 mx-auto max-w-7xl lg:grid-cols-2">
-          {/* Text Section */}
-          <div className="space-y-5 text-center lg:text-left">
-            <h1 className="title text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#00473E]">
-             Digital Marketing
-            </h1>
-            <p className="max-w-xl mx-auto leading-relaxed text-gray-600 description lg:mx-0">
-             When it comes to digital marketing, we create strategies that drive real business growth. Our goal is to help your brand reach the right audience, increase engagement, and convert leads into customers.
-            </p>
-
-            <div className="flex justify-center lg:justify-start">
-              <CustomButton text={"Quick a Call"} link={"#"} />
+      <section className="pt-10 md:pb-20">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="grid items-center grid-cols-1 gap-10 md:grid-cols-2">
+            {/* Text Section */}
+            <div className="space-y-5 lg:text-left">
+              <h1 className="title ">Digital Marketing</h1>
+              <p className="description">
+                When it comes to digital marketing, we create strategies that
+                drive real business growth. Our goal is to help your brand reach
+                the right audience, increase engagement, and convert leads into
+                customers.
+              </p>
+              <div className="flex lg:justify-start">
+                <CustomButton text={"Quick a Call"} link={"#"} />
+              </div>
             </div>
-          </div>
-
-          {/* Image Section */}
-          <div className="flex justify-center w-full lg:justify-end">
-            <img
-              src="/service/marketing.png"
-              alt="Cyber Security"
-              className="object-cover w-full max-w-[450px] rounded-2xl"
-            />
+            {/* Image Section */}
+            <div className="flex justify-center w-full lg:justify-end">
+              <img
+                src="/service/marketing.png"
+                alt="Cyber Security"
+                className="object-cover max-w-full max-h-[500px] rounded-2xl"
+                style={{ width: "100%", height: "auto", maxWidth: "500px" }}
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* -------- Services Grid -------- */}
-      <section className="px-4 pb-14 md:pb-16">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="pt-10 md:pb-20">
+        <div className="px-4 mx-auto max-w-7xl">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {services.map((service) => (
               <div
                 key={service.number}
-                className="flex flex-col justify-between p-6 transition-all duration-300 bg-white shadow-sm rounded-xl hover:shadow-md"
+                className="flex flex-col justify-between p-6 transition-all duration-300 bg-white rounded-xl "
               >
                 <div>
-                  <div className="subtitle">{service.number}</div>
-                  <h3 className="subtitle">{service.title}</h3>
+                  <div className="mb-2 text-3xl text-gray-400">{service.number}</div>
+                  <h3 className="mb-6 text-3xl font-semibold text-gray-400 text-accent">{service.title}</h3>
                 </div>
-
                 <div className="mt-4 flex underline items-center gap-1 text-sm font-semibold text-[#00473E] hover:gap-2 transition-all duration-300 cursor-pointer">
                   Details
                   <ArrowRight className="w-5 h-5 transform rotate-[-45deg]" />
@@ -114,19 +115,18 @@ export default function DigitalMarketingComponent() {
       </section>
 
       {/* -------- Expert Connect Section -------- */}
-      <section className="pb-10 overflow-hidden ">
+      <section className="pt-10 md:pb-20">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-5">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-9">
             {/* IMAGE SIDE */}
-            <div className="relative flex justify-center md:justify-start md:col-span-2">
+            <div className="relative flex w-full overflow-hidden rounded-2xl md:justify-start md:col-span-4">
               <Image
                 alt="Expert"
                 src="/About/Abdul-Kadir.png"
                 width={220}
                 height={220}
-               className="relative  w-[200px] sm:w-[180px] md:w-[200px] rounded-2xl"
+                className="relative w-[270px] sm:w-[300px] md:w-[250px] lg:w-[320px] rounded-2xl"
               />
-
               {/* Animated Star */}
               <MotionImage
                 src="/HomePage/Star.png"
@@ -143,21 +143,20 @@ export default function DigitalMarketingComponent() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute top-[40%] md:top-[40%] left-[80%] -translate-x-[50%] xl:left-[50%]  md:left-[85%] lg:left-[70%] -translate-y-[50%] w-[130px] sm:w-[100px] md:w-[190px]"
+                className="absolute top-[40%] z-100 left-[70%] -translate-x-[50%] -translate-y-[50%] w-[210px] sm:w-[100px] md:w-[150px] lg:w-[200px] xl:left-[65%] lg:left-[75%] md:left-[75%]"
+                style={{ maxWidth: "100%", pointerEvents: "none" }}
               />
             </div>
-
             {/* TEXT SIDE */}
-            <div className="space-y-5 text-center md:text-left md:col-span-3">
+            <div className="space-y-5 text-center md:text-left md:col-span-5 ">
               <h1 className="title">
-             Connect with our Marketing Experts Today!
+                Connect with our Marketing Experts Today!
               </h1>
-              <p className=" description">
+              <p className="description">
                 Have a project in mind? Let’s collaborate and create something
                 extraordinary. Reach out to us, and we’ll help turn your ideas
                 into impactful digital experiences.
               </p>
-
               <div className="flex justify-center md:justify-start">
                 <CustomButton text={"Quick a Call"} link={"#"} />
               </div>

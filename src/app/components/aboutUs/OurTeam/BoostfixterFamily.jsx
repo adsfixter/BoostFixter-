@@ -107,15 +107,15 @@ const squad = [
 
 export default function BoostfixterFamily() {
   return (
-    <div className="pb-20 pt-10">
+    <div className="pt-10 pb-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Top div */}
-        <div className="flex justify-between items-center">
+        <div className="flex items-center justify-between">
           <h1 className="title">Our Awesome <br /> BoostFixter Family</h1>
           <CustomButton text={"Join Our Team"} link={"#"} />
         </div>
 
-       <div className="grid lg:grid-cols-3 gap-8">
+       <div className="grid gap-8 lg:grid-cols-3">
   {squad.map((member) => (
     <div key={member.id} className="flex flex-col mt-10 group">
       {/* Image wrapper with hover effect */}
@@ -132,11 +132,11 @@ export default function BoostfixterFamily() {
           src={member.image2}
           alt={member.name + " hover"}
           fill
-          className="object-cover opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100"
+          className="object-cover transition-opacity duration-700 ease-in-out opacity-0 group-hover:opacity-100"
         />
       </div>
 
-      <h1 className="subtitle mt-4">{member.name}</h1>
+      <h1 className="mt-4 subtitle">{member.name}</h1>
       <h2 className="-mt-1.5 text-gray-500 font-semibold">
         {member.role}
       </h2>
