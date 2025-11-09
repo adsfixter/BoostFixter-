@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedButton from "../Share/AnimatedButton";
 import CustomButton from "../Share/CustomButton";
+import T from "../T";
 
 export default function Hero() {
   return (
@@ -13,7 +14,7 @@ export default function Hero() {
           {/* ---------- LEFT CONTENT ---------- */}
           <div className="z-10 w-full space-y-6 text-center md:text-left">
             <h1 className="text-3xl font-extrabold text-primary sm:text-3xl md:text-5xl lg:text-6xl">
-              Leading AI-Powered Global Digital Growth Marketing Agency
+              <T>Leading AI-Powered Global Digital Growth Marketing Agency</T>
             </h1>
 
             <p className="mx-auto text-base text-gray-600 sm:text-lg md:text-xl md:mx-0 md:w-11/12">

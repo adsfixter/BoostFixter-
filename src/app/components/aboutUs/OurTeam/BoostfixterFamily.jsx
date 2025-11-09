@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import CustomButton from "../../Share/CustomButton";
+import T from "../../T";
 
 const squad = [
   {
@@ -110,8 +111,8 @@ export default function BoostfixterFamily() {
     <div className="pt-10 pb-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Top div */}
-        <div className="flex items-center justify-between">
-          <h1 className="title">Our Awesome <br /> BoostFixter Family</h1>
+        <div className="flex justify-between items-center">
+          <h1 className="title"> <T>Our Awesome BoostFixter Family</T></h1>
           <CustomButton text={"Join Our Team"} link={"#"} />
         </div>
 
@@ -136,9 +137,9 @@ export default function BoostfixterFamily() {
         />
       </div>
 
-      <h1 className="mt-4 subtitle">{member.name}</h1>
+      <h1 className="subtitle mt-4"><T>{member.name}</T></h1>
       <h2 className="-mt-1.5 text-gray-500 font-semibold">
-        {member.role}
+       <T>{member.role}</T>
       </h2>
     </div>
   ))}
