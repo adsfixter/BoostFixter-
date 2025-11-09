@@ -10,10 +10,8 @@ export default function Advertising() {
   return (
       <div>
       <AdvertisHero></AdvertisHero>
-      
-      
       <SocialMediaSection></SocialMediaSection>
-     <OurAdsExperts></OurAdsExperts>
+     {/* <OurAdsExperts></OurAdsExperts> */}
       {/* <AdvertisFaq></AdvertisFaq> */}
     </div>
   )
