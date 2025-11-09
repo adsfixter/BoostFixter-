@@ -2,11 +2,11 @@ import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Share/Navbar";
 import Footer from "./components/Share/Footer";
-
+import { LocaleProvider } from "@/context/LocaleContext";
 const nunito = Nunito_Sans({
   subsets: ["latin"],
-  weight: [ "200", "300", "400", "500", "600", "700", "800"], 
-  variable: "--font-nunito", 
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-nunito",
 });
 
 export const metadata = {
@@ -21,13 +21,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={nunito.variable}>
       <body className="antialiased primaryText font-nunito">
-        <header className="sticky top-0 z-50">
-          <Navbar />
-        </header>
-        <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+        <LocaleProvider>
+          <header className="sticky top-0 z-50">
+            <Navbar />
+          </header>
+          <main>{children}</main>
+          <footer>
+            <Footer />
+          </footer>
+        </LocaleProvider>
       </body>
     </html>
   );
