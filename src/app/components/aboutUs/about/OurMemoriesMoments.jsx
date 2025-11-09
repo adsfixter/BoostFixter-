@@ -49,7 +49,7 @@ export default function OurMemoriesMoments() {
           ))}
         </Marquee>
         {/* 3 Image Marquee */}
-        <Marquee speed={40} gradient={false} pauseOnHover>
+        {/* <Marquee speed={40} gradient={false} pauseOnHover>
           {Image1.map((member) => (
             <div key={member.id} className="mx-3 flex flex-col mt-5">
               <div className="relative w-[480px] sm:w-[320px] lg:w-[350px] h-[280px]  overflow-hidden rounded-2xl">
@@ -64,7 +64,7 @@ export default function OurMemoriesMoments() {
               </div>
             </div>
           ))}
-        </Marquee>
+        </Marquee> */}
       </div>
     </div>
   );
