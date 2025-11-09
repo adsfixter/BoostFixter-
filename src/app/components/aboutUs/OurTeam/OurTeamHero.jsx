@@ -33,13 +33,12 @@ export default function OurTeamHero() {
             // Adjust height and opacity based on distance
             let sizeClass = "";
             if (distanceFromCenter === 0) {
-              sizeClass = "w-76 h-80 opacity-100"; // center
+              sizeClass = "w-[390px] h-[330px] opacity-100"; // center
             } else if (distanceFromCenter === 1) {
-              sizeClass = "w-60 h-64 opacity-95"; // next to center
+              sizeClass = "w-[210px] h-[260px] opacity-95"; // next to center
             } else {
-              sizeClass = "w-44 h-48 opacity-90"; // far edges
+              sizeClass = "w-[172px] h-[212px] opacity-90"; // far edges
             }
-
             return (
               <img
                 key={index}

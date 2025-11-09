@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import LanguageToggle from "../LanguageToggle";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +51,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur">
+    <header className=" bg-white/90 backdrop-blur">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -60,7 +62,7 @@ export default function Navbar() {
               className="w-auto h-8"
             />
           </Link>
-
+       {/* <LanguageToggle></LanguageToggle> */}
           {/* Desktop Menu */}
           <nav className="items-center hidden gap-8 md:flex">
             {navItems.map((item, index) =>
