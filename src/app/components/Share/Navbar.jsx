@@ -21,7 +21,7 @@ export default function Navbar() {
       href: "/Advertising",
       name: "advertising",
       links: [
-        // { href: "/Advertising/Facebook", label: "Facebook" },
+        { href: "/Advertising/Facebook", label: "Facebook" },
         // { href: "/Advertising/TikTok", label: "TikTok" },
         // { href: "/Advertising/Google", label: "Google" },
       ],
@@ -46,7 +46,7 @@ export default function Navbar() {
       //   { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
        ],
     },
-    { label: "Blog", href: "/blog" },
+    // { label: "Blog", href: "/blog" },
     // { label: "Contact", href: "/Contact" },
   ];
 
