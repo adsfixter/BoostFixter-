@@ -21,9 +21,9 @@ export default function Navbar() {
       href: "/Advertising",
       name: "advertising",
       links: [
-        // { href: "/Advertising/Facebook", label: "Facebook" },
-        // { href: "/Advertising/TikTok", label: "TikTok" },
-        // { href: "/Advertising/Google", label: "Google" },
+        { href: "/Advertising/Facebook", label: "Facebook" },
+        { href: "/Advertising/TikTok", label: "TikTok" },
+        { href: "/Advertising/Google", label: "Google" },
       ],
     },
     {

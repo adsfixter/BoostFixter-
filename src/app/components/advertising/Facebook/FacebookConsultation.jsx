@@ -1,7 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
 import AnimatedButton from "../../Share/AnimatedButton";
 
-export default function NeedConsultation() {
+
+export default function FacebookConsultation() {
   return (
     <section className="py-16 mb-16 bg-[#F8F8F8]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -9,29 +10,28 @@ export default function NeedConsultation() {
           {/* Left Text Section */}
           <div className="w-full space-y-6 md:w-2/5">
             <h2 className="title">
-              Planning <br></br> Something Big?
+             Ready to Grow?
             </h2>
             <p className="description">
-              Discuss your idea on a call. After discovery, we'll propose a tailored plan for your project.
+              Let's discuss your business and plan your first campaign together.
             </p>
 
             {/* Avatar Section */}
             <div className="flex items-center gap-4 p-4l w-fit">
               <div className="w-16 h-16 overflow-hidden rounded-full">
                 <img
-                  src="About/Md-Shobuj-Hosen.png"
+                  src="/About/Abdul-Kadir.png"
                   alt="Manager"
                   className="object-cover w-full h-full "
                 />
               </div>
               <div>
                 <h3 className="subtitle">
-                  Md Shobuj Hosen
+                  Abdul Kadir
                 </h3>
-                <p className="text-sm text-gray-500">Chief Technical Manager</p>
+                <p className="text-sm text-gray-500">Technical Support Officer</p>
               </div>
             </div>
-
             {/* Call Link */}
             <div className="flex items-center gap-0 mt-6 text-green-800 underline tex-2t-lg font-sgemibold md:text-xl">
               <a href="#" className="text-green-800 ">

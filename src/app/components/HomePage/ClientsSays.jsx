@@ -36,7 +36,7 @@ export default function ClientsSays() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* top div */}
         <div className="flex justify-between items-center">
-          <h1 className="title">Team Insights</h1>
+          <h1 className="title">Clients Say</h1>
         </div>
         <div className="grid lg:grid-cols-3">
           {squad.map((member) => (
