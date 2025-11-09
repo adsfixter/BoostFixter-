@@ -46,7 +46,7 @@ export default function Navbar() {
       //   { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
        ],
     },
-    // { label: "Blog", href: "/blog" },
+    { label: "Blog", href: "/blog" },
     // { label: "Contact", href: "/Contact" },
   ];
 

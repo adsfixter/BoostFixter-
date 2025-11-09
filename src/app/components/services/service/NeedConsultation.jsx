@@ -42,7 +42,7 @@ export default function NeedConsultation() {
           </div>
 
           {/* Right Form Section */}
-          <form className="w-full p-8 space-y-6 bg-white shadow md:w-3/5 rounded-2xl">
+          <form className="w-full p-8 space-y-6 bg-white md:w-3/5 rounded-2xl">
             <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
               <input
                 type="text"
