@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 export default function AboutHomePage() {
+
   return (
     <section className="py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -17,62 +19,53 @@ export default function AboutHomePage() {
         </p>
 
         {/* Image row */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 items-center">
+        <div className="flex items-center gap-4">
           {/* 1 image */}
-          <div className="relative w-full h-48 sm:h-56 lg:h-52 overflow-hidden rounded-xl">
+          <div className="relative w-[172px] h-[212px] hidden lg:block">
             <Image
               src="/About/Office.png"
-              alt=""
+              alt="Office"
               fill
-              className="object-cover transition-transform duration-500 opacity-85 "
-              quality={100}
-              priority
+              className="object-cover rounded-xl"
             />
           </div>
-
           {/* 2 image */}
-          <div className="relative w-full h-48 sm:h-56 lg:h-62 overflow-hidden rounded-xl">
+          <div className="relative w-[210px] h-[260px] hidden md:block">
             <Image
               src="/About/Image-03.png"
-              alt=""
+              alt="Office"
               fill
-              className="object-cover transition-transform duration-500 opacity-90 "
-              quality={100}
+              className="object-cover rounded-xl"
             />
           </div>
-
           {/* 3 image */}
-          <div className="relative w-full h-56 sm:h-64 lg:h-72 overflow-hidden rounded-xl">
+          <div className="relative w-[440px] h-[327px]">
             <Image
               src="/About/Image-04.png"
-              alt=""
+              alt="Office"
               fill
-              className="object-cover transition-transform duration-500 opacity-100 "
-              quality={100}
+              className="object-cover rounded-xl"
             />
           </div>
-
           {/* 4 image */}
-          <div className="relative w-full h-48 sm:h-56 lg:h-62 overflow-hidden rounded-xl">
+          <div className="relative w-[210px] h-[260px] hidden md:block">
             <Image
               src="/About/Image-01.png"
-              alt=""
+              alt="Office"
               fill
-              className="object-cover transition-transform duration-500 opacity-90 "
-              quality={100}
+              className="object-cover rounded-xl"
             />
           </div>
-
           {/* 5 image */}
-          <div className="relative w-full h-48 sm:h-56 lg:h-52 overflow-hidden rounded-xl">
+          <div className="relative w-[172px] h-[212px] hidden lg:block">
             <Image
               src="/About/Image-02.png"
-              alt=""
+              alt="Office"
               fill
-              className="object-cover transition-transform duration-500 opacity-85"
-              quality={100}
+              className="object-cover rounded-xl"
             />
           </div>
+       
         </div>
       </div>
     </section>
