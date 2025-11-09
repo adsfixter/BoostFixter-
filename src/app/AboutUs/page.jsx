@@ -13,12 +13,14 @@ import WorkProcess from "../components/aboutUs/about/WorkProcess";
 import Squad from "../components/aboutUs/about/Squad";
 import CareerOpportunities from "../components/aboutUs/about/CareerOpportunities";
 import TalkAbout from "../components/aboutUs/about/TalkAbout";
+import OurMemoriesMoments from "../components/aboutUs/about/OurMemoriesMoments";
 
 export default function AboutUs() {
   return (
     <div>
       <AboutHomePage></AboutHomePage>
       <OurVision></OurVision>
+      <OurMemoriesMoments></OurMemoriesMoments>
       <WorkProcess></WorkProcess>
       <Squad></Squad>
       <CareerOpportunities></CareerOpportunities>
