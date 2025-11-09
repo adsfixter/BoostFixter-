@@ -50,7 +50,7 @@ export default function Pricing() {
     <div className="pb-20 pt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="title mb-2">Service Packages & Pricing</h2>
-        <p className="description w-3xl mx-auto mb-12">
+        <p className="description max-w-3xl mx-auto mb-12">
           Note: The ad spend will be paid directly to Facebook. We only charge
           for the service management fee.
         </p>

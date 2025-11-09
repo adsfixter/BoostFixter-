@@ -6,9 +6,9 @@ export default function FacebookAds() {
   return (
     <div className="py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex gap-4 justify-between items-stretch">
+        <div className="flex flex-col-reverse md:flex-row  gap-4 justify-between items-stretch">
           {/* left content */}
-          <div className="w-1/2 space-y-8">
+          <div className="md:w-1/2 space-y-8">
             <h1 className="title">Facebook Ads</h1>
             <p className="description">
               Facebook Ads allow your business to reach the exact people who are
@@ -17,7 +17,7 @@ export default function FacebookAds() {
               measurable growth, improved conversion rates, and maximum return
               on investment (ROI).
             </p>
-            <div className="w-2/6">
+            <div className="md:w-2/6">
               <CustomButton text={"Quick a Call"} link={"#"}></CustomButton>
             </div>
           </div>
