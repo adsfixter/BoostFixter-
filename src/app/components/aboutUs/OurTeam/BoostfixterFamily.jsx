@@ -72,7 +72,7 @@ const squad = [
   {
     id: 10,
     image: "/About/Md-Hasnat-Nion.png",
-    image2:"/About/Md-Hashat-Nion-2.png",
+    image2: "/About/Md-Hashat-Nion-2.png",
     name: "Md Hasnat Nion",
     role: "Marketing Executive",
   },
@@ -112,39 +112,36 @@ export default function BoostfixterFamily() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Top div */}
         <div className="flex justify-between items-center">
-          <h1 className="title"> <T>Our Awesome BoostFixter Family</T></h1>
+          <h1 className="title">
+            {" "}
+            <T>Our Awesome BoostFixter Family</T>
+          </h1>
           <CustomButton text={"Join Our Team"} link={"#"} />
         </div>
 
-       <div className="grid gap-8 lg:grid-cols-3">
-  {squad.map((member) => (
-    <div key={member.id} className="flex flex-col mt-10 group">
-      {/* Image wrapper with hover effect */}
-      <div className="relative w-full h-[420px] overflow-hidden rounded-2xl">
-        {/* Main image */}
-        <Image
-          src={member.image}
-          alt={member.name}
-          fill
-          className="object-cover transition-opacity duration-700 ease-in-out group-hover:opacity-0"
-        />
-        {/* Hover image */}
-        <Image
-          src={member.image2}
-          alt={member.name + " hover"}
-          fill
-          className="object-cover transition-opacity duration-700 ease-in-out opacity-0 group-hover:opacity-100"
-        />
-      </div>
+        <div className="grid gap-8 lg:grid-cols-3">
+          {squad.map((member) => (
+            <div key={member.id} className="flex flex-col mt-10 group">
+              {/* Image wrapper with hover effect */}
+              <div className="relative w-full h-[420px] overflow-hidden rounded-2xl">
+                {/* Main image */}
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover transition-opacity duration-700 ease-in-out "
+                />
+              </div>
 
-      <h1 className="subtitle mt-4"><T>{member.name}</T></h1>
-      <h2 className="-mt-1.5 text-gray-500 font-semibold">
-       <T>{member.role}</T>
-      </h2>
-    </div>
-  ))}
-</div>
-
+              <h1 className="subtitle mt-4">
+                <T>{member.name}</T>
+              </h1>
+              <h2 className="-mt-1.5 text-gray-500 font-semibold">
+                <T>{member.role}</T>
+              </h2>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

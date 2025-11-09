@@ -61,7 +61,7 @@ export default function SocialMediaSection() {
   ];
 
   return (
-    <section className="text-gray-800 bg-white ">
+    <section className="text-gray-800 bg-white pb-20">
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {services.map((service, index) => (
