@@ -1,57 +1,57 @@
 import React from "react";
 
-export default function Pricing() {
-  const plans = [
-    {
-      name: "Starter",
-      desc: "Best for boosting brand presence",
-      price: "৳ 6,500",
-      period: "/month",
-      adSpend: "Up to ৳ 20,000",
-      features: [
-        "3 Custom Ad Creatives",
-        "1 Campaign Setup",
-        "Basic Target Audience Setting",
-        "Basic Optimization",
-        "Monthly Performance Report",
-      ],
-    },
-    {
-      name: "Growth",
-      desc: "Perfect for lead & sales generation",
-      price: "৳ 12,000",
-      period: "/month",
-      adSpend: "৳ 20,000 - 80,000",
-      features: [
-        "6 Custom Ad Creatives",
-        "Multi-Level Campaign Funnel",
-        "Retargeting & Remarketing",
-        "Facebook Pixel & Event Setup",
-        "Weekly Reports & Consultation",
-      ],
-    },
-    {
-      name: "Scale Pro",
-      desc: "For businesses ready to scale big",
-      price: "৳ 22,000",
-      period: "/month",
-      adSpend: "৳ 80,000+",
-      features: [
-        "12+ Custom Creatives Per Month",
-        "Full Campaign Strategy & Scaling",
-        "Advanced Retargeting Funnels",
-        "A/B Split Testing Optimization",
-        "Dedicated Account Manager",
-      ],
-    },
-  ];
+export default function TikTokPricing() {
+ const plans = [
+  {
+    name: "Starter",
+    desc: "Best for small businesses or trial campaigns.",
+    price: "৳ 9,900",
+    period: "/month",
+    adSpend: "Up to ৳ 20,000",
+    features: [
+      "1 TikTok campaign setup",
+      "2–3 short-form video creatives",
+      "3 ad copy variations",
+      "Basic audience targeting",
+      "Monthly performance report",
+    ],
+  },
+  {
+    name: "Growth",
+    desc: "Best for growing brands looking for higher engagement.",
+    price: "৳ 12,000",
+    period: "/month",
+    adSpend: "৳ 20,000 – 80,000",
+    features: [
+      "2–3 TikTok campaigns setup",
+      "5–7 video or static creatives",
+      "5 ad copy variations",
+      "Advanced audience segmentation & targeting",
+      "Trend & hashtag research",
+    ],
+  },
+  {
+    name: "Scale Pro",
+    desc: "Best for brands aiming for viral campaigns.",
+    price: "৳ 22,000",
+    period: "/month",
+    adSpend: "৳ 80,000+",
+    features: [
+      "3–5 TikTok campaigns setup",
+      "8–10 video or static creatives",
+      "7+ ad copy variations",
+      "Full audience analysis",
+      "Retargeting strategy",
+    ],
+  },
+];
 
   return (
     <div className="pb-20 pt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="title mb-2">Service Packages & Pricing</h2>
         <p className="description max-w-3xl mx-auto mb-12">
-          Note: The ad spend will be paid directly to Facebook. We only charge
+          Note: The ad spend will be paid directly to TikTok. We only charge
           for the service management fee.
         </p>
 
