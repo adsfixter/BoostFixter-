@@ -16,7 +16,7 @@ export default function AboutHomePage() {
     <section className="py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
-        <h2 className="title text-center mb-4">
+        <h2 className="mb-4 text-center title">
           Behind the Magic
         </h2>
 
@@ -28,18 +28,18 @@ export default function AboutHomePage() {
         </p>
 
         {/* Image row */}
-        <div className="flex justify-between items-center gap-3">
+        <div className="flex items-center justify-between gap-3">
           {images.map((img, index) => {
             const distanceFromCenter = Math.abs(centerIndex - index);
 
             // Adjust height and opacity based on distance
             let sizeClass = "";
             if (distanceFromCenter === 0) {
-              sizeClass = "w-76 h-80 opacity-100"; // center
+              sizeClass = "w-80 h-85 opacity-100"; // center
             } else if (distanceFromCenter === 1) {
-              sizeClass = "w-60 h-64 opacity-70"; // next to center
+              sizeClass = "w-80 h-85 opacity-70"; // next to center
             } else {
-              sizeClass = "w-44 h-48 opacity-50"; // far edges
+              sizeClass = "w-54 h-60 opacity-50"; // far edges
             }
 
             return (

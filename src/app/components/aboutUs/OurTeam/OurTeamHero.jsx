@@ -1,4 +1,5 @@
 "use client";
+import { div } from "framer-motion/client";
 import React from "react";
 
 export default function OurTeamHero() {
@@ -16,17 +17,17 @@ export default function OurTeamHero() {
     <section className="py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Title */}
-        <h2 className="title text-center mb-4">
-          Thinkers of BoostFixter
-        </h2>
+        <h2 className="mb-4 text-center title">Thinkers of BoostFixter</h2>
 
         {/* Description */}
         <p className="mb-10 max-w-[70%] mx-auto text-center description">
-         More than teammates, we’re friends who build ideas together with coffee, teamwork, and a shared vision that keeps us inspired every day.
+          More than teammates, we’re friends who build ideas together with
+          coffee, teamwork, and a shared vision that keeps us inspired every
+          day.
         </p>
 
         {/* Image row */}
-        <div className="flex justify-between items-center gap-3">
+        <div className="flex items-center justify-between gap-3">
           {images.map((img, index) => {
             const distanceFromCenter = Math.abs(centerIndex - index);
 
@@ -40,12 +41,14 @@ export default function OurTeamHero() {
               sizeClass = "w-[172px] h-[212px] opacity-90"; // far edges
             }
             return (
-              <img
-                key={index}
-                src={img}
-                alt={`image-${index}`}
-                className={`rounded-lg transition-all duration-500 ${sizeClass}`}
-              />
+              <div className="object-fill object-center">
+                <img
+                  key={index}
+                  src={img}
+                  alt={`image-${index}`}
+                  className={`rounded-lg transition-all duration-500   ${sizeClass}`}
+                />
+              </div>
             );
           })}
         </div>

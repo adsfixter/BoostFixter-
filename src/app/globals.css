@@ -187,3 +187,6 @@ body{
 
 /* description custom css end */
 
+body, html {
+  overflow-x: hidden;
+}
