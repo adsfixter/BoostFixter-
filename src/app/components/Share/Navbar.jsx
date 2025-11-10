@@ -46,12 +46,12 @@ export default function Navbar() {
       //   { href: "/AboutUs/PrivacyPolicy", label: "Privacy Policy" },
        ],
     },
-    // { label: "Blog", href: "/blog" },
-    // { label: "Contact", href: "/Contact" },
+     { label: "Blog", href: "/blog" },
+     { label: "Contact", href: "/Contact" },
   ];
 
   return (
-    <header className=" bg-white/90 backdrop-blur sticky top-0 z-50">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
