@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Share/Navbar";
 import Footer from "./components/Share/Footer";
 import { LocaleProvider } from "@/context/LocaleContext";
+
 const nunito = Nunito_Sans({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -20,15 +21,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={nunito.variable}>
-      <body className="antialiased primaryText font-nunito">
+      <body className="antialiased primaryText font-nunito bg-white">
         <LocaleProvider>
-          <header className="sticky top-0 z-50">
+         
+          <header className="fixed top-0 left-0 z-50 w-full bg-white">
             <Navbar />
           </header>
-          <main>{children}</main>
-          <footer>
-            <Footer />
-          </footer>
+          <main className="pt-[80px]">{children}</main>
+          <Footer />
         </LocaleProvider>
       </body>
     </html>

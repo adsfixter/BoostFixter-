@@ -13,8 +13,6 @@ export default function AdvertisHero() {
         <p className="mb-10 max-w-[70%] mx-auto text-center description">
           From Facebook to TikTok to Google, we craft campaigns that drive traffic, engagement, and sales for your business.
         </p>
-
-        
       </div>
     </section>
   );
