@@ -47,7 +47,7 @@ export default function Navbar() {
        ],
     },
     // { label: "Blog", href: "/blog" },
-    // { label: "Contact", href: "/Contact" },
+    { label: "Contact", href: "/Contact" },
   ];
 
   return (
