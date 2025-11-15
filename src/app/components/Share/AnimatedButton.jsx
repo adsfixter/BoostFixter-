@@ -3,10 +3,19 @@
 import { ArrowUpRight } from "lucide-react";
 import "./AnimatedButton.css";
 
-function AnimatedButton({ text = "Get Started", onClick, className = "" }) {
+function AnimatedButton({ text = "Get Started",  scrollToId,  className = "" }) {
+
+  const handleClick = () => {
+    if (scrollToId) {
+      const section = document.getElementById(scrollToId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
   return (
     <button
-      onClick={onClick}
+      onClick={handleClick}
       className={`relative px-8 py-3 font-semibold text-white rounded-full overflow-hidden group transition-all duration-300 ${className} animated-button`}
     >
       {/* Animated Effects */}

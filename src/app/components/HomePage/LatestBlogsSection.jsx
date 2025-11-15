@@ -54,10 +54,10 @@ export default function LatestBlog() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-center justify-between gap-6 mb-10 sm:flex-row">
-          <h2 className=" title ">
+          <h2 className=" title">
             Our Latest Blog
           </h2>
-          <CustomButton text={"See All Blogs"} link={"#"} />
+          <CustomButton text={"See All Blogs"} link={"/blog"} />
         </div>
 
         {/* Blog Cards */}

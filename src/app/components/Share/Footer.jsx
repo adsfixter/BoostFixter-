@@ -37,19 +37,21 @@ export default function Footer() {
                   />
                 </div>
               </Link>
-              <p className="text-sm           
+              <p
+                className="text-sm           
     sm:text-base     
     md:text-lg       
     font-normal md:font-semibold 
     text-[#013F32]
     hover:text-[#031d17]
     transition-colors duration-300 
-    break-all     ">
+    break-all     "
+              >
                 Global ad solutions built for growth fast, secure, and
                 performance-driven.
               </p>
-              <div className="max-w-2/3 mt-5">
-                <AnimatedButton text="Contact Us"></AnimatedButton>
+              <div className="mt-5 max-w-2/3">
+                <AnimatedButton text="Contact Us" scrollToId="freeConsultation"></AnimatedButton>
               </div>
             </div>
 
@@ -106,7 +108,7 @@ export default function Footer() {
                 </div>
 
                 {/* Email */}
-                <div className="flex gap-3 items-center">
+                <div className="flex items-center gap-3">
                   <Mail className="w-6 h-6 text-[#013F32] mt-1 flex-shrink-0" />
                   <a
                     href="mailto:boostfixter@gmail.com"
@@ -128,14 +130,16 @@ export default function Footer() {
                 {/* Address */}
                 <div className="flex items-start gap-3">
                   <MapPin className="w-6 h-6 text-[#013F32] mt-1 flex-shrink-0" />
-                  <p className=" text-sm           
+                  <p
+                    className=" text-sm           
     sm:text-base     
     md:text-lg       
     font-normal md:font-semibold 
     text-[#013F32]
     hover:text-[#031d17]
     transition-colors duration-300 
-    break-all     ">
+    break-all     "
+                  >
                     Rafiq Place, Level 5C, Opposite. <br /> BM College Mosque
                     Gate, Barisal, Bangladesh.
                   </p>
@@ -145,7 +149,7 @@ export default function Footer() {
           </div>
 
           {/* ===== Bottom Section ===== */}
-          <div className="space-y-2 mt-10">
+          <div className="mt-10 space-y-2">
             <div className="flex flex-row-reverse flex-wrap items-center justify-between gap-4">
               {/* Social Icons */}
               <div className="flex items-center gap-4">
@@ -153,31 +157,31 @@ export default function Footer() {
                   href="#"
                   className="flex items-center justify-center w-8 h-8 bg-[#013F32] rounded-full hover:bg-green-700"
                 >
-                  <FaFacebookF className="text-secondary w-5 h-5" />
+                  <FaFacebookF className="w-5 h-5 text-secondary" />
                 </a>
                 <a
                   href="#"
                   className="flex items-center justify-center w-8 h-8 bg-[#013F32] rounded-full hover:bg-green-700"
                 >
-                  <FaLinkedinIn className="text-secondary w-5 h-5" />
+                  <FaLinkedinIn className="w-5 h-5 text-secondary" />
                 </a>
                 <a
                   href="#"
                   className="flex items-center justify-center w-8 h-8 bg-[#013F32] rounded-full hover:bg-green-700"
                 >
-                  <FaInstagram className="text-secondary w-5 h-5" />
+                  <FaInstagram className="w-5 h-5 text-secondary" />
                 </a>
                 <a
                   href="#"
                   className="flex items-center justify-center w-8 h-8 bg-[#013F32] rounded-full hover:bg-green-700"
                 >
-                  <FaYoutube className="text-secondary w-5 h-5" />
+                  <FaYoutube className="w-5 h-5 text-secondary" />
                 </a>
               </div>
               {/* Company Deck Download */}
               <a
                 href="#"
-                className="flex items-center gap-3 transition-colors text-primary mb-4"
+                className="flex items-center gap-3 mb-4 transition-colors text-primary"
               >
                 <div className="flex items-center justify-center text-secondary p-2 rounded-full bg-[#013F32]">
                   <Download size={36} />

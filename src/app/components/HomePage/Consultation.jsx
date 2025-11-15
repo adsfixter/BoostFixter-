@@ -3,7 +3,7 @@ import AnimatedButton from "../Share/AnimatedButton";
 
 export default function ContactForm() {
   return (
-    <section className=" pb-10 pt-10 bg-[#F8F8F8]">
+    <section id="freeConsultation" className=" pb-10 pt-10 bg-[#F8F8F8]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col items-start my-10 rounded-lg md:flex-row ">
           {/* text div - 30% */}
@@ -16,7 +16,7 @@ export default function ContactForm() {
               approved, <br/> we start the work.
             </p>
 
-            <div className="flex items-center gap-0 text-green-800 underline tex-2t-lg font-sgemibold md:text-xl mt-6">
+            <div className="flex items-center gap-0 mt-6 text-green-800 underline tex-2t-lg font-sgemibold md:text-xl">
               <a href="#" className="text-green-800 ">
                 Direct Call{" "}
               </a>

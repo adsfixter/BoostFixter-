@@ -23,7 +23,7 @@ const ratings = [
   },
   {
     id: 5,
-    image: "/ClientRatings/designrush.png",
+    image: "/ClientRatings/DesignRush.png",
     link: "https://example.com/service5",
   },
 ];
