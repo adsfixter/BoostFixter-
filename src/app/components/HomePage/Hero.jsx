@@ -7,6 +7,9 @@ import CustomButton from "../Share/CustomButton";
 import T from "../T";
 
 export default function Hero() {
+
+ 
+  
   return (
     <section className="relative py-16 overflow-hidden bg-gradient-to-br from-gray-100 via-white to-white sm:py-20 lg:py-24">
       <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -23,8 +26,8 @@ export default function Hero() {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-col items-center justify-center gap-4 pt-4 sm:flex-row md:justify-start">
-              <AnimatedButton text="Free Consultation" />
+            <div  className="flex flex-col items-center justify-center gap-4 pt-4 sm:flex-row md:justify-start">
+              <AnimatedButton id="freeConsultation"  text="Free Consultation" scrollToId="freeConsultation" />
               <CustomButton text="Portfolio" link="#" />
             </div>
           </div>
